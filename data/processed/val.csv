@@ -1,0 +1,649 @@
+id,text,anger,disgust,fear,joy,sadness,surprise,emotions,language,split,text_clean
+afr_dev_track_a_00001,hierdie oormagte gaan groter word.,0,0.0,1,0,0,0.0,['fear'],afrikaans,dev,hierdie oormagte gaan groter word
+afr_dev_track_a_00002,"dit is van toepassing op geletterdheidsvlakke, bruto inskrywing aan skole, en die koers van deelname aan tersiêre onderrig.",0,0.0,0,0,0,0.0,[],afrikaans,dev,dit is van toepassing op geletterdheidsvlakke bruto inskrywing aan skole en die koers van deelname aan tersiêre onderrig
+afr_dev_track_a_00003,tweedens moet onderwys gedepolitiseer word.,0,0.0,0,0,0,0.0,[],afrikaans,dev,tweedens moet onderwys gedepolitiseer word
+afr_dev_track_a_00004,daarom moet ons ons koppe optel en met groot dankbaarheid dink aan hulle wie se nagedagtenis ons vandag hier eer.,0,0.0,0,1,1,0.0,['joy' 'sadness'],afrikaans,dev,daarom moet ons ons koppe optel en met groot dankbaarheid dink aan hulle wie se nagedagtenis ons vandag hier eer
+afr_dev_track_a_00005,ons is gedetermineerd om die voortdurende skending van die waardigheid van veral die minderbevoorregte en weerlose mense in ons provinsie te stuit.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ons is gedetermineerd om die voortdurende skending van die waardigheid van veral die minderbevoorregte en weerlose mense in ons provinsie te stuit
+afr_dev_track_a_00006,ons moet dus verseker vir n konstitionele meganisme vir die beskerming van die regte van die minderhede.,0,0.0,1,1,0,0.0,['fear' 'joy'],afrikaans,dev,ons moet dus verseker vir n konstitionele meganisme vir die beskerming van die regte van die minderhede
+afr_dev_track_a_00007,"hierdie poste is in areas soos konstruksie, tuis- en gemeenskapsgebaseerde sorg en omgewingsprojekte.",0,0.0,0,0,0,0.0,[],afrikaans,dev,hierdie poste is in areas soos konstruksie tuis en gemeenskapsgebaseerde sorg en omgewingsprojekte
+afr_dev_track_a_00008,"dit sal volhoubaarheid verseker, én die aanwending van meer regeringshulpbronne om ekonomiese dienste te verskaf om meer werk- en sakegeleenthede te skep.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,dit sal volhoubaarheid verseker én die aanwending van meer regeringshulpbronne om ekonomiese dienste te verskaf om meer werk en sakegeleenthede te skep
+afr_dev_track_a_00009,"daar is eerstens ooreengekom dat, op alle regeringsgebiede, noodsaaklike vakatures gevul moet word binne ses maande nadat die vakature ontstaan het.",0,0.0,0,0,0,0.0,[],afrikaans,dev,daar is eerstens ooreengekom dat op alle regeringsgebiede noodsaaklike vakatures gevul moet word binne ses maande nadat die vakature ontstaan het
+afr_dev_track_a_00010,aan die ander kant is weinig vordering met die herverdeling van grond gemaak.,0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,aan die ander kant is weinig vordering met die herverdeling van grond gemaak
+afr_dev_track_a_00011,dirkie de villiers het destyds twaalf daarvan uitgesoek en laat publiseer.,0,0.0,0,0,0,0.0,[],afrikaans,dev,dirkie de villiers het destyds twaalf daarvan uitgesoek en laat publiseer
+afr_dev_track_a_00012,mettertyd sal hierdie instellings waarskynlik nader aan mekaar groei.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,mettertyd sal hierdie instellings waarskynlik nader aan mekaar groei
+afr_dev_track_a_00013,"ek glo baie sterk daaraan aan om te kan boer nie 'n reg is nie, dis 'n voorreg.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ek glo baie sterk daaraan aan om te kan boer nie n reg is nie dis n voorreg
+afr_dev_track_a_00014,"die kompleksiteit van die suid-afrikaanse samelewing, ook op onderwysgebied, vereis deeglike beplanning, oriëntering en harde werk.",0,0.0,0,0,0,0.0,[],afrikaans,dev,die kompleksiteit van die suidafrikaanse samelewing ook op onderwysgebied vereis deeglike beplanning oriëntering en harde werk
+afr_dev_track_a_00015,dít is heelwat hoër as die inflasieteiken van tussen drie en ses persent.,0,0.0,1,0,1,0.0,['fear' 'sadness'],afrikaans,dev,dít is heelwat hoër as die inflasieteiken van tussen drie en ses persent
+afr_dev_track_a_00016,"anton bredell, minister van plaaslike regering, omgewingsake en ontwikkelingsbeplanning.",0,0.0,0,0,0,0.0,[],afrikaans,dev,anton bredell minister van plaaslike regering omgewingsake en ontwikkelingsbeplanning
+afr_dev_track_a_00017,die minister van onderwys sal volgende week oor die nasionale debat oor hierdie aangeleenthede uitbrei.,0,0.0,0,0,0,0.0,[],afrikaans,dev,die minister van onderwys sal volgende week oor die nasionale debat oor hierdie aangeleenthede uitbrei
+afr_dev_track_a_00018,"daar is wesentlike verskille tussen ons oor die kwessie van dissipline, gesag en orde.",0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,daar is wesentlike verskille tussen ons oor die kwessie van dissipline gesag en orde
+afr_dev_track_a_00019,"so as jy bo gekom het, hou aan met klim.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,so as jy bo gekom het hou aan met klim
+afr_dev_track_a_00020,"mense kan ook orgaan skenkerskaarte by hulle dra,"" sê uys.",0,0.0,0,0,0,0.0,[],afrikaans,dev,mense kan ook orgaan skenkerskaarte by hulle dra sê uys
+afr_dev_track_a_00021,ek het die ministers beveel om die uitstaande aangeleenthede ook op te los.,0,0.0,0,0,0,0.0,[],afrikaans,dev,ek het die ministers beveel om die uitstaande aangeleenthede ook op te los
+afr_dev_track_a_00022,"hy verwys na sy gevangenskap ná sy deelname aan die mislukte opstand van 1914, later beter bekend as die rebellie.",0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,hy verwys na sy gevangenskap ná sy deelname aan die mislukte opstand van 1914 later beter bekend as die rebellie
+afr_dev_track_a_00023,"hulle moet nog iewers wees, ja.",0,0.0,0,0,0,0.0,[],afrikaans,dev,hulle moet nog iewers wees ja
+afr_dev_track_a_00024,daar word beplan ook om twee berghuise te vestig wat verhuur gaan word aan toeriste.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,daar word beplan ook om twee berghuise te vestig wat verhuur gaan word aan toeriste
+afr_dev_track_a_00025,dit is nou vir my belangrik dat ek 'n strategiese riglyn probeer neerlê waaraan hierdie kongres behoort aandag te gee.,0,0.0,0,0,0,0.0,[],afrikaans,dev,dit is nou vir my belangrik dat ek n strategiese riglyn probeer neerlê waaraan hierdie kongres behoort aandag te gee
+afr_dev_track_a_00026,dit het duidelik geblyk uit 'n informele behoefte-bepaling en wenslikheidstudie wat naln verlede jaar as een van sy naln 25-projekte onderneem het.,0,0.0,0,0,0,0.0,[],afrikaans,dev,dit het duidelik geblyk uit n informele behoeftebepaling en wenslikheidstudie wat naln verlede jaar as een van sy naln 25projekte onderneem het
+afr_dev_track_a_00027,"daar is daagliks, beide in arm en ryk buurte, vrees vir die moontlikheid van ’n gewelddadig aanval.",1,1.0,1,0,1,0.0,['anger' 'disgust' 'fear' 'sadness'],afrikaans,dev,daar is daagliks beide in arm en ryk buurte vrees vir die moontlikheid van n gewelddadig aanval
+afr_dev_track_a_00028,ons het in terme van dieselfde ooreenkoms vyf aspirant kaasmakers na beaune gestuur asook vyf persone wat opleiding in wynbediening ontvang het.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ons het in terme van dieselfde ooreenkoms vyf aspirant kaasmakers na beaune gestuur asook vyf persone wat opleiding in wynbediening ontvang het
+afr_dev_track_a_00029,daar is talle voorbeelde in die geskiedenis van tragiese konflikte wat ontketen is deur die miskenning van die regte van minderhede.,0,1.0,0,0,1,0.0,['disgust' 'sadness'],afrikaans,dev,daar is talle voorbeelde in die geskiedenis van tragiese konflikte wat ontketen is deur die miskenning van die regte van minderhede
+afr_dev_track_a_00032,"die volledige getikte manuskrip, saam met die nota van die tikster, word in naln bewaar.",0,0.0,0,0,0,0.0,[],afrikaans,dev,die volledige getikte manuskrip saam met die nota van die tikster word in naln bewaar
+afr_dev_track_a_00033,die koste van die melkstal is r920 000 en die melkmasjien kos r160 000.,0,0.0,0,0,0,0.0,[],afrikaans,dev,die koste van die melkstal is r920 000 en die melkmasjien kos r160 000
+afr_dev_track_a_00034,"patatskloof was die naam van my vader, d.g.",0,0.0,0,0,0,0.0,[],afrikaans,dev,patatskloof was die naam van my vader dg
+afr_dev_track_a_00035,"as koring winsgewend verbou kan word, sal boere dit plant en so verseker dat daar genoeg kos bekostigbaar geproduseer word.",0,0.0,0,0,0,0.0,[],afrikaans,dev,as koring winsgewend verbou kan word sal boere dit plant en so verseker dat daar genoeg kos bekostigbaar geproduseer word
+afr_dev_track_a_00036,eerstens is die ultra-violetstrale van die son skadelik vir die pype self en brande sal groot skade aan die pyplyn kan aanrig.,0,0.0,1,0,1,0.0,['fear' 'sadness'],afrikaans,dev,eerstens is die ultravioletstrale van die son skadelik vir die pype self en brande sal groot skade aan die pyplyn kan aanrig
+afr_dev_track_a_00037,"hulle praat met mekaar, en hy vra haar opinie oor sake.",0,0.0,0,0,0,0.0,[],afrikaans,dev,hulle praat met mekaar en hy vra haar opinie oor sake
+afr_dev_track_a_00038,dit is 'n ideaal waarvoor ek hoop om te lewe en te bereik.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,dit is n ideaal waarvoor ek hoop om te lewe en te bereik
+afr_dev_track_a_00039,"daarna word hy dosent in geskiedenis aan die grey universiteits-kollege en later suid-afrika se leidende ekonoom, en nog later ambassadeur in engeland.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,daarna word hy dosent in geskiedenis aan die grey universiteitskollege en later suidafrika se leidende ekonoom en nog later ambassadeur in engeland
+afr_dev_track_a_00040,jy laat ons bloei.,1,0.0,1,0,1,0.0,['anger' 'fear' 'sadness'],afrikaans,dev,jy laat ons bloei
+afr_dev_track_a_00041,dit is 'n bedryf wat 90% uitvoergerig is.,0,0.0,0,0,0,0.0,[],afrikaans,dev,dit is n bedryf wat 90 uitvoergerig is
+afr_dev_track_a_00042,bewusmaking en opvoeding ten opsigte van kwessies soos alkoholmisbruik en miv/vigs geskied ook deur middel van die kunste.,0,0.0,0,0,0,0.0,[],afrikaans,dev,bewusmaking en opvoeding ten opsigte van kwessies soos alkoholmisbruik en mivvigs geskied ook deur middel van die kunste
+afr_dev_track_a_00043,ek wil verder ook die bestuur van hierdie instelling gelukwens.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ek wil verder ook die bestuur van hierdie instelling gelukwens
+afr_dev_track_a_00044,die koste van die eerste 30 koeie was r2 535 elk wat n totaal van r76 050 beloop.,0,0.0,0,0,0,0.0,[],afrikaans,dev,die koste van die eerste 30 koeie was r2 535 elk wat n totaal van r76 050 beloop
+afr_dev_track_a_00045,dat hulle taal en hulle tradisies en hulle basiese lewens en wêreldbeskouing in hulle hand gelaat sal word.,0,0.0,0,0,0,0.0,[],afrikaans,dev,dat hulle taal en hulle tradisies en hulle basiese lewens en wêreldbeskouing in hulle hand gelaat sal word
+afr_dev_track_a_00046,ons beoog om teen 2014 terreine in 160 wyke te hê.,0,0.0,0,0,0,0.0,[],afrikaans,dev,ons beoog om teen 2014 terreine in 160 wyke te hê
+afr_dev_track_a_00047,"die gees van ""besigheid buitengewoon"" behoort van toepassing te wees op alle individue wat die voorreg geniet om staatsamptenare te wees.",0,0.0,0,0,0,0.0,[],afrikaans,dev,die gees van besigheid buitengewoon behoort van toepassing te wees op alle individue wat die voorreg geniet om staatsamptenare te wees
+afr_dev_track_a_00048,ek is seker dat van die nuwe of herkose lede hier teenwoordig is.,0,0.0,0,0,0,0.0,[],afrikaans,dev,ek is seker dat van die nuwe of herkose lede hier teenwoordig is
+afr_dev_track_a_00049,daar sal brue gebou moet word tussen die leerplek en die werkplek.,0,0.0,1,0,0,0.0,['fear'],afrikaans,dev,daar sal brue gebou moet word tussen die leerplek en die werkplek
+afr_dev_track_a_00050,"die belange wat vanaand hier verteenwoordig is, staan voor 'n groot uitdaging.",0,0.0,1,0,0,0.0,['fear'],afrikaans,dev,die belange wat vanaand hier verteenwoordig is staan voor n groot uitdaging
+afr_dev_track_a_00051,al hierdie mense het die potensiaal om rolmodelle vir huidige leerders te word.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,al hierdie mense het die potensiaal om rolmodelle vir huidige leerders te word
+afr_dev_track_a_00052,daarom is daar begrip vir die rou en die seer van die gemeenskap.,0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,daarom is daar begrip vir die rou en die seer van die gemeenskap
+afr_dev_track_a_00053,dit is iets om op trots te wees.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,dit is iets om op trots te wees
+afr_dev_track_a_00054,cillié het hom laat ompraat van ds.,0,0.0,0,0,0,0.0,[],afrikaans,dev,cillié het hom laat ompraat van ds
+afr_dev_track_a_00055,môrester landgoed is 'n familie-onderneming van bykans 95 jaar oud.,0,0.0,0,0,0,0.0,[],afrikaans,dev,môrester landgoed is n familieonderneming van bykans 95 jaar oud
+afr_dev_track_a_00056,"baie van die uitdagings in ons werk wat uitgelig is, spruit voort uit ernstige tekortkominge ten opsigte van ons beplanning.",0,1.0,1,0,0,0.0,['disgust' 'fear'],afrikaans,dev,baie van die uitdagings in ons werk wat uitgelig is spruit voort uit ernstige tekortkominge ten opsigte van ons beplanning
+afr_dev_track_a_00057,"ons benodig landbou-ingenieurs, ekonome en veeartse.",0,0.0,0,0,0,0.0,[],afrikaans,dev,ons benodig landbouingenieurs ekonome en veeartse
+afr_dev_track_a_00058,dit is egter nie goed genoeg nie.,1,1.0,0,0,1,0.0,['anger' 'disgust' 'sadness'],afrikaans,dev,dit is egter nie goed genoeg nie
+afr_dev_track_a_00059,ons wil ook grondhervornming en landbou-ondersteuningsprogramme beter integreer.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ons wil ook grondhervornming en landbouondersteuningsprogramme beter integreer
+afr_dev_track_a_00060,ek wil weet wat daar aangaan.,0,0.0,0,0,0,0.0,[],afrikaans,dev,ek wil weet wat daar aangaan
+afr_dev_track_a_00061,want kyk hoe gluur keesje hom aan .. .,0,0.0,0,0,0,0.0,[],afrikaans,dev,want kyk hoe gluur keesje hom aan
+afr_dev_track_a_00062,ek verstaan u het intussen 'n stewige bankbalans opgebou.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ek verstaan u het intussen n stewige bankbalans opgebou
+afr_dev_track_a_00063,duidelike beleidsraamwerke is reeds vir toekomstige onderwysontwikkeling in suid-afrika neergelê.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,duidelike beleidsraamwerke is reeds vir toekomstige onderwysontwikkeling in suidafrika neergelê
+afr_dev_track_a_00064,ek het gesê dis tyd die mense van die wes-kaap groter verantwoordelikheid aan die dag lê wanneer dit om tering gaan.,0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,ek het gesê dis tyd die mense van die weskaap groter verantwoordelikheid aan die dag lê wanneer dit om tering gaan
+afr_dev_track_a_00065,hiertoe dra die staat 80% by d.m.v 'n subsidie.,0,0.0,0,0,0,0.0,[],afrikaans,dev,hiertoe dra die staat 80 by dmv n subsidie
+afr_dev_track_a_00066,ek dank u almal.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ek dank u almal
+afr_dev_track_a_00067,"hieruit blyk die verbintenis en benadering van hierdie regering tot ontwikkeling, hulp aan armes en die regstelling van die verlede.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,hieruit blyk die verbintenis en benadering van hierdie regering tot ontwikkeling hulp aan armes en die regstelling van die verlede
+afr_dev_track_a_00068,hierdeur kry die gemeenskap die geleentheid om volwaardig tot landbou toe te tree soos enige kommersiële boer.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,hierdeur kry die gemeenskap die geleentheid om volwaardig tot landbou toe te tree soos enige kommersiële boer
+afr_dev_track_a_00069,"u is almal bewus van die krisisse wat ons die afgelope jaar beleef het, beide wat varkboere en die volstruisbedryf aanbetref.",0,0.0,1,0,1,0.0,['fear' 'sadness'],afrikaans,dev,u is almal bewus van die krisisse wat ons die afgelope jaar beleef het beide wat varkboere en die volstruisbedryf aanbetref
+afr_dev_track_a_00070,nou le dit op ons weg om in die implementering van daardie grondwetlike kompromis toe te sien dat aan alle belange gereg geskied.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,nou le dit op ons weg om in die implementering van daardie grondwetlike kompromis toe te sien dat aan alle belange gereg geskied
+afr_dev_track_a_00071,"dit sal egter opgevolg moet word deur spanwerk in kleiner kringe, gerig op gedetaileerde voorstelle en strategieë.",0,0.0,0,0,0,0.0,[],afrikaans,dev,dit sal egter opgevolg moet word deur spanwerk in kleiner kringe gerig op gedetaileerde voorstelle en strategieë
+afr_dev_track_a_00072,en ek is dankbaar dat daar ook van ander partye in die kabinet dieselfde punte gekom.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,en ek is dankbaar dat daar ook van ander partye in die kabinet dieselfde punte gekom
+afr_dev_track_a_00073,ek glo dat u besprekings en beraadslagings binne die raamwerk van die heersende werklikheid hanteer moet word.,0,0.0,0,0,0,0.0,[],afrikaans,dev,ek glo dat u besprekings en beraadslagings binne die raamwerk van die heersende werklikheid hanteer moet word
+afr_dev_track_a_00074,"ons voer tans samesprekings met eskom, dme en nersa om 'n verslag saam te stel wat die stelsels monitor.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ons voer tans samesprekings met eskom dme en nersa om n verslag saam te stel wat die stelsels monitor
+afr_dev_track_a_00075,en dit was dan ook die president self wat die boomplant-tradisie in die tuin van die ou goewermentsgebou begin het.,0,0.0,0,0,0,0.0,[],afrikaans,dev,en dit was dan ook die president self wat die boomplanttradisie in die tuin van die ou goewermentsgebou begin het
+afr_dev_track_a_00076,"dit fokus ook op die departement se personeel, want beter opgeleide amptenare sal ook beter diens aan u lewer.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,dit fokus ook op die departement se personeel want beter opgeleide amptenare sal ook beter diens aan u lewer
+afr_dev_track_a_00078,"en juis omdat dit 'n tydperk van uitdagings is, is dit ook 'n tydperk van geleenthede!",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,en juis omdat dit n tydperk van uitdagings is is dit ook n tydperk van geleenthede
+afr_dev_track_a_00079,"hierdie optrede sal verseker dat vroue, kinders en persone met gestremdhede toegang tot ontwikkelingsgeleenthede kry.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,hierdie optrede sal verseker dat vroue kinders en persone met gestremdhede toegang tot ontwikkelingsgeleenthede kry
+afr_dev_track_a_00080,"so vanjaar kom ek om naln te besoek, terug.",0,0.0,0,0,0,0.0,[],afrikaans,dev,so vanjaar kom ek om naln te besoek terug
+afr_dev_track_a_00081,dit is egter ontstellend om te weet dat studente wat aan landboukolleges studeer van hierdie hulpskema uitgesluit word.,1,0.0,0,0,1,0.0,['anger' 'sadness'],afrikaans,dev,dit is egter ontstellend om te weet dat studente wat aan landboukolleges studeer van hierdie hulpskema uitgesluit word
+afr_dev_track_a_00082,die onkoste beloop r1 135 000 en die kapasiteit word met ± 3 miljoen m3 vermeerder.,0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,die onkoste beloop r1 135 000 en die kapasiteit word met 3 miljoen m3 vermeerder
+afr_dev_track_a_00083,aan die ander kant sal ons die bekendstelling van die volgende fase van die program vir uitgebreide openbare werke bespoedig.,0,0.0,0,0,0,0.0,[],afrikaans,dev,aan die ander kant sal ons die bekendstelling van die volgende fase van die program vir uitgebreide openbare werke bespoedig
+afr_dev_track_a_00084,"ek is nie 'n filatelis nie, maar my oudste dogter, melita, wel.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ek is nie n filatelis nie maar my oudste dogter melita wel
+afr_dev_track_a_00085,die dp het 'n magsbasis slegs in die ryke woonbuurtes van die groter stede.,0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,die dp het n magsbasis slegs in die ryke woonbuurtes van die groter stede
+afr_dev_track_a_00086,"adoons se tong hang ook uit van die lus, maar dis nie die skerm se hond wat hom so laat kwyl nie!",0,0.0,0,0,0,0.0,[],afrikaans,dev,adoons se tong hang ook uit van die lus maar dis nie die skerm se hond wat hom so laat kwyl nie
+afr_dev_track_a_00087,"die afgelope jaar se katastrofe met die viskwotas die beskuldigings van korrupsie in die bedryf, die beweerde nepotisme dit alles is onaanvaarbaar.",1,1.0,0,0,0,0.0,['anger' 'disgust'],afrikaans,dev,die afgelope jaar se katastrofe met die viskwotas die beskuldigings van korrupsie in die bedryf die beweerde nepotisme dit alles is onaanvaarbaar
+afr_dev_track_a_00088,party was so ongelukkig dat hulle die week die see ingevaar en onwettig kreef gaan uithaal het.,0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,party was so ongelukkig dat hulle die week die see ingevaar en onwettig kreef gaan uithaal het
+afr_dev_track_a_00089,schoeman te oorreed om sy hele studeerkamer en dokumenteversameling aan naln te skenk.,0,0.0,0,0,0,0.0,[],afrikaans,dev,schoeman te oorreed om sy hele studeerkamer en dokumenteversameling aan naln te skenk
+afr_dev_track_a_00090,"met sy publikasies het hy heelwat rekordlyste gehaal; selde indien ooit 'n uitgewer se ""remainder""-lys.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,met sy publikasies het hy heelwat rekordlyste gehaal selde indien ooit n uitgewer se remainderlys
+afr_dev_track_a_00091,op die ou einde het die uitdagings net soveel met regulering te doen as wat dit met konsekwente toepassing te doen het.,0,0.0,0,0,0,0.0,[],afrikaans,dev,op die ou einde het die uitdagings net soveel met regulering te doen as wat dit met konsekwente toepassing te doen het
+afr_dev_track_a_00092,ons maan alle huishoudings wat dit kan bekostig om dit te oorweeg om onmiddelik hierdie energiebesparingsmaatreëls te implementeer.,0,0.0,1,0,0,0.0,['fear'],afrikaans,dev,ons maan alle huishoudings wat dit kan bekostig om dit te oorweeg om onmiddelik hierdie energiebesparingsmaatreëls te implementeer
+afr_dev_track_a_00093,"die afrikaanse patriot het dié gedagte baie sterk gepropageer, onder meer met 'n reeks uitvoerige hoofartikels.",0,0.0,0,0,0,0.0,[],afrikaans,dev,die afrikaanse patriot het dié gedagte baie sterk gepropageer onder meer met n reeks uitvoerige hoofartikels
+afr_dev_track_a_00094,"en vanjaar is 'n ekstra besonderse jaar, aangesien die wêreld sokker beker ons oor 'n paar maande gaan tref.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,en vanjaar is n ekstra besonderse jaar aangesien die wêreld sokker beker ons oor n paar maande gaan tref
+afr_dev_track_a_00095,in een van m.e.r.,0,0.0,0,0,0,0.0,[],afrikaans,dev,in een van mer
+afr_dev_track_a_00096,daar was immers genoeg waarskuwing al van 1960 af.,0,0.0,0,0,0,0.0,[],afrikaans,dev,daar was immers genoeg waarskuwing al van 1960 af
+afr_dev_track_a_00097,"soos hulle my vertel het was dit maar 'n toiingrige baba, huilerig en ontevrede.",0,0.0,0,0,1,0.0,['sadness'],afrikaans,dev,soos hulle my vertel het was dit maar n toiingrige baba huilerig en ontevrede
+afr_dev_track_a_00098,"ek is hier om te hoor wat u probleme is en, gesamentlik, te kyk hoe ons dit kan aanpak.",0,0.0,0,1,0,0.0,['joy'],afrikaans,dev,ek is hier om te hoor wat u probleme is en gesamentlik te kyk hoe ons dit kan aanpak
+eng_dev_track_a_00001,older sister (23 at the time) is a scumbag stacy.,1,0.0,0,0,0,0.0,['anger'],english,dev,older sister 23 at the time is a scumbag stacy
+eng_dev_track_a_00002,"and i laughed like this: garhahagar, because my mouth was full of cotton and shit to bite down on and sharp objects and drills.",0,0.0,1,0,0,0.0,['fear'],english,dev,and i laughed like this garhahagar because my mouth was full of cotton and shit to bite down on and sharp objects and drills
+eng_dev_track_a_00003,it overflowed and brown shitty diarrhea water came flooding under the stall wall into my wife's stall.,1,0.0,1,0,1,1.0,['anger' 'fear' 'sadness' 'surprise'],english,dev,it overflowed and brown shitty diarrhea water came flooding under the stall wall into my wifes stall
+eng_dev_track_a_00004,its very dark and foggy.,0,0.0,1,0,0,0.0,['fear'],english,dev,its very dark and foggy
+eng_dev_track_a_00005,"then she tried to, like, have sex with/strangle everyone.",1,0.0,1,0,0,1.0,['anger' 'fear' 'surprise'],english,dev,then she tried to like have sex withstrangle everyone
+eng_dev_track_a_00006,<< < using my brain?,0,0.0,1,0,0,0.0,['fear'],english,dev,using my brain
+eng_dev_track_a_00007,"i said the first thing that came into my head, ` ciao.",0,0.0,0,1,0,0.0,['joy'],english,dev,i said the first thing that came into my head ciao
+eng_dev_track_a_00008,"my mouth fell open `` no, no, no... i..",0,0.0,1,0,1,1.0,['fear' 'sadness' 'surprise'],english,dev,my mouth fell open no no no i
+eng_dev_track_a_00009,"end of story, right?",0,0.0,0,0,0,1.0,['surprise'],english,dev,end of story right
+eng_dev_track_a_00010,we're still together.,0,0.0,0,1,0,0.0,['joy'],english,dev,were still together
+eng_dev_track_a_00011,; ) in the evening we did go down and put our feet in the water-i got to about my waist actually.,0,0.0,0,1,0,0.0,['joy'],english,dev,in the evening we did go down and put our feet in the wateri got to about my waist actually
+eng_dev_track_a_00012,after that first big experience i started doing some research because i was so confused.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,after that first big experience i started doing some research because i was so confused
+eng_dev_track_a_00013,... but raul never called.,1,0.0,0,0,1,1.0,['anger' 'sadness' 'surprise'],english,dev,but raul never called
+eng_dev_track_a_00014,"it takes them 6 guys, all firefighters mind, and one old schoolteacher, to lift this oak dresser off meridian.",0,0.0,0,0,0,1.0,['surprise'],english,dev,it takes them 6 guys all firefighters mind and one old schoolteacher to lift this oak dresser off meridian
+eng_dev_track_a_00015,in between my toes.,0,0.0,0,0,0,0.0,[],english,dev,in between my toes
+eng_dev_track_a_00016,"i have a floor shift in the morning, hopefully without my nose being stuffy.",0,0.0,1,0,0,0.0,['fear'],english,dev,i have a floor shift in the morning hopefully without my nose being stuffy
+eng_dev_track_a_00017,"i was born without the compassion chromosome, or i could have been born with two hearts, neither one agreeing where my brain should spend it's time.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,i was born without the compassion chromosome or i could have been born with two hearts neither one agreeing where my brain should spend its time
+eng_dev_track_a_00018,"i can't move, my hand is stuck, i'm making weird noises and my mom is screaming.",0,0.0,1,0,1,1.0,['fear' 'sadness' 'surprise'],english,dev,i cant move my hand is stuck im making weird noises and my mom is screaming
+eng_dev_track_a_00019,") i started to teach myself japanese, and just couldn't shake the feeling that i was supposed to live there.",0,0.0,1,1,0,1.0,['fear' 'joy' 'surprise'],english,dev,i started to teach myself japanese and just couldnt shake the feeling that i was supposed to live there
+eng_dev_track_a_00020,"""  i'm like ""sure.",0,0.0,0,1,0,0.0,['joy'],english,dev,im like sure
+eng_dev_track_a_00021,can't wait to be in another wedding!,0,0.0,0,1,0,0.0,['joy'],english,dev,cant wait to be in another wedding
+eng_dev_track_a_00022,i would go over to his house where his grandmother and mom and dad lived to play ssx tricky and eat pokemon fruit rollups.,0,0.0,0,1,0,0.0,['joy'],english,dev,i would go over to his house where his grandmother and mom and dad lived to play ssx tricky and eat pokemon fruit rollups
+eng_dev_track_a_00023,actually what's going on in my head is a lot of congestion.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,actually whats going on in my head is a lot of congestion
+eng_dev_track_a_00024,"oh, and i noticed an odd effect from eating ripe honeydew melon; this raspy, raw feeling in my chest, like a cold was coming on.",0,0.0,1,0,0,0.0,['fear'],english,dev,oh and i noticed an odd effect from eating ripe honeydew melon this raspy raw feeling in my chest like a cold was coming on
+eng_dev_track_a_00025,i looked at my wrist.,0,0.0,0,0,0,0.0,[],english,dev,i looked at my wrist
+eng_dev_track_a_00026,"i went at it twice, until the muscles around my mouth hurt and my innards almost came out together.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,i went at it twice until the muscles around my mouth hurt and my innards almost came out together
+eng_dev_track_a_00027,my stomach was hurting.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,my stomach was hurting
+eng_dev_track_a_00028,this is so odd.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,this is so odd
+eng_dev_track_a_00029,"just getting out of the house put a smile on my face, that and the fact that she had some wicked old music on her ipod.",0,0.0,0,1,0,0.0,['joy'],english,dev,just getting out of the house put a smile on my face that and the fact that she had some wicked old music on her ipod
+eng_dev_track_a_00030,block island holds a very special place in my heart.,0,0.0,0,1,0,0.0,['joy'],english,dev,block island holds a very special place in my heart
+eng_dev_track_a_00031,i was brought by to reality when noona hit my arm lightly.,0,0.0,1,0,0,0.0,['fear'],english,dev,i was brought by to reality when noona hit my arm lightly
+eng_dev_track_a_00032,"i can't breathe right, my head has been stuffed up for three months, i have whacked out dreams, can't sleep, i'm just... i'm... i feel like i'm breaking.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,i cant breathe right my head has been stuffed up for three months i have whacked out dreams cant sleep im just im i feel like im breaking
+eng_dev_track_a_00033,"anyway, i finished up and went back inside and decided to brush my teeth and straighten my shirttail, which had gotten twisted while sitting on the floor of the hall reading for two hours.",0,0.0,0,0,0,0.0,[],english,dev,anyway i finished up and went back inside and decided to brush my teeth and straighten my shirttail which had gotten twisted while sitting on the floor of the hall reading for two hours
+eng_dev_track_a_00034,"i cried my eyes out, longing for the days just a mere 10 1/2 months or so ago when i called this `` home '' and knew that i had a safe haven to rest my head.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,i cried my eyes out longing for the days just a mere 10 12 months or so ago when i called this home and knew that i had a safe haven to rest my head
+eng_dev_track_a_00035,"wow, that is really interesting.",0,0.0,0,1,0,1.0,['joy' 'surprise'],english,dev,wow that is really interesting
+eng_dev_track_a_00036,"&gt;me: ""wait, really?",0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,gtme wait really
+eng_dev_track_a_00037,the entire summer is going to pass by with a blink of my eye because i've got so much going on!,0,0.0,1,1,0,0.0,['fear' 'joy'],english,dev,the entire summer is going to pass by with a blink of my eye because ive got so much going on
+eng_dev_track_a_00038,my nose is currently upset.,0,0.0,0,0,0,0.0,[],english,dev,my nose is currently upset
+eng_dev_track_a_00039,after standing in a few times in the past his buddy asks again but warns him that it is the full moon and it won't be like the last times.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,after standing in a few times in the past his buddy asks again but warns him that it is the full moon and it wont be like the last times
+eng_dev_track_a_00040,"swarms of people wandering around confused and unaware of where they're going, cutting people short as they wander into burger king and other such stores on the other side of the corridor-completely unaware of the fact that they literally almost made me drop everything i'm carrying and fall flat on my face.",1,0.0,1,0,0,1.0,['anger' 'fear' 'surprise'],english,dev,swarms of people wandering around confused and unaware of where theyre going cutting people short as they wander into burger king and other such stores on the other side of the corridorcompletely unaware of the fact that they literally almost made me drop everything im carrying and fall flat on my face
+eng_dev_track_a_00041,her nose was broken.,0,0.0,1,0,1,1.0,['fear' 'sadness' 'surprise'],english,dev,her nose was broken
+eng_dev_track_a_00042,i accidentally drop him.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,i accidentally drop him
+eng_dev_track_a_00043,"one screamed out that it was screwed up, to which another replied ""to the max!",0,0.0,0,1,0,1.0,['joy' 'surprise'],english,dev,one screamed out that it was screwed up to which another replied to the max
+eng_dev_track_a_00044,""" and burst into tears.",0,0.0,0,0,1,0.0,['sadness'],english,dev,and burst into tears
+eng_dev_track_a_00045,i tried to be an easy going bride.,0,0.0,1,1,0,0.0,['fear' 'joy'],english,dev,i tried to be an easy going bride
+eng_dev_track_a_00046,welcome to the month from passive aggressive hell.,1,0.0,1,0,1,0.0,['anger' 'fear' 'sadness'],english,dev,welcome to the month from passive aggressive hell
+eng_dev_track_a_00047,"when mom inquires what ""the truth"" is, lisa just says that ""you will know eventually"", and she says that once she learned of ""the truth"", then ""everything became wonderful"".",0,0.0,0,1,0,1.0,['joy' 'surprise'],english,dev,when mom inquires what the truth is lisa just says that you will know eventually and she says that once she learned of the truth then everything became wonderful
+eng_dev_track_a_00048,clint and i went up and down with that weight for at least three or four reps after i thought my legs were shot.,0,0.0,1,0,0,0.0,['fear'],english,dev,clint and i went up and down with that weight for at least three or four reps after i thought my legs were shot
+eng_dev_track_a_00049,"""arch stop your progression.",0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,arch stop your progression
+eng_dev_track_a_00050,"was not happy with the waking up, but was awake because my hands were on fire.",1,0.0,1,0,1,0.0,['anger' 'fear' 'sadness'],english,dev,was not happy with the waking up but was awake because my hands were on fire
+eng_dev_track_a_00051,it was rather insulting.,1,0.0,0,0,0,0.0,['anger'],english,dev,it was rather insulting
+eng_dev_track_a_00052,the way i was positioned with the air moving made it hard to not breath through my mouth.,0,0.0,1,0,0,0.0,['fear'],english,dev,the way i was positioned with the air moving made it hard to not breath through my mouth
+eng_dev_track_a_00053,i got close enough to feel some of the spray from the falls landing on my lips and glasses.,0,0.0,0,1,0,0.0,['joy'],english,dev,i got close enough to feel some of the spray from the falls landing on my lips and glasses
+eng_dev_track_a_00054,there was also the sensation of something at my back at this point like a crustacean that i had to ask to leave.,0,0.0,1,0,0,0.0,['fear'],english,dev,there was also the sensation of something at my back at this point like a crustacean that i had to ask to leave
+eng_dev_track_a_00055,"""i don't have time to arrest drunk drivers because of all the murders, rapes, and robberies we have to deal with.",1,0.0,1,0,1,0.0,['anger' 'fear' 'sadness'],english,dev,i dont have time to arrest drunk drivers because of all the murders rapes and robberies we have to deal with
+eng_dev_track_a_00056,"we had obviously done this before, but this time something was different.",0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,we had obviously done this before but this time something was different
+eng_dev_track_a_00057,my sister was walking backwards and bumped her back into the wall so the second shelf or whatever that was placed on top of the knobs in the middle fell on my feet.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,my sister was walking backwards and bumped her back into the wall so the second shelf or whatever that was placed on top of the knobs in the middle fell on my feet
+eng_dev_track_a_00058,i noticed this months after moving in and doing all of my basic routines in my room naked.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,i noticed this months after moving in and doing all of my basic routines in my room naked
+eng_dev_track_a_00059,"not hardcore accidental racism, but it fits.",1,0.0,1,0,1,0.0,['anger' 'fear' 'sadness'],english,dev,not hardcore accidental racism but it fits
+eng_dev_track_a_00060,they were coal black.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,they were coal black
+eng_dev_track_a_00061,this was fairly recently...,0,0.0,0,0,0,0.0,[],english,dev,this was fairly recently
+eng_dev_track_a_00062,"the doors were getting ready to close, and she wasn't in yet, so i wedged my foot in the bottom of the door to hold it open for her.",0,0.0,0,1,0,0.0,['joy'],english,dev,the doors were getting ready to close and she wasnt in yet so i wedged my foot in the bottom of the door to hold it open for her
+eng_dev_track_a_00063,"but after blinking my eyes for a few times lepas tu tampar-tampar muka sikit, memang sah la yang penghantar itu hanis zalikha.",0,0.0,0,0,0,1.0,['surprise'],english,dev,but after blinking my eyes for a few times lepas tu tampartampar muka sikit memang sah la yang penghantar itu hanis zalikha
+eng_dev_track_a_00064,"this 'star', starts to move across the sky.",0,0.0,0,1,0,1.0,['joy' 'surprise'],english,dev,this star starts to move across the sky
+eng_dev_track_a_00065,"i know not why, i wipe my face.",0,0.0,0,0,0,0.0,[],english,dev,i know not why i wipe my face
+eng_dev_track_a_00066,slowly rising to my feet i came to the conclusion that sometimes being alone meant surviving for myself.,0,0.0,0,0,1,0.0,['sadness'],english,dev,slowly rising to my feet i came to the conclusion that sometimes being alone meant surviving for myself
+eng_dev_track_a_00067,the police were called.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,the police were called
+eng_dev_track_a_00068,"( you see, i have these afi patches that i bought in 2004 and i had no where to put them ) yesterday i bought this neato bag and i said to my brain '' i can put my patches on this here bag. ''",0,0.0,0,1,0,0.0,['joy'],english,dev,you see i have these afi patches that i bought in 2004 and i had no where to put them yesterday i bought this neato bag and i said to my brain i can put my patches on this here bag
+eng_dev_track_a_00069,my friend and i were walking home from school as per usual as we lived close to each other and this was the normal routine.,0,0.0,0,1,0,0.0,['joy'],english,dev,my friend and i were walking home from school as per usual as we lived close to each other and this was the normal routine
+eng_dev_track_a_00070,i feel like i am in over my head... like quicksand.,0,0.0,1,0,0,0.0,['fear'],english,dev,i feel like i am in over my head like quicksand
+eng_dev_track_a_00071,we moved to a labor and delivery room and i labored mostly on my hands and knees.,0,0.0,1,0,0,0.0,['fear'],english,dev,we moved to a labor and delivery room and i labored mostly on my hands and knees
+eng_dev_track_a_00072,"ok, so my pet alligator's tank is directly across from my pillow... the second i opened my eyes this morning at 6 am, the absolute first thing i see is my alligator in the corner of his tank staring directly at me.",0,0.0,0,1,0,1.0,['joy' 'surprise'],english,dev,ok so my pet alligators tank is directly across from my pillow the second i opened my eyes this morning at 6 am the absolute first thing i see is my alligator in the corner of his tank staring directly at me
+eng_dev_track_a_00073,"i leaned forward in my seat, pearing though the small portion of the windshield that was clear enough to look out and see a wall of white reflecting my lights back in my face.",0,0.0,1,0,0,0.0,['fear'],english,dev,i leaned forward in my seat pearing though the small portion of the windshield that was clear enough to look out and see a wall of white reflecting my lights back in my face
+eng_dev_track_a_00074,it's so stressful but i'd never wanna be with anyone else and i'd marry her this minute if the financial made sense.,0,0.0,1,1,1,0.0,['fear' 'joy' 'sadness'],english,dev,its so stressful but id never wanna be with anyone else and id marry her this minute if the financial made sense
+eng_dev_track_a_00075,i was beyond furious.,1,0.0,0,0,0,0.0,['anger'],english,dev,i was beyond furious
+eng_dev_track_a_00076,a deep thud sound in the room and a grin spread across my face.,0,0.0,0,1,0,0.0,['joy'],english,dev,a deep thud sound in the room and a grin spread across my face
+eng_dev_track_a_00077,the best part however was when she jumped into the pictures and pushed the dog into my hands.,0,0.0,0,1,0,1.0,['joy' 'surprise'],english,dev,the best part however was when she jumped into the pictures and pushed the dog into my hands
+eng_dev_track_a_00078,& # x 26; nbsp; what i did was cut the top off of a plastic gallon milk carton leaving the handle then by standing next to body of water or sometimes partially in it i could get a good dowseing dipping the carton into the water and then dumping it over my head.,0,0.0,0,1,0,0.0,['joy'],english,dev,x 26 nbsp what i did was cut the top off of a plastic gallon milk carton leaving the handle then by standing next to body of water or sometimes partially in it i could get a good dowseing dipping the carton into the water and then dumping it over my head
+eng_dev_track_a_00079,i remember the sweat burning in my eyes and trying to control my breathing.,0,0.0,1,0,0,0.0,['fear'],english,dev,i remember the sweat burning in my eyes and trying to control my breathing
+eng_dev_track_a_00080,"the feeling has started to come back to my eye, but i still cant raise my lip and actually inspect the damage.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,the feeling has started to come back to my eye but i still cant raise my lip and actually inspect the damage
+eng_dev_track_a_00081,you can barely make out your daughter's pale form in the darkness of your room.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,you can barely make out your daughters pale form in the darkness of your room
+eng_dev_track_a_00082,just look at them once and that's it whispered my wife in my ears.,0,0.0,0,1,0,0.0,['joy'],english,dev,just look at them once and thats it whispered my wife in my ears
+eng_dev_track_a_00083,"about ten years ago, he passed away from a severe brain tumor.",0,0.0,0,0,1,0.0,['sadness'],english,dev,about ten years ago he passed away from a severe brain tumor
+eng_dev_track_a_00084,"victim-less, non-violent crimes shouldn't be handled so harshly.",1,0.0,0,0,0,0.0,['anger'],english,dev,victimless nonviolent crimes shouldnt be handled so harshly
+eng_dev_track_a_00085,"tears welled up in my eyes, but none fell out.",0,0.0,0,0,1,0.0,['sadness'],english,dev,tears welled up in my eyes but none fell out
+eng_dev_track_a_00086,"my legs felt sluggish, my calves were burning, my right foot was pinched, and i couldn't settle into my typical breathing pattern.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,my legs felt sluggish my calves were burning my right foot was pinched and i couldnt settle into my typical breathing pattern
+eng_dev_track_a_00087,your sister is a heavy sleeper.,0,0.0,0,0,0,0.0,[],english,dev,your sister is a heavy sleeper
+eng_dev_track_a_00088,my dad is a minister and part of his duties is visiting the sick and dying.,0,0.0,0,0,1,0.0,['sadness'],english,dev,my dad is a minister and part of his duties is visiting the sick and dying
+eng_dev_track_a_00089,it is stuck there in the back of my head with some other nasty stuff.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,it is stuck there in the back of my head with some other nasty stuff
+eng_dev_track_a_00090,thankfully only a short ride to the hospital.,0,0.0,1,1,0,0.0,['fear' 'joy'],english,dev,thankfully only a short ride to the hospital
+eng_dev_track_a_00091,"aargh, the look of frenzy must have been written all over my face as i tried to corall the older kids and placate my little one with a granola bar because it was dinner time ye know.",1,0.0,1,0,0,0.0,['anger' 'fear'],english,dev,aargh the look of frenzy must have been written all over my face as i tried to corall the older kids and placate my little one with a granola bar because it was dinner time ye know
+eng_dev_track_a_00092,"it has sat with me, back in the pit of my stomach since sunday night.",0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,it has sat with me back in the pit of my stomach since sunday night
+eng_dev_track_a_00093,my heart.,0,0.0,0,0,0,0.0,[],english,dev,my heart
+eng_dev_track_a_00094,and my feet hurt.,0,0.0,1,0,0,0.0,['fear'],english,dev,and my feet hurt
+eng_dev_track_a_00095,just rip my heart out and stomp that sucker flat.,1,0.0,0,0,1,0.0,['anger' 'sadness'],english,dev,just rip my heart out and stomp that sucker flat
+eng_dev_track_a_00096,what is it about this winter that is making me literally sick to my stomach?,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,what is it about this winter that is making me literally sick to my stomach
+eng_dev_track_a_00097,always hiding my eyes welling up by yawning so it seemed like they were just tearing from that.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,always hiding my eyes welling up by yawning so it seemed like they were just tearing from that
+eng_dev_track_a_00098,the black eyed kids,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,the black eyed kids
+eng_dev_track_a_00099,"longest, most awkward drive i've ever taken.",1,0.0,1,0,1,0.0,['anger' 'fear' 'sadness'],english,dev,longest most awkward drive ive ever taken
+eng_dev_track_a_00100,"i walk right over to the tv, stand face to face with it, and begin to point at the little number areas.",0,0.0,0,0,0,0.0,[],english,dev,i walk right over to the tv stand face to face with it and begin to point at the little number areas
+eng_dev_track_a_00101,i untie my bear bag and grab some food inside it.,0,0.0,0,1,0,0.0,['joy'],english,dev,i untie my bear bag and grab some food inside it
+eng_dev_track_a_00102,"i'm a highly skeptical, scientific person.",0,0.0,0,0,0,0.0,[],english,dev,im a highly skeptical scientific person
+eng_dev_track_a_00103,i'm gonna absolutely ~~suck~~ be terrible during my first sexual experience ._.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,im gonna absolutely suck be terrible during my first sexual experience _
+eng_dev_track_a_00104,i wake up very easily to sounds so i'm not overly concerned.,0,0.0,1,1,0,0.0,['fear' 'joy'],english,dev,i wake up very easily to sounds so im not overly concerned
+eng_dev_track_a_00105,i put my hand on its tail to pet it.,0,0.0,0,1,0,0.0,['joy'],english,dev,i put my hand on its tail to pet it
+eng_dev_track_a_00106,i didn't see it through but what i did see when i lifted my head was my wife coming up the street.,0,0.0,0,0,0,0.0,[],english,dev,i didnt see it through but what i did see when i lifted my head was my wife coming up the street
+eng_dev_track_a_00107,i had to chord with my thumb.,0,0.0,0,0,0,0.0,[],english,dev,i had to chord with my thumb
+eng_dev_track_a_00108,he also worse black gloves and a black ski mask.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,he also worse black gloves and a black ski mask
+eng_dev_track_a_00109,and my brain can think up some pretty horrible ailments.,0,0.0,1,0,1,0.0,['fear' 'sadness'],english,dev,and my brain can think up some pretty horrible ailments
+eng_dev_track_a_00110,it was late and they were asleep.,0,0.0,0,0,0,0.0,[],english,dev,it was late and they were asleep
+eng_dev_track_a_00111,my heart was beating fast from excitement.,0,0.0,0,1,0,0.0,['joy'],english,dev,my heart was beating fast from excitement
+eng_dev_track_a_00112,a fraying rope stretches down from the rafters.,0,0.0,1,0,0,1.0,['fear' 'surprise'],english,dev,a fraying rope stretches down from the rafters
+eng_dev_track_a_00113,so i cried my eyes out and did the drawing.,0,0.0,0,0,1,0.0,['sadness'],english,dev,so i cried my eyes out and did the drawing
+eng_dev_track_a_00114,never been so close to a group ass-wooping in my life.,1,0.0,1,0,0,1.0,['anger' 'fear' 'surprise'],english,dev,never been so close to a group asswooping in my life
+eng_dev_track_a_00115,the song `` poor places '' is ironically seeping out of my speakers and into my ears: it's hot in the poor places tonight / i'm not going outside,0,0.0,0,1,0,0.0,['joy'],english,dev,the song poor places is ironically seeping out of my speakers and into my ears its hot in the poor places tonight im not going outside
+zul_test_track_c_01257,kudlangile ukuhlukunyezwa kwabafana ngokocansi,0,1.0,1,0,1,0.0,['disgust' 'fear' 'sadness'],isizulu,test,kudlangile ukuhlukunyezwa kwabafana ngokocansi
+zul_test_track_c_01210,zihlanzwa kahle izimoto kuleli,0,0.0,0,0,0,0.0,[],isizulu,test,zihlanzwa kahle izimoto kuleli
+zul_test_track_c_00889,umisiwe ‘onukubeza’ odado esikoleni,0,1.0,0,0,0,0.0,['disgust'],isizulu,test,umisiwe onukubeza odado esikoleni
+zul_test_track_c_00568,umqeqeshi webayern uncome ibhola likapitso,0,0.0,0,0,0,0.0,[],isizulu,test,umqeqeshi webayern uncome ibhola likapitso
+zul_test_track_c_01091,kusolwa amarabi kolunywe yinja,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kusolwa amarabi kolunywe yinja
+zul_test_track_c_01496,#ezothando: uma kuwukhisimusi ngiphenduka isigqila sasemzini,0,0.0,0,0,0,0.0,[],isizulu,test,ezothando uma kuwukhisimusi ngiphenduka isigqila sasemzini
+zul_dev_track_c_00618,kuqhume impama nequpha kuxabana omaskandi,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,kuqhume impama nequpha kuxabana omaskandi
+zul_test_track_c_00574,u-ayanda ugajwe wusizi wahlulwa wukuya kokasfiso,0,0.0,0,0,0,0.0,[],isizulu,test,uayanda ugajwe wusizi wahlulwa wukuya kokasfiso
+zul_test_track_c_00902,uzofaka isicelo sebheyili osolwa ngokudlwengula,0,0.0,0,0,0,0.0,[],isizulu,test,uzofaka isicelo sebheyili osolwa ngokudlwengula
+zul_test_track_c_01394,nongenalo ngisho ukhamba nje lolu senithi lezulu⚡️⛈🌩inina,0,0.0,0,0,0,0.0,[],isizulu,test,nongenalo ngisho ukhamba nje lolu senithi lezuluinina
+zul_test_track_c_00503,‘bengithi ngiyifanele ibafana bafana’,0,0.0,0,0,0,0.0,[],isizulu,test,bengithi ngiyifanele ibafana bafana
+zul_dev_track_c_00290,udedelwe ngesixwayiso udj ontshontshe iwayini,0,0.0,0,0,0,0.0,[],isizulu,dev,udedelwe ngesixwayiso udj ontshontshe iwayini
+zul_dev_track_c_00280,kusolwa abaphangi kutholwa isidumbu somlisa obeklajiwe,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kusolwa abaphangi kutholwa isidumbu somlisa obeklajiwe
+zul_test_track_c_00365,ufuna isinxephezelo ‘odutshulwe ngamaphoyisa’,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,ufuna isinxephezelo odutshulwe ngamaphoyisa
+zul_test_track_c_00543,umshushisi uthi uyabanjezelwa kwelomfundisi tim omotoso,0,0.0,0,0,0,0.0,[],isizulu,test,umshushisi uthi uyabanjezelwa kwelomfundisi tim omotoso
+zul_test_track_c_01988,kusolwa owezemfundo ngokudonswa ngekhala yizinyunyana,0,0.0,0,0,0,0.0,[],isizulu,test,kusolwa owezemfundo ngokudonswa ngekhala yizinyunyana
+zul_test_track_c_00162,bexwayisa ngokumosa imali ngoblack friday osomnotho,0,0.0,0,0,0,0.0,[],isizulu,test,bexwayisa ngokumosa imali ngoblack friday osomnotho
+zul_test_track_c_00692,ngilahlekelwe umngani oqotho: ramaphosa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,ngilahlekelwe umngani oqotho ramaphosa
+zul_test_track_c_00452,usizi ngesimo somndeni osuhlale ehlathini iminyaka,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,usizi ngesimo somndeni osuhlale ehlathini iminyaka
+zul_test_track_c_00570,sebemumi emphinjeni abekwaito abagoloza nerenti eflethini,0,0.0,0,0,0,0.0,[],isizulu,test,sebemumi emphinjeni abekwaito abagoloza nerenti eflethini
+zul_test_track_c_00471,ugwetshiwe owashayisa isithandwa ngemoto safa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,ugwetshiwe owashayisa isithandwa ngemoto safa
+zul_test_track_c_00537,kusolwa isoka ngesitshudeni esinyamalele,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kusolwa isoka ngesitshudeni esinyamalele
+zul_test_track_c_00865,ukhathazwa ngamagoli angena ngakubo,0,0.0,0,0,0,0.0,[],isizulu,test,ukhathazwa ngamagoli angena ngakubo
+zul_dev_track_c_00248,bafuna isinxephezelo ngobulawe amaphoyisa,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,bafuna isinxephezelo ngobulawe amaphoyisa
+zul_dev_track_c_00818,sinyuka ngesivinini esesabekayo isibalo sabanecovid-19 egauteng,0,0.0,0,0,0,0.0,[],isizulu,dev,sinyuka ngesivinini esesabekayo isibalo sabanecovid19 egauteng
+zul_test_track_c_00075,umampintsha uthandazela umsakazi wemetro odivosayo,0,0.0,0,0,0,0.0,[],isizulu,test,umampintsha uthandazela umsakazi wemetro odivosayo
+zul_test_track_c_00810,udj sbu ukhumbule upro ngohlelo,0,0.0,0,0,0,0.0,[],isizulu,test,udj sbu ukhumbule upro ngohlelo
+zul_test_track_c_00415,@andile_gamedze nami cishe ngalotsholwa kodwa because of icorona waphela kanjalo umendo 😭😭😭😭,0,0.0,0,0,0,0.0,[],isizulu,test,andile_gamedze nami cishe ngalotsholwa kodwa because of icorona waphela kanjalo umendo
+zul_test_track_c_00443,igagasi lifuna ukwenza inzuzo ngabalaleli,0,0.0,0,0,0,0.0,[],isizulu,test,igagasi lifuna ukwenza inzuzo ngabalaleli
+zul_test_track_c_02000,usabisa ngokuhlasela umndeni 'obulale' unina wezingane ngokumshisa ngophethroli,0,0.0,1,0,1,1.0,['fear' 'sadness' 'surprise'],isizulu,test,usabisa ngokuhlasela umndeni obulale unina wezingane ngokumshisa ngophethroli
+zul_test_track_c_01339,bafuna ijaji ophenyweni ongoye,0,0.0,0,0,0,0.0,[],isizulu,test,bafuna ijaji ophenyweni ongoye
+zul_test_track_c_00717,uzovela enkantolo ummeli ngemayini,0,0.0,0,0,0,0.0,[],isizulu,test,uzovela enkantolo ummeli ngemayini
+zul_test_track_c_02013,u-tdk usolwa ngokweba ingoma,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,utdk usolwa ngokweba ingoma
+zul_test_track_c_00828,isilo nenselelo kosomabhizinisi nowezemfundo ngesichazamazwi,0,0.0,0,0,0,0.0,[],isizulu,test,isilo nenselelo kosomabhizinisi nowezemfundo ngesichazamazwi
+zul_test_track_c_01504,bavelile abashaya babulala izingane,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,bavelile abashaya babulala izingane
+zul_dev_track_c_00768,unyazi lukhulekele ukuthula ekzn,0,0.0,0,0,0,0.0,[],isizulu,dev,unyazi lukhulekele ukuthula ekzn
+zul_dev_track_c_00522,kudlule abawu-11 engozini yetekisi neloli kun3,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kudlule abawu11 engozini yetekisi neloli kun3
+zul_dev_track_c_00595,babulawa ukucwila ezinkambeni zikafaro abakuleli,0,0.0,0,0,0,0.0,[],isizulu,dev,babulawa ukucwila ezinkambeni zikafaro abakuleli
+zul_test_track_c_01023,"""konakele kodwa awuvumi uhambe ubuyele ekhaya""😭yeses!💔 @ami_faku",0,0.0,0,0,0,0.0,[],isizulu,test,konakele kodwa awuvumi uhambe ubuyele ekhayayeses ami_faku
+zul_dev_track_c_00857,sekuvele okusha ngokubulawa kukasenzo meyiwa,0,0.0,0,0,0,1.0,['surprise'],isizulu,dev,sekuvele okusha ngokubulawa kukasenzo meyiwa
+zul_test_track_c_01925,alikho ivoti eliya kukhongolose umhlaba ungakabuyiswa',1,0.0,0,0,0,0.0,['anger'],isizulu,test,alikho ivoti eliya kukhongolose umhlaba ungakabuyiswa
+zul_test_track_c_01047,bakhungathekile ngoduke ehostela lakwamashu,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,bakhungathekile ngoduke ehostela lakwamashu
+zul_dev_track_c_00436,guys aubrey wabhungukela esoweto serious la abadla khona amaqubu enkukhu😂,0,0.0,0,0,0,0.0,[],isizulu,dev,guys aubrey wabhungukela esoweto serious la abadla khona amaqubu enkukhu
+zul_test_track_c_00487,urebecca uthembise ulozolo lwe-albhamu,0,0.0,0,0,0,0.0,[],isizulu,test,urebecca uthembise ulozolo lwealbhamu
+zul_dev_track_c_00101,le gym e gijima kuyo ihlathi. they closed 🤦‍♂️6pm,0,0.0,0,0,0,0.0,[],isizulu,dev,le gym e gijima kuyo ihlathi they closed 6pm
+zul_dev_track_c_00031,@zeeright lapho ubaba wami usethuneni mina bakithi 😭,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,zeeright lapho ubaba wami usethuneni mina bakithi
+zul_dev_track_c_00322,kuvalwe un3 indoda izama ukuzibulala,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,dev,kuvalwe un3 indoda izama ukuzibulala
+zul_dev_track_c_00694,@ms_tourist @bianca79105785 @mabule_sam @sdudladudla @somkheleomkhulu banyastrong futhi badliwa manxazonke🙈,0,0.0,0,0,0,0.0,[],isizulu,dev,ms_tourist bianca79105785 mabule_sam sdudladudla somkheleomkhulu banyastrong futhi badliwa manxazonke
+zul_dev_track_c_00749,@thembakaula @aphiwekaula 😂😂😂😂😂kodwa gabhisa mfwethu wangibiza ngentenkulu kangaka ngingelutho mina🤦🏾‍♂️phela iqhikiza ungqongqoshe we yintombi zonke zizwangaye 😂😂😂,0,0.0,0,0,0,0.0,[],isizulu,dev,thembakaula aphiwekaula kodwa gabhisa mfwethu wangibiza ngentenkulu kangaka ngingelutho minaphela iqhikiza ungqongqoshe we yintombi zonke zizwangaye
+zul_test_track_c_00394,sibonga wona lo omncane 🍺,0,0.0,0,0,0,0.0,[],isizulu,test,sibonga wona lo omncane
+zul_dev_track_c_00715,kuboshwe abafundi abahlanu ngokubulawa kowesilisa,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,dev,kuboshwe abafundi abahlanu ngokubulawa kowesilisa
+zul_test_track_c_01840,owegagasi nosizo lwemifundaze kubafundi,0,0.0,0,0,0,0.0,[],isizulu,test,owegagasi nosizo lwemifundaze kubafundi
+zul_dev_track_c_00845,abashayeli bakhala ngesibhaxu sabanikazi bamatekisi,0,0.0,0,0,0,0.0,[],isizulu,dev,abashayeli bakhala ngesibhaxu sabanikazi bamatekisi
+zul_test_track_c_00820,ugqugquzeleke wakhipha inoni elisha untando,0,0.0,0,0,0,0.0,[],isizulu,test,ugqugquzeleke wakhipha inoni elisha untando
+zul_test_track_c_00158,ubona iligi ingadliwa noma yiliphi iqembu,0,0.0,0,0,0,0.0,[],isizulu,test,ubona iligi ingadliwa noma yiliphi iqembu
+zul_dev_track_c_00846,usimbine ujabule eshiya ingwazi,0,0.0,0,1,0,0.0,['joy'],isizulu,dev,usimbine ujabule eshiya ingwazi
+zul_test_track_c_01778,uyabazi ubunzima bokuqhakswa umfana atshele iskole sonke ukuthi ujola naye lapho engakaze athi vu😭yey sike sakhula kanzima😔 https://t.co/nkjr2l4rk2,0,0.0,0,0,0,0.0,[],isizulu,test,uyabazi ubunzima bokuqhakswa umfana atshele iskole sonke ukuthi ujola naye lapho engakaze athi vuyey sike sakhula kanzima httpstconkjr2l4rk2
+zul_test_track_c_01229,abayizwa eyokugixabezwa kwamaphoyisa kamasipala  'angabonakali'      ngezigidi,0,0.0,0,0,0,0.0,[],isizulu,test,abayizwa eyokugixabezwa kwamaphoyisa kamasipala angabonakali ngezigidi
+zul_dev_track_c_00464,osafufusa ukhala ngokudlelwa iculo nguzahara,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,osafufusa ukhala ngokudlelwa iculo nguzahara
+zul_dev_track_c_00211,ujabule esethandana nowobulili bakhe,0,0.0,0,1,0,0.0,['joy'],isizulu,dev,ujabule esethandana nowobulili bakhe
+zul_dev_track_c_00300,uzimisele ngamanye amagoli owemaritzburg,0,0.0,0,0,0,0.0,[],isizulu,dev,uzimisele ngamanye amagoli owemaritzburg
+zul_dev_track_c_00529,uhunt uqinisa ubudlelwane nabaziqeqesha newits,0,0.0,0,0,0,0.0,[],isizulu,dev,uhunt uqinisa ubudlelwane nabaziqeqesha newits
+zul_test_track_c_01183,khona lo mosquito oyi1 ongbelesele sengize nga give up ukuw’shaya 😩,0,0.0,0,0,0,0.0,[],isizulu,test,khona lo mosquito oyi1 ongbelesele sengize nga give up ukuwshaya
+zul_test_track_c_01992,are groceries expensive or kwenziwa mina islima? 😩😩 aibo angikho right ngamanani,0,0.0,0,0,0,0.0,[],isizulu,test,are groceries expensive or kwenziwa mina islima aibo angikho right ngamanani
+zul_test_track_c_00419,ugwetshwe odilikajele owabulala abasekhweni,1,1.0,0,0,0,0.0,['anger' 'disgust'],isizulu,test,ugwetshwe odilikajele owabulala abasekhweni
+zul_dev_track_c_00762,kushone amaphoyisa amathathu abeyophenya engcobo,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kushone amaphoyisa amathathu abeyophenya engcobo
+zul_test_track_c_01093,usteve ufuna bajabule abalandeli,0,0.0,0,1,0,0.0,['joy'],isizulu,test,usteve ufuna bajabule abalandeli
+zul_test_track_c_00906,uyasidinda oxoshwe wumkakhe endlini wafaka ishende,0,0.0,0,0,0,0.0,[],isizulu,test,uyasidinda oxoshwe wumkakhe endlini wafaka ishende
+zul_test_track_c_01104,kwehle umthwalo kumfelokazi obenabayeni 'ababili',0,0.0,0,0,0,1.0,['surprise'],isizulu,test,kwehle umthwalo kumfelokazi obenabayeni ababili
+zul_test_track_c_01015,uboshiwe osolwa ngokuqoba umshana,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,uboshiwe osolwa ngokuqoba umshana
+zul_test_track_c_00448,"uthena uyabuya😂😂😂, kujabule mina dlokovu 🙌🙏 https://t.co/93kcpnqoxq",0,0.0,0,1,0,0.0,['joy'],isizulu,test,uthena uyabuya kujabule mina dlokovu httpstco93kcpnqoxq
+zul_dev_track_c_00444,uskhosana ufuna uwayde abuyise amangwevu,0,0.0,0,0,0,0.0,[],isizulu,dev,uskhosana ufuna uwayde abuyise amangwevu
+zul_test_track_c_00253,kaizer chiefs: seligcwale umoya kumiddendorp,0,0.0,0,0,0,0.0,[],isizulu,test,kaizer chiefs seligcwale umoya kumiddendorp
+zul_dev_track_c_00742,bafuna uphenyo ngokulamba kwabagonqile  e-addington,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,bafuna uphenyo ngokulamba kwabagonqile eaddington
+zul_test_track_c_00956,"@wandilesithole6 no angilwi, ngiyabuza ukuthi why nje kphela if kuhlobisa then okay 😂",0,0.0,0,0,0,0.0,[],isizulu,test,wandilesithole6 no angilwi ngiyabuza ukuthi why nje kphela if kuhlobisa then okay
+zul_dev_track_c_00425,kushiswe umuntu empumalanga,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,dev,kushiswe umuntu empumalanga
+zul_test_track_c_01154,‘abesifazane baphuza ngendlela ethusayo’,0,0.0,0,0,0,0.0,[],isizulu,test,abesifazane baphuza ngendlela ethusayo
+zul_dev_track_c_00140,ukhale ngokusatshiswa osule okhozini,0,0.0,1,0,0,0.0,['fear'],isizulu,dev,ukhale ngokusatshiswa osule okhozini
+zul_test_track_c_00791,uchaze ngenkinga yezikweletu,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,uchaze ngenkinga yezikweletu
+zul_test_track_c_00858,"just like that, zekhethelo walahlekelwa umsebenzi. hhai bakithi unzima umjolo, money or no money kuyazifanelanje.🙆‍♀️🙆‍♂️ #uzalo",0,0.0,0,0,0,0.0,[],isizulu,test,just like that zekhethelo walahlekelwa umsebenzi hhai bakithi unzima umjolo money or no money kuyazifanelanje uzalo
+zul_test_track_c_01468,umantashe uphika eyokugwazela izintatheli ukuvimba udaba ngocansi nesitshudeni,0,1.0,0,0,0,1.0,['disgust' 'surprise'],isizulu,test,umantashe uphika eyokugwazela izintatheli ukuvimba udaba ngocansi nesitshudeni
+zul_dev_track_c_00094,"amazulu avumile ukuba ngiphumelele🙏shenge,ave ngiyithanda lengoma oh nkosi....#jabulujule #siyayijikalento2020 @ukhozi_fm @iamsbubuthelezi https://t.co/0xj0okae9a",0,0.0,0,0,0,0.0,[],isizulu,dev,amazulu avumile ukuba ngiphumeleleshengeave ngiyithanda lengoma oh nkosijabulujule siyayijikalento2020 ukhozi_fm iamsbubuthelezi httpstco0xj0okae9a
+zul_test_track_c_01038,@siya_selepe2581 mina ngyacasuka nje umuntu methena uzongipha imali ngosuku lwakhe lomholo kodwa engabe esangipha🤣🤣🤣 syahlukana nokuhlukana lapho,0,0.0,0,0,0,0.0,[],isizulu,test,siya_selepe2581 mina ngyacasuka nje umuntu methena uzongipha imali ngosuku lwakhe lomholo kodwa engabe esangipha syahlukana nokuhlukana lapho
+zul_test_track_c_01945,injabulo umndeni uhlanganiswa nelungu lawo elahamba ekhaya ngo-1969,0,0.0,0,1,0,0.0,['joy'],isizulu,test,injabulo umndeni uhlanganiswa nelungu lawo elahamba ekhaya ngo1969
+zul_test_track_c_01163,kudutshulwe iphoyisa elithinteka ecaleni,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kudutshulwe iphoyisa elithinteka ecaleni
+zul_test_track_c_01577,ubezivikela oshise iphoyisa ngepharishi,0,0.0,0,0,0,0.0,[],isizulu,test,ubezivikela oshise iphoyisa ngepharishi
+zul_test_track_c_00921,uzodwa wabantu uxoshelwe isimilo ezambia,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,uzodwa wabantu uxoshelwe isimilo ezambia
+zul_test_track_c_00250,kuyingozi ukubekezela uthando lube seluse-icu,0,0.0,0,0,0,0.0,[],isizulu,test,kuyingozi ukubekezela uthando lube seluseicu
+zul_dev_track_c_00013,iciko libukise ngemidwebo yalo,0,0.0,0,0,0,0.0,[],isizulu,dev,iciko libukise ngemidwebo yalo
+zul_test_track_c_00336,isihluku kudlwengulwa isalukazi (84),0,0.0,0,0,1,0.0,['sadness'],isizulu,test,isihluku kudlwengulwa isalukazi 84
+zul_dev_track_c_00461,kushayisana ubufakazi bukamaseko nobukazuma,0,0.0,0,0,0,0.0,[],isizulu,dev,kushayisana ubufakazi bukamaseko nobukazuma
+zul_test_track_c_00313,kuphume isidumbu izitshudeni zihlakazwa ngenhlamvu,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kuphume isidumbu izitshudeni zihlakazwa ngenhlamvu
+zul_dev_track_c_00730,uvaleliswe ngengoma nomdanso usir bubzin,0,0.0,0,0,0,0.0,[],isizulu,dev,uvaleliswe ngengoma nomdanso usir bubzin
+zul_test_track_c_01348,@zimemsomi 🤣🤣 lapho akubona obami ngedwa kodwa ngibushaya ngedwa.,0,0.0,0,0,0,0.0,[],isizulu,test,zimemsomi lapho akubona obami ngedwa kodwa ngibushaya ngedwa
+zul_dev_track_c_00863,ukhuzani nongizwe babanga ububi,0,0.0,0,0,0,0.0,[],isizulu,dev,ukhuzani nongizwe babanga ububi
+zul_dev_track_c_00424,senyukile isibalo sabashone emgwaqeni ngamaholidi,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,senyukile isibalo sabashone emgwaqeni ngamaholidi
+zul_test_track_c_01834,kuphazamise ukufunda ukusha kwesikole,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kuphazamise ukufunda ukusha kwesikole
+zul_dev_track_c_00519,ukhala uyazithulisa ngokuhluleka ukunqoba kwezakhe usolskjaer,1,0.0,0,0,1,0.0,['anger' 'sadness'],isizulu,dev,ukhala uyazithulisa ngokuhluleka ukunqoba kwezakhe usolskjaer
+zul_dev_track_c_00163,isharks ethubeni lokubuyisa izinduku,0,0.0,0,0,0,0.0,[],isizulu,dev,isharks ethubeni lokubuyisa izinduku
+zul_test_track_c_00823,always wonder ukuty kwaku ngapum ushun onjani uma @sjava_atm enza inoni nobabu david masondo (soul brothers)ongasekho emhlaben 🤔 https://t.co/kkerfcnpcp,0,0.0,0,0,0,0.0,[],isizulu,test,always wonder ukuty kwaku ngapum ushun onjani uma sjava_atm enza inoni nobabu david masondo soul brothersongasekho emhlaben httpstcokkerfcnpcp
+zul_test_track_c_01341,@tinydlamini3 kodwa esebona intshebe eyisdleke izophazamisa😂😂😂😂😂,0,0.0,0,0,0,0.0,[],isizulu,test,tinydlamini3 kodwa esebona intshebe eyisdleke izophazamisa
+zul_test_track_c_01608,abamatekisi banikele ngamatv ezibhedlela,0,0.0,0,0,0,0.0,[],isizulu,test,abamatekisi banikele ngamatv ezibhedlela
+zul_test_track_c_01086,@04octobergang ngimude and bonke bafishane manje ngishimile 😭😭🥺,0,0.0,0,0,0,0.0,[],isizulu,test,04octobergang ngimude and bonke bafishane manje ngishimile
+zul_test_track_c_00971,kushone abathathu engozini yetekisi kwazulu-natal,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kushone abathathu engozini yetekisi kwazulunatal
+zul_test_track_c_00835,kumlungele umculi ocishe walahla ithemba,0,0.0,0,0,0,0.0,[],isizulu,test,kumlungele umculi ocishe walahla ithemba
+zul_test_track_c_01467,bazohleka bodwa abasembonini yamatekisi njengoba  bezothola uxhaso,0,0.0,0,1,0,0.0,['joy'],isizulu,test,bazohleka bodwa abasembonini yamatekisi njengoba bezothola uxhaso
+zul_test_track_c_00038,kulimale abane engozini yemoto emgungundlovu,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kulimale abane engozini yemoto emgungundlovu
+zul_test_track_c_01449,@mmqwashu musa ukudakelwa @julius_s_malema wena manje enzenjani ahlale emjondolo izingane zakhe zingafundi? wena wenzenjani ngempilo yakho nomndeni wakho?? yeka ukusangana bafo 🤞🏼 kusho ukuthi uyajabula njengoba kubalawa abantu abamnyama njengo cyril,1,0.0,0,0,0,0.0,['anger'],isizulu,test,mmqwashu musa ukudakelwa julius_s_malema wena manje enzenjani ahlale emjondolo izingane zakhe zingafundi wena wenzenjani ngempilo yakho nomndeni wakho yeka ukusangana bafo kusho ukuthi uyajabula njengoba kubalawa abantu abamnyama njengo cyril
+zul_dev_track_c_00362,ukhubazekile owashaywa esikoleni,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,ukhubazekile owashaywa esikoleni
+zul_test_track_c_00531,ukhala ngokuxhashazwa ocula awomzabalazo,1,0.0,0,0,0,0.0,['anger'],isizulu,test,ukhala ngokuxhashazwa ocula awomzabalazo
+zul_test_track_c_01560,banqunyelwe ugwayi katiki abasebenzi,1,0.0,0,0,0,0.0,['anger'],isizulu,test,banqunyelwe ugwayi katiki abasebenzi
+zul_test_track_c_00970,usemisiwe emsebenzini uthisha (51) osolwa ngokulala nomfundi (13),0,0.0,0,0,1,0.0,['sadness'],isizulu,test,usemisiwe emsebenzini uthisha 51 osolwa ngokulala nomfundi 13
+zul_dev_track_c_00680,sebewu-138 134 abaphethwe yicovid-19 kuleli,0,0.0,0,0,0,0.0,[],isizulu,dev,sebewu138 134 abaphethwe yicovid19 kuleli
+zul_test_track_c_01358,uvalo kuhoxiswa izicelo kwabesibhakela,0,0.0,0,0,0,0.0,[],isizulu,test,uvalo kuhoxiswa izicelo kwabesibhakela
+zul_dev_track_c_00388,umfundisi uchaza ngengxabano nomakhelwane owaqamba amanga wathi udlwengulile,1,0.0,0,0,0,1.0,['anger' 'surprise'],isizulu,dev,umfundisi uchaza ngengxabano nomakhelwane owaqamba amanga wathi udlwengulile
+zul_dev_track_c_00124,kubulawe uthisha nonina kuhlaselwa umndeni,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kubulawe uthisha nonina kuhlaselwa umndeni
+zul_test_track_c_00225,ubenamanxeba okugwazwa ofele phezu komjondolo,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,ubenamanxeba okugwazwa ofele phezu komjondolo
+zul_dev_track_c_00227,bakhala ‘ngoqole’ abalandeli imali esebenzisa amagama omaskanda,0,1.0,0,0,0,0.0,['disgust'],isizulu,dev,bakhala ngoqole abalandeli imali esebenzisa amagama omaskanda
+zul_test_track_c_00579,bavale imigwaqo befuna kuxoshwe abokufika,1,0.0,0,0,0,0.0,['anger'],isizulu,test,bavale imigwaqo befuna kuxoshwe abokufika
+zul_test_track_c_00628,ezothando: ukhuluma ngomkakhe owashona njalo ebe enami,0,0.0,0,0,0,0.0,[],isizulu,test,ezothando ukhuluma ngomkakhe owashona njalo ebe enami
+zul_dev_track_c_00556,kutholwe isidumbu sesonakele sinuka ophahleni lwesibhedlela,0,1.0,0,0,1,0.0,['disgust' 'sadness'],isizulu,dev,kutholwe isidumbu sesonakele sinuka ophahleni lwesibhedlela
+zul_test_track_c_01823,u-aka uchaza ngobuhlungu bokushonelwa yingoduso,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,uaka uchaza ngobuhlungu bokushonelwa yingoduso
+zul_dev_track_c_00795,@biyela_bongz 🤣🤣🤣🤣🤣🤣🤣 kodwa yini! lafa elihle,0,0.0,0,0,0,0.0,[],isizulu,dev,biyela_bongz kodwa yini lafa elihle
+zul_dev_track_c_00323,"@zamanduli_n kodwa zama uyahleka oe, indoda iyasebenza sis mele ilungiselwe😭. ngiyazwelana nawe indaba yengane yoh😭",0,0.0,0,0,0,0.0,[],isizulu,dev,zamanduli_n kodwa zama uyahleka oe indoda iyasebenza sis mele ilungiselwe ngiyazwelana nawe indaba yengane yoh
+zul_test_track_c_00781,udutshulwe wafa obebopha amaphoyisa ngokumlumisa ngezinja,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,udutshulwe wafa obebopha amaphoyisa ngokumlumisa ngezinja
+zul_test_track_c_00847,usizi nomunyu kufihlwa intatheli yesolezwe,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,usizi nomunyu kufihlwa intatheli yesolezwe
+zul_test_track_c_00095,bakhala ngotsotsi abokufika abaxoshwe emiqashweni,0,0.0,0,0,0,0.0,[],isizulu,test,bakhala ngotsotsi abokufika abaxoshwe emiqashweni
+zul_dev_track_c_00599,cha @bhekamchunu locc othi u happy la ekhon i x yakhe iyambonya umngani wakhe ngyasola umanqezula 🤣🤣🤣🤣 uthini we @nommkhize1 @ukhozi_fm #kanyenawe,0,0.0,0,0,0,0.0,[],isizulu,dev,cha bhekamchunu locc othi u happy la ekhon i x yakhe iyambonya umngani wakhe ngyasola umanqezula uthini we nommkhize1 ukhozi_fm kanyenawe
+zul_test_track_c_01224,injabulo kowamajita ngomphumela we-afcon,0,0.0,0,1,0,0.0,['joy'],isizulu,test,injabulo kowamajita ngomphumela weafcon
+zul_test_track_c_01024,&quot;ukomphela usebenzile kwichiefs&quot;,0,0.0,0,0,0,0.0,[],isizulu,test,quotukomphela usebenzile kwichiefsquot
+zul_test_track_c_01008,akayifunanga ibheyili umfundisi (73) osolwa ngokubulala intombi nabazukulu bayo,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,akayifunanga ibheyili umfundisi 73 osolwa ngokubulala intombi nabazukulu bayo
+zul_dev_track_c_00686,"ngendlela abangani abangihlamuka ngyasola, ukuthi kuyothi masebephele bonke sengingedwa, umdali useyovela athi ""nazoke mi thatha naku owawukade ukufisa"" 🤔",0,0.0,0,0,0,0.0,[],isizulu,dev,ngendlela abangani abangihlamuka ngyasola ukuthi kuyothi masebephele bonke sengingedwa umdali useyovela athi nazoke mi thatha naku owawukade ukufisa
+zul_test_track_c_01209,ukomphela usephelelwa yisineke,0,0.0,0,0,0,0.0,[],isizulu,test,ukomphela usephelelwa yisineke
+zul_dev_track_c_00804,umkhize unxusa abantu bazivikele kwicovid-19,0,0.0,0,0,0,0.0,[],isizulu,dev,umkhize unxusa abantu bazivikele kwicovid19
+zul_dev_track_c_00650,‘azisebenze izinhlelo ezilwa nokubulawa kwabesifazane’,0,0.0,0,0,0,0.0,[],isizulu,dev,azisebenze izinhlelo ezilwa nokubulawa kwabesifazane
+zul_dev_track_c_00180,uthando lwamazambane lumvulele ibhizinisi,0,0.0,0,0,0,0.0,[],isizulu,dev,uthando lwamazambane lumvulele ibhizinisi
+zul_dev_track_c_00545,usemenya uhlukene nomqeqeshi wakhe,0,0.0,0,0,0,1.0,['surprise'],isizulu,dev,usemenya uhlukene nomqeqeshi wakhe
+zul_test_track_c_00502,zibonga abantu basemzansi izithandani zodumo lwasekfc,0,0.0,0,0,0,0.0,[],isizulu,test,zibonga abantu basemzansi izithandani zodumo lwasekfc
+zul_test_track_c_00536,"@nkullii_ ngizwile, nami ngisho nje ukuthi le think uma yenzeka usho nges’khathi 🤣",0,0.0,0,0,0,0.0,[],isizulu,test,nkullii_ ngizwile nami ngisho nje ukuthi le think uma yenzeka usho ngeskhathi
+zul_test_track_c_00698,lasho ke futhi selikhuphuka😭😭😭😭😭😭 https://t.co/3pmijhtk59,0,0.0,0,0,0,0.0,[],isizulu,test,lasho ke futhi selikhuphuka httpstco3pmijhtk59
+zul_test_track_c_00562,bagonyuluke ngokuhlukunyezwa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,bagonyuluke ngokuhlukunyezwa
+zul_test_track_c_01222,indodakazi isola uyise ongusomabhizinisi ngokuthwala,0,0.0,0,0,0,0.0,[],isizulu,test,indodakazi isola uyise ongusomabhizinisi ngokuthwala
+zul_test_track_c_02008,isathukile imindeni yamadoda aqothwe ebuka ibhola,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,test,isathukile imindeni yamadoda aqothwe ebuka ibhola
+zul_test_track_c_00348,@uzalo_sabc1 hhayi ke mamlambo kodwa ke lezinyanya zakho bezilinde kuze kushadwe😥😥🙆‍♀️🙆‍♀️,0,0.0,0,0,0,0.0,[],isizulu,test,uzalo_sabc1 hhayi ke mamlambo kodwa ke lezinyanya zakho bezilinde kuze kushadwe
+zul_test_track_c_00839,inkinga nje le😩 ngvele ngphuze ngiqeda kubthenga https://t.co/7nkrupho9k,0,0.0,0,0,0,0.0,[],isizulu,test,inkinga nje le ngvele ngphuze ngiqeda kubthenga httpstco7nkrupho9k
+zul_test_track_c_01863,uthuka izanya owomuvhango oshaywe esitolo,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,test,uthuka izanya owomuvhango oshaywe esitolo
+zul_test_track_c_01345,yithuba lokuhlola abadlali bethu abadala - barker,0,0.0,0,0,0,0.0,[],isizulu,test,yithuba lokuhlola abadlali bethu abadala barker
+zul_test_track_c_01583,bala ukhasha emachwebeni ngobhubhane,0,0.0,0,0,0,0.0,[],isizulu,test,bala ukhasha emachwebeni ngobhubhane
+zul_dev_track_c_00462,@mkhuh_mbulazi @thobilenguban18 awuuuu kodwa mbulazi ngikukhonze kanje mina 🥺🥺🥺 ok masimnqande sobabili ke 😂😂😂,0,0.0,0,0,0,0.0,[],isizulu,dev,mkhuh_mbulazi thobilenguban18 awuuuu kodwa mbulazi ngikukhonze kanje mina ok masimnqande sobabili ke
+zul_test_track_c_01828,utusa ukhenyeza owinise isikole sakhe r1 million,0,0.0,0,0,0,0.0,[],isizulu,test,utusa ukhenyeza owinise isikole sakhe r1 million
+zul_test_track_c_01914,@samke_umgijimi kodwa ushayile👏🏿👏🏿. uma sewu phinda kuzoba nconywana,0,0.0,0,0,0,0.0,[],isizulu,test,samke_umgijimi kodwa ushayile uma sewu phinda kuzoba nconywana
+zul_test_track_c_00988,ithimba lekhethelo odlameni lwamatekisi,0,0.0,0,0,0,0.0,[],isizulu,test,ithimba lekhethelo odlameni lwamatekisi
+zul_test_track_c_01681,uxwayisa ontanga ozale wafihla usana,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,uxwayisa ontanga ozale wafihla usana
+zul_dev_track_c_00808,udinwe abamgxekayo obetolika kokancwane,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,udinwe abamgxekayo obetolika kokancwane
+zul_test_track_c_00460,"mother (mamtshali) + father (makhanya) + dj wise ( ngizalwa yilabantuke mina) 🤞🏽❤️❤️🙏🏾 @ durban, kwazulu-natal https://t.co/wmtskik00g",0,0.0,0,0,0,0.0,[],isizulu,test,mother mamtshali father makhanya dj wise ngizalwa yilabantuke mina durban kwazulunatal httpstcowmtskik00g
+zul_test_track_c_01301,isexwayiso ngabaqola abantu ngamaselula,0,0.0,0,0,0,0.0,[],isizulu,test,isexwayiso ngabaqola abantu ngamaselula
+zul_dev_track_c_00870,owase-ukzn uyomela ibanyana efrance,0,0.0,0,1,0,0.0,['joy'],isizulu,dev,owaseukzn uyomela ibanyana efrance
+zul_dev_track_c_00068,uncome ihighlands park elahla amaphuzu,0,0.0,0,0,0,0.0,[],isizulu,dev,uncome ihighlands park elahla amaphuzu
+zul_dev_track_c_00512,ufe nesizukulwana besha nendlu,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,ufe nesizukulwana besha nendlu
+zul_dev_track_c_00479,lishone selilabile ifa lalo iphoyisa ebelingcwatshwa,0,0.0,0,0,0,0.0,[],isizulu,dev,lishone selilabile ifa lalo iphoyisa ebelingcwatshwa
+zul_test_track_c_01727,kufezeke amaphupho eminyaka engena kwesikatira,0,0.0,0,0,0,0.0,[],isizulu,test,kufezeke amaphupho eminyaka engena kwesikatira
+zul_test_track_c_00078,kubonwa ngokusa kubadlali abane abalimale engozini yemoto,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kubonwa ngokusa kubadlali abane abalimale engozini yemoto
+zul_test_track_c_01298,uphenyo ngabasolwa ngokudubula amalungu omphakathi entuzuma,0,0.0,0,0,0,0.0,[],isizulu,test,uphenyo ngabasolwa ngokudubula amalungu omphakathi entuzuma
+zul_test_track_c_01501,uwome nenselelo yokugqama kwi-orlando pirates,0,0.0,0,0,0,0.0,[],isizulu,test,uwome nenselelo yokugqama kwiorlando pirates
+zul_test_track_c_00254,"syakuzwa macingwane,abanye bangakbona sengathi uyahlanya,awsile uyisilima but personal yonke into oyishoyo remains a reality with content🙌 ""phakade akagugi engemakhosi asendulo"" https://t.co/mzuivgafwk",0,0.0,0,0,0,0.0,[],isizulu,test,syakuzwa macingwaneabanye bangakbona sengathi uyahlanyaawsile uyisilima but personal yonke into oyishoyo remains a reality with content phakade akagugi engemakhosi asendulo httpstcomzuivgafwk
+zul_test_track_c_01599,bazodilikelwa yijele umshana noninalume ababulala iphoyisa,0,0.0,0,0,0,0.0,[],isizulu,test,bazodilikelwa yijele umshana noninalume ababulala iphoyisa
+zul_dev_track_c_00760,umndeni wowaduka ethaveni udidekile,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,umndeni wowaduka ethaveni udidekile
+zul_test_track_c_00412,isibhaxu simshiye ephoxekile uhunt,0,0.0,0,0,0,0.0,[],isizulu,test,isibhaxu simshiye ephoxekile uhunt
+zul_dev_track_c_00415,‘akuyona inkanyamba kodwa yisishingishane’,0,0.0,0,0,0,0.0,[],isizulu,dev,akuyona inkanyamba kodwa yisishingishane
+zul_test_track_c_00720,ubusiswa usezokwethula igqom nation,0,0.0,0,0,0,0.0,[],isizulu,test,ubusiswa usezokwethula igqom nation
+zul_test_track_c_00183,lusandizela phezulu ukhozi fm ngabalaleli,0,0.0,0,1,0,0.0,['joy'],isizulu,test,lusandizela phezulu ukhozi fm ngabalaleli
+zul_test_track_c_00910,ezika-amla zigila izimanga esri lanka,0,0.0,0,0,0,0.0,[],isizulu,test,ezikaamla zigila izimanga esri lanka
+zul_test_track_c_00561,abasakazi bakhala ngokubanjiswa udonga,0,0.0,0,0,0,0.0,[],isizulu,test,abasakazi bakhala ngokubanjiswa udonga
+zul_dev_track_c_00239,iminjunju indodakazi ayingcwaba ivela kwabaphilayo,0,0.0,0,0,0,1.0,['surprise'],isizulu,dev,iminjunju indodakazi ayingcwaba ivela kwabaphilayo
+zul_test_track_c_00243,"injalo mbovu futhi kuthiwa utshani obulele buvuswa ngomlilo, sophaphama sesisha ngoba asboni🤞 https://t.co/ghrejkhxqp",0,0.0,0,0,0,0.0,[],isizulu,test,injalo mbovu futhi kuthiwa utshani obulele buvuswa ngomlilo sophaphama sesisha ngoba asboni httpstcoghrejkhxqp
+zul_test_track_c_00961,ingase ingasuswa imithetho eqinile kathaqa ethekwini,0,0.0,0,0,0,0.0,[],isizulu,test,ingase ingasuswa imithetho eqinile kathaqa ethekwini
+zul_dev_track_c_00645,upillay unxusa umphakathi ubambisane kufukulwe umnotho,0,0.0,0,0,0,0.0,[],isizulu,dev,upillay unxusa umphakathi ubambisane kufukulwe umnotho
+zul_test_track_c_00909,@missc_30 🤣🤣🤣haaa lomntwana yaganga thanda thisha wakhe ngoshokholethi kamama aibo,0,0.0,0,0,0,0.0,[],isizulu,test,missc_30 haaa lomntwana yaganga thanda thisha wakhe ngoshokholethi kamama aibo
+zul_test_track_c_02033,isiphoxwa eyomqeqeshi wamakhosi ishell helix cup,0,0.0,0,0,0,0.0,[],isizulu,test,isiphoxwa eyomqeqeshi wamakhosi ishell helix cup
+zul_test_track_c_00240,umyeni wami ufuna ngibe wumngani nentombi yakhe,1,1.0,0,0,0,0.0,['anger' 'disgust'],isizulu,test,umyeni wami ufuna ngibe wumngani nentombi yakhe
+zul_dev_track_c_00209,kukhonya imidlalo emisha  kumaroyalty awards,0,0.0,0,0,0,0.0,[],isizulu,dev,kukhonya imidlalo emisha kumaroyalty awards
+zul_test_track_c_00261,umsakazi ugonyuluka ngokuhlukumeza,0,0.0,0,0,0,0.0,[],isizulu,test,umsakazi ugonyuluka ngokuhlukumeza
+zul_test_track_c_01757,kuboshwe abaqashi abephula ekathaqa,0,0.0,0,0,0,0.0,[],isizulu,test,kuboshwe abaqashi abephula ekathaqa
+zul_dev_track_c_00247,uvalo ngezinkabi ezicutha ngasemafemini emnambithi,0,0.0,1,0,0,0.0,['fear'],isizulu,dev,uvalo ngezinkabi ezicutha ngasemafemini emnambithi
+zul_test_track_c_01417,kushaqeke abagibeli kubulawa umshayeli webhasi,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,kushaqeke abagibeli kubulawa umshayeli webhasi
+zul_test_track_c_01530,kufufusa isiteleka sabensfas,1,0.0,0,0,0,0.0,['anger'],isizulu,test,kufufusa isiteleka sabensfas
+zul_dev_track_c_00262,uboshiwe osolwa ngokubhokoda isitshudeni,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,uboshiwe osolwa ngokubhokoda isitshudeni
+zul_test_track_c_01800,"omunye wayethi uthakathiwe , ngamhlalisa phansi, waqala walanda amaphilisi, yazi kuymanje bambiza ngostufuza😊",0,0.0,0,0,0,0.0,[],isizulu,test,omunye wayethi uthakathiwe ngamhlalisa phansi waqala walanda amaphilisi yazi kuymanje bambiza ngostufuza
+zul_test_track_c_00174,umisiwe uthisha osolwa ngokudlwengula umfundi (6),0,0.0,0,0,1,0.0,['sadness'],isizulu,test,umisiwe uthisha osolwa ngokudlwengula umfundi 6
+zul_dev_track_c_00499,umphakathi usola induna ngokugweva nenkulisa,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,umphakathi usola induna ngokugweva nenkulisa
+zul_dev_track_c_00799,isoka libhokode  intombi yafa iya esikoleni,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,isoka libhokode intombi yafa iya esikoleni
+zul_test_track_c_00644,@ladydwabantu #jabulujule ey uyahlupha kodwa rubby😅😅😅 @ukhozi_fm,0,0.0,0,0,0,0.0,[],isizulu,test,ladydwabantu jabulujule ey uyahlupha kodwa rubby ukhozi_fm
+zul_dev_track_c_00252,isibhicongo itekisi ishayisa kwashona abafundi abathathu enewlands,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,isibhicongo itekisi ishayisa kwashona abafundi abathathu enewlands
+zul_test_track_c_01146,icorona iphazamise ukhetho lokuchibiyela,0,0.0,0,0,0,0.0,[],isizulu,test,icorona iphazamise ukhetho lokuchibiyela
+zul_dev_track_c_00523,@aphelelejody @hopeperfect_dla ulahlekelwe yin wena dlamini ku muntu wam😑 https://t.co/lxumpv5dv4,0,0.0,0,0,0,0.0,[],isizulu,dev,aphelelejody hopeperfect_dla ulahlekelwe yin wena dlamini ku muntu wam httpstcolxumpv5dv4
+zul_test_track_c_00612,unodada uhalela esovelele kwipsl,0,0.0,0,0,0,0.0,[],isizulu,test,unodada uhalela esovelele kwipsl
+zul_test_track_c_01135,kujutshwe ithimba lodokotela kutholwa owokuqala onecoronavirus kwazulu-natal,0,0.0,0,0,0,0.0,[],isizulu,test,kujutshwe ithimba lodokotela kutholwa owokuqala onecoronavirus kwazulunatal
+zul_dev_track_c_00787,uqopha umlando kwasabc umarawa,0,0.0,0,0,0,0.0,[],isizulu,dev,uqopha umlando kwasabc umarawa
+zul_test_track_c_00143,ubuchwepheshe namathuba okwakha umnotho,0,0.0,0,0,0,0.0,[],isizulu,test,ubuchwepheshe namathuba okwakha umnotho
+zul_test_track_c_00583,intaba yasedubai ithakasela ushintsho empilweni,0,0.0,0,1,0,0.0,['joy'],isizulu,test,intaba yasedubai ithakasela ushintsho empilweni
+zul_test_track_c_00167,uzalo seludale amathuba omsebenzi,0,0.0,0,0,0,0.0,[],isizulu,test,uzalo seludale amathuba omsebenzi
+zul_test_track_c_01169,intukuthelo kunyuka imali yokugibela entshangwe,1,0.0,0,0,0,0.0,['anger'],isizulu,test,intukuthelo kunyuka imali yokugibela entshangwe
+zul_test_track_c_00651,ujabulele usizo oluvela kungqongqoshe owesifazane ohlala ehlathini,0,0.0,0,1,0,0.0,['joy'],isizulu,test,ujabulele usizo oluvela kungqongqoshe owesifazane ohlala ehlathini
+zul_dev_track_c_00033,@uncuthu mina ngizwa ngamabele masengizoya on period avele ahlohle 🥺,0,0.0,0,0,0,0.0,[],isizulu,dev,uncuthu mina ngizwa ngamabele masengizoya on period avele ahlohle
+zul_test_track_c_00749,kuminze ingane (5) unina ewasha emfuleni,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kuminze ingane 5 unina ewasha emfuleni
+zul_dev_track_c_00081,@andiisaah mse ulindiswa a whole hour on some ngizonfonela ma ehhhh nangu ubby unglandile.. namaxoki akhona bby scela uphathe kahlee umngan wethu kaaaaade ekhuluma ngawe she really loves u sbari🙄 https://t.co/djt94mcbe4,0,0.0,0,0,0,0.0,[],isizulu,dev,andiisaah mse ulindiswa a whole hour on some ngizonfonela ma ehhhh nangu ubby unglandile namaxoki akhona bby scela uphathe kahlee umngan wethu kaaaaade ekhuluma ngawe she really loves u sbari httpstcodjt94mcbe4
+zul_test_track_c_00151,i blocked loyasisi long time ago coz ngambona nje ukuthi ay kahle ekhanda🙄,0,0.0,0,0,0,0.0,[],isizulu,test,i blocked loyasisi long time ago coz ngambona nje ukuthi ay kahle ekhanda
+zul_dev_track_c_00451,kwelulwe uxhaso lwensfas,0,0.0,0,1,0,0.0,['joy'],isizulu,dev,kwelulwe uxhaso lwensfas
+zul_dev_track_c_00784,"njengoba wahluleka ukuthwala ngam’ nokungibulala ngeke uphumelele #buyisela lawo mabhodlela aqhumayo mawula, otikoloshe labo bayosebenza kulaba abanye, zama abanye🚺kunqaba sona isidalwa #angibhenywa mina, angisonsangu!",0,0.0,0,0,0,0.0,[],isizulu,dev,njengoba wahluleka ukuthwala ngam nokungibulala ngeke uphumelele buyisela lawo mabhodlela aqhumayo mawula otikoloshe labo bayosebenza kulaba abanye zama abanyekunqaba sona isidalwa angibhenywa mina angisonsangu
+zul_test_track_c_01723,bakhala ngomama oxova abazalwane kwelezitabane,0,0.0,0,0,0,0.0,[],isizulu,test,bakhala ngomama oxova abazalwane kwelezitabane
+zul_test_track_c_01425,i’downs ifuna ukuzithoba inhliziyo ngosuthu,0,0.0,0,0,0,0.0,[],isizulu,test,idowns ifuna ukuzithoba inhliziyo ngosuthu
+zul_test_track_c_01179,guys bajabulile abantu be glorious movement ku facebook. kuya le kuya le 🤣,0,0.0,0,1,0,0.0,['joy'],isizulu,test,guys bajabulile abantu be glorious movement ku facebook kuya le kuya le
+zul_test_track_c_01718,ubengafuni ukubuyela ekhaya obulawe yisoka ethornwood,1,0.0,0,0,1,0.0,['anger' 'sadness'],isizulu,test,ubengafuni ukubuyela ekhaya obulawe yisoka ethornwood
+zul_dev_track_c_00264,utshatha ubhobokile evalelisa kugcwensa,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,utshatha ubhobokile evalelisa kugcwensa
+zul_test_track_c_00844,iphoyisa lidubule labulala ababili enkantolo kweledivosi,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,test,iphoyisa lidubule labulala ababili enkantolo kweledivosi
+zul_test_track_c_00685,izovulela amaphoyisa icala intatheli eboshwe kubhikisha abaseka ugumede,1,0.0,0,0,0,0.0,['anger'],isizulu,test,izovulela amaphoyisa icala intatheli eboshwe kubhikisha abaseka ugumede
+zul_test_track_c_00337,buka: 'angikukhethanga ukuba sesithenjini' - makhumalo,0,0.0,0,0,0,0.0,[],isizulu,test,buka angikukhethanga ukuba sesithenjini makhumalo
+zul_test_track_c_01378,injabulo emacikweni kuhoxiswa amacala awo,0,0.0,0,1,0,0.0,['joy'],isizulu,test,injabulo emacikweni kuhoxiswa amacala awo
+zul_test_track_c_01710,akudluli kumsakazi wokhozi owaliwa yisoka,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,akudluli kumsakazi wokhozi owaliwa yisoka
+zul_test_track_c_00710,‘kuwe insika kudlula emhlabeni umsimang’,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kuwe insika kudlula emhlabeni umsimang
+zul_test_track_c_02019,ithembisa lukhulu eyokuqala kabenni,0,0.0,0,0,0,0.0,[],isizulu,test,ithembisa lukhulu eyokuqala kabenni
+zul_test_track_c_01587,-ngiphethe ama scammer ngingaboshwa jesu 😭,0,0.0,0,0,0,0.0,[],isizulu,test,ngiphethe ama scammer ngingaboshwa jesu
+zul_test_track_c_01886,umlingisi wacishe wadlwengulwa ngophrojusa,0,1.0,1,0,0,0.0,['disgust' 'fear'],isizulu,test,umlingisi wacishe wadlwengulwa ngophrojusa
+zul_dev_track_c_00656,ayikho neyodwa nje indoda engibuzayo ukuthi yini engiyifunayo ngoba kuholiwe 😭 cha ninehliziyo embi,0,0.0,0,0,0,0.0,[],isizulu,dev,ayikho neyodwa nje indoda engibuzayo ukuthi yini engiyifunayo ngoba kuholiwe cha ninehliziyo embi
+zul_test_track_c_00483,bamisiwe othisha abajola nomfundi ecomtech,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,bamisiwe othisha abajola nomfundi ecomtech
+zul_test_track_c_01351,ukhuzani usayinise umaskanda wesifazane,0,0.0,0,1,0,0.0,['joy'],isizulu,test,ukhuzani usayinise umaskanda wesifazane
+zul_test_track_c_01206,kuxabene ubendle phakathi kukakelly khumalo nozandie,0,0.0,0,0,0,0.0,[],isizulu,test,kuxabene ubendle phakathi kukakelly khumalo nozandie
+zul_test_track_c_01376,umiddendorp ucikwe abalandeli abagxeka u-akpeyi,1,0.0,0,0,0,0.0,['anger'],isizulu,test,umiddendorp ucikwe abalandeli abagxeka uakpeyi
+zul_dev_track_c_00621,imboni yamatekisi ineqhaza eliqhakambile emnothweni,0,0.0,0,0,0,0.0,[],isizulu,dev,imboni yamatekisi ineqhaza eliqhakambile emnothweni
+zul_test_track_c_02042,ngijabule ngizothole zonke engizifunayo. 🍀💚 https://t.co/chuwyf2br7,0,0.0,0,1,0,0.0,['joy'],isizulu,test,ngijabule ngizothole zonke engizifunayo httpstcochuwyf2br7
+zul_test_track_c_01696,ushaywe ngumphakathi waboshwa ‘ogwaze wabulala’ uyise,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,ushaywe ngumphakathi waboshwa ogwaze wabulala uyise
+zul_dev_track_c_00125,ujabule ebizelwa eqenjini lesizwe unozinti we-arrows,0,0.0,0,1,0,0.0,['joy'],isizulu,dev,ujabule ebizelwa eqenjini lesizwe unozinti wearrows
+zul_dev_track_c_00600,sekunethimba elizoqapha abashisa amaloli,0,0.0,0,0,0,0.0,[],isizulu,dev,sekunethimba elizoqapha abashisa amaloli
+zul_test_track_c_01619,kufe usomatekisi nomsebenzi kuhlaselwa ecar wash kwamashu,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,test,kufe usomatekisi nomsebenzi kuhlaselwa ecar wash kwamashu
+zul_test_track_c_00136,kuklinywe isalukazi esina-107 sashona,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kuklinywe isalukazi esina107 sashona
+zul_test_track_c_01078,ngishilo ukuthi ngzovuka ngifa indlala 😭,0,0.0,0,0,0,0.0,[],isizulu,test,ngishilo ukuthi ngzovuka ngifa indlala
+zul_dev_track_c_00810,abazali bakhala ngothisha ochapha abafundi ngenhlamba,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,abazali bakhala ngothisha ochapha abafundi ngenhlamba
+zul_test_track_c_00249,abalandeli baphawula ngokuxoswha kukahunt,0,0.0,0,0,0,0.0,[],isizulu,test,abalandeli baphawula ngokuxoswha kukahunt
+zul_test_track_c_01985,isigwebo kwawokudlwengula,0,0.0,0,0,0,0.0,[],isizulu,test,isigwebo kwawokudlwengula
+zul_test_track_c_00299,unetayitela lendlu engabonwa,0,0.0,0,0,0,0.0,[],isizulu,test,unetayitela lendlu engabonwa
+zul_dev_track_c_00786,"“akagundi nje umuntu onengane encane, ayenziwa leyo nto.” well ngiyenzile-ke abigail mhlathi wakho. ☺️",0,0.0,0,0,0,0.0,[],isizulu,dev,akagundi nje umuntu onengane encane ayenziwa leyo nto well ngiyenzileke abigail mhlathi wakho
+zul_test_track_c_00739,uramaphosa uncome intsha esebenzise isikhathi sikathaqa yasungula amabhizinisi,0,0.0,0,0,0,0.0,[],isizulu,test,uramaphosa uncome intsha esebenzise isikhathi sikathaqa yasungula amabhizinisi
+zul_test_track_c_01495,kuvela okuxoshe ibafana ehhotela lodumo,0,0.0,0,0,0,0.0,[],isizulu,test,kuvela okuxoshe ibafana ehhotela lodumo
+zul_test_track_c_02018,uzomiswa ebandleni umfundisi osolwa ngokweba ibhokisi,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,uzomiswa ebandleni umfundisi osolwa ngokweba ibhokisi
+zul_dev_track_c_00843,lungene kwelinye iqophelo olukabuhle mkhwanazi ongadlali,0,0.0,0,0,0,0.0,[],isizulu,dev,lungene kwelinye iqophelo olukabuhle mkhwanazi ongadlali
+zul_test_track_c_00664,ulaxaze umdlalo umlingisi,0,0.0,0,0,0,0.0,[],isizulu,test,ulaxaze umdlalo umlingisi
+zul_dev_track_c_00568,kusolwa uphuzo engozini yetekisi ebulale abomndeni (13),0,0.0,0,0,0,0.0,[],isizulu,dev,kusolwa uphuzo engozini yetekisi ebulale abomndeni 13
+zul_test_track_c_00861,sehlile isibalo sabafa ezingozini zomgwaqo,0,0.0,0,0,0,0.0,[],isizulu,test,sehlile isibalo sabafa ezingozini zomgwaqo
+zul_test_track_c_01129,kusolwa abenhlangano kushiswa indlu,0,0.0,0,0,0,0.0,[],isizulu,test,kusolwa abenhlangano kushiswa indlu
+zul_test_track_c_00747,uhamba ngezinduku “osasazelwe ngezinja” washaywa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,uhamba ngezinduku osasazelwe ngezinja washaywa
+zul_test_track_c_00916,uthisha ugijimise uthishanhloko ngommese,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,uthisha ugijimise uthishanhloko ngommese
+zul_test_track_c_00496,ukhale ngokushisa washona eqeda umzuliswano wocansi nomfelokazi,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,test,ukhale ngokushisa washona eqeda umzuliswano wocansi nomfelokazi
+zul_test_track_c_01755,uziphonse edamini washona ‘ebalekela’ ukuboshwa ngamaphoyisa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,uziphonse edamini washona ebalekela ukuboshwa ngamaphoyisa
+zul_test_track_c_00042,'sijabulile ngabafuna ukuhola i-anc',0,0.0,0,1,0,0.0,['joy'],isizulu,test,sijabulile ngabafuna ukuhola ianc
+zul_test_track_c_01266,imeya ichaza ngetulo lokuyisoconga,0,0.0,0,0,0,0.0,[],isizulu,test,imeya ichaza ngetulo lokuyisoconga
+zul_test_track_c_01042,uzuma engozini yokuvulelwa icala lobugebengu,0,0.0,0,0,0,0.0,[],isizulu,test,uzuma engozini yokuvulelwa icala lobugebengu
+zul_test_track_c_00617,kuvulwe icala ngoshaye umfundi 'wabola' izinqe,0,0.0,0,0,0,0.0,[],isizulu,test,kuvulwe icala ngoshaye umfundi wabola izinqe
+zul_test_track_c_01643,amaphoyisa kwelokukhwabanisa,1,1.0,0,0,0,1.0,['anger' 'disgust' 'surprise'],isizulu,test,amaphoyisa kwelokukhwabanisa
+zul_test_track_c_01682,buchitheke bugayiwe elanda ilobolo,0,0.0,0,0,0,0.0,[],isizulu,test,buchitheke bugayiwe elanda ilobolo
+zul_test_track_c_01428,"isigejane sabalandeli bakaria aledwaba ebesitheleke lapho kunokhetho khona lwezikhundla zobuholi besafa, esandton city convention centre. 📷 nhlanhla sithole https://t.co/c1imvmetrh",0,0.0,0,0,0,0.0,[],isizulu,test,isigejane sabalandeli bakaria aledwaba ebesitheleke lapho kunokhetho khona lwezikhundla zobuholi besafa esandton city convention centre nhlanhla sithole httpstcoc1imvmetrh
+zul_test_track_c_00686,owegagasi fm ufuna ukugqugquzela intsha,0,0.0,0,0,0,0.0,[],isizulu,test,owegagasi fm ufuna ukugqugquzela intsha
+zul_dev_track_c_00277,kuhlukene ukubona ngozuma,0,0.0,0,0,0,0.0,[],isizulu,dev,kuhlukene ukubona ngozuma
+zul_test_track_c_01529,kugqame eyomhlaba kugujwa usuku lwamalungelo,0,0.0,0,0,0,0.0,[],isizulu,test,kugqame eyomhlaba kugujwa usuku lwamalungelo
+zul_dev_track_c_00720,usolinas uthembe ikhefu lefifa ukwelapha ubuthuntu bechiefs,0,0.0,0,0,0,0.0,[],isizulu,dev,usolinas uthembe ikhefu lefifa ukwelapha ubuthuntu bechiefs
+zul_test_track_c_00215,amabhokobhoko aqhathwe ne-all blacks,0,0.0,0,0,0,0.0,[],isizulu,test,amabhokobhoko aqhathwe neall blacks
+zul_dev_track_c_00441,ukhoza uziqhelelanisa namacala    awepsl,0,0.0,0,0,0,0.0,[],isizulu,dev,ukhoza uziqhelelanisa namacala awepsl
+zul_dev_track_c_00756,kume ukufunda kubangwa uthishanhloko omusha wesikole,0,0.0,0,0,0,0.0,[],isizulu,dev,kume ukufunda kubangwa uthishanhloko omusha wesikole
+zul_test_track_c_00088,i-sundowns inqobe yahlala esicongweni,0,0.0,0,0,0,0.0,[],isizulu,test,isundowns inqobe yahlala esicongweni
+zul_test_track_c_01460,udedelwe umyeni owataxa uthishanhloko,0,0.0,0,0,0,0.0,[],isizulu,test,udedelwe umyeni owataxa uthishanhloko
+zul_test_track_c_00492,udlule ebunzimeni umethuli wenyan nyan,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,udlule ebunzimeni umethuli wenyan nyan
+zul_test_track_c_01635,lizothathelwa izinyathelo ikhansela eliwuvanzi,0,0.0,0,0,0,0.0,[],isizulu,test,lizothathelwa izinyathelo ikhansela eliwuvanzi
+zul_test_track_c_01060,kulimale 23 kuginqika itekisi ethutha abafundi,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kulimale 23 kuginqika itekisi ethutha abafundi
+zul_test_track_c_01821,lebonda khona lana ngiyazela khona 👀🤔 https://t.co/mjrd4okyfa,0,0.0,0,0,0,0.0,[],isizulu,test,lebonda khona lana ngiyazela khona httpstcomjrd4okyfa
+zul_test_track_c_00351,acele empunzini amaphoyisa kubhikishwa,0,0.0,0,0,0,0.0,[],isizulu,test,acele empunzini amaphoyisa kubhikishwa
+zul_test_track_c_00737,isimangalo kusatshiswa ungizwe nomkakhe,0,0.0,1,0,0,1.0,['fear' 'surprise'],isizulu,test,isimangalo kusatshiswa ungizwe nomkakhe
+zul_test_track_c_00578,ugwetshwe iminyaka engu-32 owabulala ukarabo mokoena,0,0.0,0,0,0,0.0,[],isizulu,test,ugwetshwe iminyaka engu32 owabulala ukarabo mokoena
+zul_test_track_c_01213,isilomo semazembe sinetwetwe ngesupersport,0,0.0,0,0,0,0.0,[],isizulu,test,isilomo semazembe sinetwetwe ngesupersport
+zul_test_track_c_01632,r10 itowel ku west street &amp; 2 ngo r10 ixubho emgaqweni😭 https://t.co/wrd5gereym,0,0.0,0,0,0,0.0,[],isizulu,test,r10 itowel ku west street amp 2 ngo r10 ixubho emgaqweni httpstcowrd5gereym
+zul_test_track_c_00332,@nokulun02059586 lapho mina ngidla isinkwa lana 😔😟,0,0.0,0,0,0,0.0,[],isizulu,test,nokulun02059586 lapho mina ngidla isinkwa lana
+zul_dev_track_c_00509,kumele bakhokhiswe kancane abakuleli,0,0.0,0,0,0,0.0,[],isizulu,dev,kumele bakhokhiswe kancane abakuleli
+zul_test_track_c_01525,kubongwa abahlengikazi ngokuyibamba ishisa,0,0.0,0,0,0,0.0,[],isizulu,test,kubongwa abahlengikazi ngokuyibamba ishisa
+zul_test_track_c_01700,yekani ukubeka amanzi ngamabhodwe acurry. omunye kade enuka isishebo emhlane sifuna ukudlulisa imali. niyasihlukumeza nje bafethu😣,0,0.0,0,0,0,0.0,[],isizulu,test,yekani ukubeka amanzi ngamabhodwe acurry omunye kade enuka isishebo emhlane sifuna ukudlulisa imali niyasihlukumeza nje bafethu
+zul_dev_track_c_00678,uhunt uzwakala ephelelwe amaqhinga okuvala emuva,0,0.0,0,0,0,0.0,[],isizulu,dev,uhunt uzwakala ephelelwe amaqhinga okuvala emuva
+zul_dev_track_c_00766,buka: ishaqe odokotela ingane ezalwe namakhanda amathathu,0,0.0,0,0,0,1.0,['surprise'],isizulu,dev,buka ishaqe odokotela ingane ezalwe namakhanda amathathu
+zul_test_track_c_01865,bakhala ngemiholo nokunye osonhlalakahle,1,0.0,0,0,1,0.0,['anger' 'sadness'],isizulu,test,bakhala ngemiholo nokunye osonhlalakahle
+zul_test_track_c_01424,kuvela abasolwa ngokubulala umabhalane,0,0.0,0,0,0,0.0,[],isizulu,test,kuvela abasolwa ngokubulala umabhalane
+zul_dev_track_c_00408,kuboshwe okuthiwa ubulele usana eqeda kuluzala,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,dev,kuboshwe okuthiwa ubulele usana eqeda kuluzala
+zul_dev_track_c_00663,ubona ihlazo ngokushaywa yikwadukuza,0,0.0,0,0,0,0.0,[],isizulu,dev,ubona ihlazo ngokushaywa yikwadukuza
+zul_dev_track_c_00167,kulimale 20 engozini ehlanganisa itekisi ebithwele abafundi,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kulimale 20 engozini ehlanganisa itekisi ebithwele abafundi
+zul_test_track_c_00381,"sekungaze kuvele ngelanga lomshado ukuthi makoti ubengasaphelele, kanti kwalotsholwa kanjani? nangu umama ekhihla islilo, ngomakoti wakwakhe🙆‍♂️🙆‍♀️🙆‍♀️ #ourperfectwedding https://t.co/sax75t6bxs",0,0.0,0,0,0,1.0,['surprise'],isizulu,test,sekungaze kuvele ngelanga lomshado ukuthi makoti ubengasaphelele kanti kwalotsholwa kanjani nangu umama ekhihla islilo ngomakoti wakwakhe ourperfectwedding httpstcosax75t6bxs
+zul_dev_track_c_00271,ikhabhinethi liphonsela inselelo isinqumo senkantolo ngemithetho kathaqa,0,0.0,0,0,0,0.0,[],isizulu,dev,ikhabhinethi liphonsela inselelo isinqumo senkantolo ngemithetho kathaqa
+zul_test_track_c_01760,bancishwe ikhefu abadlali bepirates,0,0.0,0,0,0,0.0,[],isizulu,test,bancishwe ikhefu abadlali bepirates
+zul_dev_track_c_00077,i-eskom ivuma eyophenyo lomvikeli,0,0.0,0,0,0,0.0,[],isizulu,dev,ieskom ivuma eyophenyo lomvikeli
+zul_dev_track_c_00103,uyagxekwa owengane ebidukile,0,0.0,0,0,0,0.0,[],isizulu,dev,uyagxekwa owengane ebidukile
+zul_test_track_c_00768,uzoluleka abazohambela intandokazi yesolezwe usomabhizinisi,0,0.0,0,1,0,0.0,['joy'],isizulu,test,uzoluleka abazohambela intandokazi yesolezwe usomabhizinisi
+zul_test_track_c_01885,banqatshelwe ibheyili abasolwa ngokubulala umagaqa,1,0.0,0,0,0,0.0,['anger'],isizulu,test,banqatshelwe ibheyili abasolwa ngokubulala umagaqa
+zul_test_track_c_01193,angilwi namandiya uma ngiwatshela ukuthi iningi lawo anobandlululo',0,0.0,0,0,0,0.0,[],isizulu,test,angilwi namandiya uma ngiwatshela ukuthi iningi lawo anobandlululo
+zul_dev_track_c_00848,uzochitha impelasonto ejele 'ohubhuze amanga' ezweni,0,0.0,0,0,0,0.0,[],isizulu,dev,uzochitha impelasonto ejele ohubhuze amanga ezweni
+zul_test_track_c_00181,'ngibuyekile!' kwazisholo isidakwa kuwumsombuluko,0,0.0,0,0,0,0.0,[],isizulu,test,ngibuyekile kwazisholo isidakwa kuwumsombuluko
+zul_test_track_c_00084,amalungu enfp athuke umholi,0,0.0,0,0,0,0.0,[],isizulu,test,amalungu enfp athuke umholi
+zul_test_track_c_00067,ezothando: ngintshontsha umka mfowethu,0,1.0,0,0,0,0.0,['disgust'],isizulu,test,ezothando ngintshontsha umka mfowethu
+zul_test_track_c_00933,"nakhu la sikhona ngaleskhathi. awuqine ushuni kadangala majongo, akukhushukwe! drip law: every szn is denim szn. 😅☔️ https://t.co/ljhi4tayqw",0,0.0,0,1,0,0.0,['joy'],isizulu,test,nakhu la sikhona ngaleskhathi awuqine ushuni kadangala majongo akukhushukwe drip law every szn is denim szn httpstcoljhi4tayqw
+zul_test_track_c_01366,izifundiswa ezingasebenzi zicikwa yizikhulu,1,0.0,0,0,0,0.0,['anger'],isizulu,test,izifundiswa ezingasebenzi zicikwa yizikhulu
+zul_test_track_c_01878,@mohalemotaung_ nazo ke say’tsheni. ume njalo nje mtawunge mfwethu. 🤝,0,0.0,0,0,0,0.0,[],isizulu,test,mohalemotaung_ nazo ke saytsheni ume njalo nje mtawunge mfwethu
+zul_test_track_c_00963,undlovu ube yisiphesihle kwiteam of choice emuka nomklomelo,0,0.0,0,1,0,0.0,['joy'],isizulu,test,undlovu ube yisiphesihle kwiteam of choice emuka nomklomelo
+zul_test_track_c_00163,athwele kanzima amaphoyisa bakwethu,0,0.0,0,0,0,0.0,[],isizulu,test,athwele kanzima amaphoyisa bakwethu
+zul_dev_track_c_00860,bavale umgwaqo befuna itiyela,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,bavale umgwaqo befuna itiyela
+zul_test_track_c_00633,umlingisi uzibulele ngenxa yokhwantalala,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,umlingisi uzibulele ngenxa yokhwantalala
+zul_dev_track_c_00480,imibiko yokuxoshwa kwesikhulu samajele ekzn,0,0.0,0,0,0,0.0,[],isizulu,dev,imibiko yokuxoshwa kwesikhulu samajele ekzn
+zul_dev_track_c_00195,akayizwa eyokufunwa ngamanye amaqembu,0,0.0,0,0,0,0.0,[],isizulu,dev,akayizwa eyokufunwa ngamanye amaqembu
+zul_test_track_c_00740,umsindo ngokwakhiwa kwenxanxathela,1,0.0,0,0,0,0.0,['anger'],isizulu,test,umsindo ngokwakhiwa kwenxanxathela
+zul_test_track_c_00201,udle ushevu namadodana akhe amabili,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,test,udle ushevu namadodana akhe amabili
+zul_dev_track_c_00652,unina usekhala ubusuku nemini ngowaduka eyolusa,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,unina usekhala ubusuku nemini ngowaduka eyolusa
+zul_test_track_c_01721,umdinga ebaliwe osolwa ngokudlwengula indodakazi (13),0,0.0,0,0,1,0.0,['sadness'],isizulu,test,umdinga ebaliwe osolwa ngokudlwengula indodakazi 13
+zul_test_track_c_01974,kushubile amawele akubo kamjik'jelwa ebanga ubuholi,0,0.0,0,0,0,0.0,[],isizulu,test,kushubile amawele akubo kamjikjelwa ebanga ubuholi
+zul_test_track_c_01613,"seeing tweets from joggers abavuke bayojaha umoya emgwaqeni..ngaze ngaphuthelwa ke ☹ kodwa ngisasaba, i won't lie. i'll continue khona la ebhilidini for now.",0,0.0,1,0,0,0.0,['fear'],isizulu,test,seeing tweets from joggers abavuke bayojaha umoya emgwaqeningaze ngaphuthelwa ke kodwa ngisasaba i wont lie ill continue khona la ebhilidini for now
+zul_test_track_c_00442,uthando lwakhiwa wukukhulela emakhaya,0,0.0,0,0,0,0.0,[],isizulu,test,uthando lwakhiwa wukukhulela emakhaya
+zul_test_track_c_00355,kuphenywa ngabathelwe ngezinhlamvu babulawa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kuphenywa ngabathelwe ngezinhlamvu babulawa
+zul_dev_track_c_00273,u-onyango ubambezele idowns egwaza ekhaya,0,0.0,0,0,0,0.0,[],isizulu,dev,uonyango ubambezele idowns egwaza ekhaya
+zul_test_track_c_00037,ucele akathi vu ngemibiko yakamuva ethinta uphenyo ngokubulawa kukameyiwa,0,0.0,0,0,0,0.0,[],isizulu,test,ucele akathi vu ngemibiko yakamuva ethinta uphenyo ngokubulawa kukameyiwa
+zul_test_track_c_00418,abe-anc bakhala ngebheyili enikwe iphoyisa elisolwa ngokubulala,0,0.0,0,0,0,0.0,[],isizulu,test,abeanc bakhala ngebheyili enikwe iphoyisa elisolwa ngokubulala
+zul_dev_track_c_00643,kubulawe iphoyisa libizelwe ingxabano yasekhaya,1,0.0,0,0,1,0.0,['anger' 'sadness'],isizulu,dev,kubulawe iphoyisa libizelwe ingxabano yasekhaya
+zul_test_track_c_00015,uvalo amabhubesi ebhubhisa imfuyo,0,0.0,1,0,0,0.0,['fear'],isizulu,test,uvalo amabhubesi ebhubhisa imfuyo
+zul_test_track_c_00553,amadoda amathathu enkantolo ngelokufa komlimi,0,0.0,0,0,0,0.0,[],isizulu,test,amadoda amathathu enkantolo ngelokufa komlimi
+zul_dev_track_c_00743,ulorch embangweni womdlali ovelele,0,0.0,0,0,0,0.0,[],isizulu,dev,ulorch embangweni womdlali ovelele
+zul_test_track_c_00379,@nazomagenge2 yeybo futhi ulaphayana ngasenandi drive😩,0,0.0,0,0,0,0.0,[],isizulu,test,nazomagenge2 yeybo futhi ulaphayana ngasenandi drive
+zul_dev_track_c_00407,ithala lifuna ukuba yibhange likahulumeni jikelele,0,0.0,0,0,0,0.0,[],isizulu,dev,ithala lifuna ukuba yibhange likahulumeni jikelele
+zul_test_track_c_01556,‘amacala okuhlukunyezwa awabikwa’,0,0.0,0,0,0,0.0,[],isizulu,test,amacala okuhlukunyezwa awabikwa
+zul_test_track_c_01369,ezothando: ngimthanda ngenhliziyo yami yonke kodwa ngihlukemezekile,0,0.0,0,0,0,0.0,[],isizulu,test,ezothando ngimthanda ngenhliziyo yami yonke kodwa ngihlukemezekile
+zul_test_track_c_00131,kulimale abangu-11 engozini yezimoto ezimbili,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kulimale abangu11 engozini yezimoto ezimbili
+zul_dev_track_c_00212,umsindo ngemoto ebihamba umaimane,0,0.0,0,0,0,0.0,[],isizulu,dev,umsindo ngemoto ebihamba umaimane
+zul_test_track_c_01901,ubongz wodumo ubesakhokhe amandla emculweni,0,0.0,0,0,0,0.0,[],isizulu,test,ubongz wodumo ubesakhokhe amandla emculweni
+zul_dev_track_c_00232,bafuna akhishwe ejele ur-kelly,0,1.0,0,0,0,0.0,['disgust'],isizulu,dev,bafuna akhishwe ejele urkelly
+zul_test_track_c_01145,bakhungathekile owesifazane ebulawa yizinswelaboya phambi komndeni,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,test,bakhungathekile owesifazane ebulawa yizinswelaboya phambi komndeni
+zul_test_track_c_01150,zizomiswa izikhulu 'ezikhohlakele',0,1.0,0,0,0,0.0,['disgust'],isizulu,test,zizomiswa izikhulu ezikhohlakele
+zul_dev_track_c_00439,kuboshwe amakhansela amathathu ethekwini,0,0.0,0,0,0,1.0,['surprise'],isizulu,dev,kuboshwe amakhansela amathathu ethekwini
+zul_test_track_c_01499,inkantolo ichithe isicelo sikazuma,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,inkantolo ichithe isicelo sikazuma
+zul_dev_track_c_00052,kushone 'undlunkulu' owakhwabanisela usars,0,0.0,0,0,0,0.0,[],isizulu,dev,kushone undlunkulu owakhwabanisela usars
+zul_test_track_c_00005,ngeke ngithuke ngoba legenge ehamba nama sonto iweekend yonke ave idlana lapha ematendeni 😂 https://t.co/gebhes2z9f,0,0.0,0,0,0,0.0,[],isizulu,test,ngeke ngithuke ngoba legenge ehamba nama sonto iweekend yonke ave idlana lapha ematendeni httpstcogebhes2z9f
+zul_test_track_c_01598,indali yezinkomo iqale ngegiya eliphezulu,0,0.0,0,0,0,0.0,[],isizulu,test,indali yezinkomo iqale ngegiya eliphezulu
+zul_dev_track_c_00803,sekuphinde kwadlula omunye umdlali wepsl engozini yemoto,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,dev,sekuphinde kwadlula omunye umdlali wepsl engozini yemoto
+zul_test_track_c_00170,ithemba lokubuya nendondo yegolide kumacommonwealth,0,0.0,0,0,0,0.0,[],isizulu,test,ithemba lokubuya nendondo yegolide kumacommonwealth
+zul_dev_track_c_00839,usutcliffe usabisa ngokugonyuluka,0,0.0,0,0,0,0.0,[],isizulu,dev,usutcliffe usabisa ngokugonyuluka
+zul_test_track_c_01255,abaphethe upitso bavivela ukubonana nesundowns enkantolo,0,0.0,0,0,0,0.0,[],isizulu,test,abaphethe upitso bavivela ukubonana nesundowns enkantolo
+zul_test_track_c_00197,ufrosler ufuna baqale umgqigqo omusha kulandela ukushaya ipirates,0,0.0,0,0,0,0.0,[],isizulu,test,ufrosler ufuna baqale umgqigqo omusha kulandela ukushaya ipirates
+zul_test_track_c_01434,ufuna ur2m wesinxephezelo oshumpulwe ibele yisibhedlela,1,0.0,0,0,1,1.0,['anger' 'sadness' 'surprise'],isizulu,test,ufuna ur2m wesinxephezelo oshumpulwe ibele yisibhedlela
+zul_test_track_c_01950,inhlanzi izoshelwa amanzi kubadayisi,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,inhlanzi izoshelwa amanzi kubadayisi
+zul_test_track_c_00346,@mmaperekosplit icebo lakhe lingevinjwe muntu😊😂 ngyabonga,0,0.0,0,0,0,0.0,[],isizulu,test,mmaperekosplit icebo lakhe lingevinjwe muntu ngyabonga
+zul_test_track_c_00673,kumiswe umfundi 'oshaye' uthisha,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,kumiswe umfundi oshaye uthisha
+zul_test_track_c_01528,bamisiwe onesi abaxosha owateta etekisini,0,0.0,0,0,0,0.0,[],isizulu,test,bamisiwe onesi abaxosha owateta etekisini
+zul_test_track_c_01535,sizilile kodwa kukhona abalokhu besidunusela badayisa nemomozi emini kwa bha😳😭😭😭,0,0.0,0,0,0,0.0,[],isizulu,test,sizilile kodwa kukhona abalokhu besidunusela badayisa nemomozi emini kwa bha
+zul_test_track_c_01789,ababili basinde ngokulambisa bedutshulwa emgwaqeni,0,0.0,0,0,0,0.0,[],isizulu,test,ababili basinde ngokulambisa bedutshulwa emgwaqeni
+zul_dev_track_c_00260,"layikhaya ngithi, usezophuma umuntu wami referring to kaygee, kwathiwa ""usho i-abuser? ooho"" i just-🥺💔",0,0.0,0,0,0,0.0,[],isizulu,dev,layikhaya ngithi usezophuma umuntu wami referring to kaygee kwathiwa usho iabuser ooho i just
+zul_test_track_c_01131,bacela anikwe ithuba e-eskom,0,0.0,0,0,0,0.0,[],isizulu,test,bacela anikwe ithuba eeskom
+zul_dev_track_c_00706,‘siyobe sibonga abasesekayo ngokungena kweyomhlaba’,0,0.0,0,0,0,0.0,[],isizulu,dev,siyobe sibonga abasesekayo ngokungena kweyomhlaba
+zul_dev_track_c_00562,problem kuyashisa futhi mina ngiyanqena ukudriver ngiyebay 😵 but i miss her so i will suck it up,0,0.0,0,0,0,0.0,[],isizulu,dev,problem kuyashisa futhi mina ngiyanqena ukudriver ngiyebay but i miss her so i will suck it up
+zul_test_track_c_01290,"@shange033 uzoba goba kwaal😂banamaga! abakwaz kahle wena, bakuzwa ngendaba😂",0,0.0,0,0,0,0.0,[],isizulu,test,shange033 uzoba goba kwaalbanamaga abakwaz kahle wena bakuzwa ngendaba
+zul_test_track_c_00719,sekusuke umbango ngesiteshi somsakazo,1,0.0,0,0,0,0.0,['anger'],isizulu,test,sekusuke umbango ngesiteshi somsakazo
+zul_test_track_c_01897,bathathela osolwa ngokunukubeza ngokocansi izinyathelo,0,0.0,0,0,0,0.0,[],isizulu,test,bathathela osolwa ngokunukubeza ngokocansi izinyathelo
+zul_test_track_c_01386,@lordwick_mei ilelirasta nje 😡😡😡 kodwa kushoniwe,1,0.0,0,0,0,0.0,['anger'],isizulu,test,lordwick_mei ilelirasta nje kodwa kushoniwe
+zul_dev_track_c_00153,osomatekisi bafuna isinxephezelo sikar15m kukaunda,0,0.0,0,0,0,0.0,[],isizulu,dev,osomatekisi bafuna isinxephezelo sikar15m kukaunda
+zul_test_track_c_01596,uchaza kabanzi ngeziboshwa eziwu-19 000 ezizodedelwa emajele akuleli ngenxa yecovid-19,0,0.0,0,0,0,0.0,[],isizulu,test,uchaza kabanzi ngeziboshwa eziwu19 000 ezizodedelwa emajele akuleli ngenxa yecovid19
+zul_test_track_c_00231,@mowgale syafana yazi ngathi ngisho ngixoxa nje ngezwa ezokuphepha zithi u should c a dr usifo leso 🙆🏾‍♂️ o nurse bangafundele nursing 💁🏾‍♂️🤦🏾‍♂️,0,0.0,0,0,0,0.0,[],isizulu,test,mowgale syafana yazi ngathi ngisho ngixoxa nje ngezwa ezokuphepha zithi u should c a dr usifo leso o nurse bangafundele nursing
+zul_test_track_c_01474,kufunwa onyamalale nosana luyogonywa,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kufunwa onyamalale nosana luyogonywa
+zul_test_track_c_01902,kushone ingqalabutho eyayiyibambe nomandela emzabalazweni,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kushone ingqalabutho eyayiyibambe nomandela emzabalazweni
+zul_dev_track_c_00534,bagxeka uhulumeni ngokungabanakekeli,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,bagxeka uhulumeni ngokungabanakekeli
+zul_test_track_c_01077,uncikazi akaneme ngakubone kwezakhe zinqoba,0,0.0,0,0,0,0.0,[],isizulu,test,uncikazi akaneme ngakubone kwezakhe zinqoba
+zul_test_track_c_01389,sisabalele isililo ngokudlula kukabra mesh,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,sisabalele isililo ngokudlula kukabra mesh
+zul_dev_track_c_00105,uhlasela mawala ushukela kwabesifazane abancane,0,0.0,1,0,0,1.0,['fear' 'surprise'],isizulu,dev,uhlasela mawala ushukela kwabesifazane abancane
+zul_test_track_c_01419,baphelelwa yithemba ngoduke eyoqala emsebenzini,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,baphelelwa yithemba ngoduke eyoqala emsebenzini
+zul_test_track_c_00330,bashise ibhasi nezimoto bebhikisha,1,0.0,0,0,0,0.0,['anger'],isizulu,test,bashise ibhasi nezimoto bebhikisha
+zul_test_track_c_00801,kufunwa umkhondo  womfundi okunamasonto enyamalele ekhaya,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,test,kufunwa umkhondo womfundi okunamasonto enyamalele ekhaya
+zul_dev_track_c_00875,abamfuni esikhundleni osolwa ngokuba neziqu ezinogcobho,1,0.0,0,0,0,0.0,['anger'],isizulu,dev,abamfuni esikhundleni osolwa ngokuba neziqu ezinogcobho
+zul_dev_track_c_00189,kuphume izidumbu abozalo bebanga inkosikazi,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,dev,kuphume izidumbu abozalo bebanga inkosikazi
+zul_test_track_c_01771,abantu abadala bayadlula laba ababizwa ngama butho kuye kugaywe isizulu kuphuzwe nje insipho nizichithe igceke lonke. 🙃 https://t.co/a5yj8kxizi,0,0.0,0,0,0,0.0,[],isizulu,test,abantu abadala bayadlula laba ababizwa ngama butho kuye kugaywe isizulu kuphuzwe nje insipho nizichithe igceke lonke httpstcoa5yj8kxizi
+zul_dev_track_c_00773,kubulawe umholi wenhlangano elwa nobugebengu,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kubulawe umholi wenhlangano elwa nobugebengu
+zul_dev_track_c_00049,amakhosi abuyise ithemba edlala ingcwenga yebhola,0,0.0,0,0,0,0.0,[],isizulu,dev,amakhosi abuyise ithemba edlala ingcwenga yebhola
+zul_test_track_c_00558,ibheyili kowetekisi ebulale abathathu,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,ibheyili kowetekisi ebulale abathathu
+zul_test_track_c_00843,ukhongolose uvivela izingqungquthela zezifunda,0,0.0,0,0,0,0.0,[],isizulu,test,ukhongolose uvivela izingqungquthela zezifunda
+zul_dev_track_c_00367,injabulo kumazet eqokelwa kwibhodi yenkampani ekwijse,0,0.0,0,1,0,0.0,['joy'],isizulu,dev,injabulo kumazet eqokelwa kwibhodi yenkampani ekwijse
+zul_dev_track_c_00110,zisinde ngokulambisa izingane kusha indlu,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,zisinde ngokulambisa izingane kusha indlu
+zul_test_track_c_01836,@bigkid850312 abanye mebenuka i bev kodwa who am i to judge 💁‍♂️,0,0.0,0,0,0,0.0,[],isizulu,test,bigkid850312 abanye mebenuka i bev kodwa who am i to judge
+zul_dev_track_c_00437,kuboshwe otholakale nezibhamu nensangu,0,0.0,0,0,0,0.0,[],isizulu,dev,kuboshwe otholakale nezibhamu nensangu
+zul_test_track_c_00807,basolwa ngokubhubhudla imali othukela,0,0.0,0,0,0,0.0,[],isizulu,test,basolwa ngokubhubhudla imali othukela
+zul_test_track_c_01736,ikhansela ecaleni lokuzama ukubulala,1,0.0,1,0,0,0.0,['anger' 'fear'],isizulu,test,ikhansela ecaleni lokuzama ukubulala
+zul_dev_track_c_00481,ibhokisa elibulewe kubanjwa inkunzi ebridge city beliphila ngobugebengu,0,0.0,0,0,1,1.0,['sadness' 'surprise'],isizulu,dev,ibhokisa elibulewe kubanjwa inkunzi ebridge city beliphila ngobugebengu
+zul_test_track_c_00968,sesinyukele ku8005 isibalo sabantu asebebulewe yicovid-19 kuleli,0,0.0,0,0,0,0.0,[],isizulu,test,sesinyukele ku8005 isibalo sabantu asebebulewe yicovid19 kuleli
+zul_test_track_c_00303,"#coronavirus: sinyukele ku-3 635 isibalo sabahaqekile, sekushone abawu-65",0,0.0,0,0,0,0.0,[],isizulu,test,coronavirus sinyukele ku3 635 isibalo sabahaqekile sekushone abawu65
+zul_dev_track_c_00498,"@simphiwe_majola 😂😂 yeah koda angina say mina, bakhona obhuti abadala. silaphana nje phesheya komzinyathi kwahlazakazi ekhaya. sibhekene nomsinga emngeni. gang yasemahlaba ike yasihlupha impela kudala kusaphila ngisho ubaba izeba.",0,0.0,0,0,0,0.0,[],isizulu,dev,simphiwe_majola yeah koda angina say mina bakhona obhuti abadala silaphana nje phesheya komzinyathi kwahlazakazi ekhaya sibhekene nomsinga emngeni gang yasemahlaba ike yasihlupha impela kudala kusaphila ngisho ubaba izeba
+zul_test_track_c_01915,ingebhe kozithele ezinjeni ebezidla ugebhezi lomuntu,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,ingebhe kozithele ezinjeni ebezidla ugebhezi lomuntu
+zul_test_track_c_00990,i-ipid iphenya elokudutshulwa kukashai,0,0.0,0,0,0,0.0,[],isizulu,test,iipid iphenya elokudutshulwa kukashai
+zul_dev_track_c_00457,#yidlanathi #dankie1223 mina ngivele ngazosel'inyama nje... ngila kwanongoma esgangeni ❤️📻 liyana!!! @ukhozi_fm @kingsfiso @zimiphib1 https://t.co/un7jnpznyt,0,0.0,0,0,0,0.0,[],isizulu,dev,yidlanathi dankie1223 mina ngivele ngazoselinyama nje ngila kwanongoma esgangeni liyana ukhozi_fm kingsfiso zimiphib1 httpstcoun7jnpznyt
+zul_test_track_c_00511,‘ngizobonakala emdlalweni omkhulu’,0,0.0,0,0,0,0.0,[],isizulu,test,ngizobonakala emdlalweni omkhulu
+zul_dev_track_c_00548,bashaqekile ngokudlwengulwa kosana,0,0.0,0,0,0,1.0,['surprise'],isizulu,dev,bashaqekile ngokudlwengulwa kosana
+zul_dev_track_c_00369,bahlose ukubuyisa udumo lwefort hare,0,0.0,0,0,0,0.0,[],isizulu,dev,bahlose ukubuyisa udumo lwefort hare
+zul_dev_track_c_00633,"@lungamahlati ""ngidlul' ekhaya ng'papekile ngingena la hungry lion, aikhona"" that's how we sang it😂😂😂",0,0.0,0,0,0,0.0,[],isizulu,dev,lungamahlati ngidlul ekhaya ngpapekile ngingena la hungry lion aikhona thats how we sang it
+zul_dev_track_c_00058,basabisa ngokubhikisha emanyuvesi,1,0.0,1,0,0,0.0,['anger' 'fear'],isizulu,dev,basabisa ngokubhikisha emanyuvesi
+zul_dev_track_c_00573,owe-ifp akayizwa eyonogada kudlwengulwa umhlengikazi esibhedlela,0,0.0,0,0,0,0.0,[],isizulu,dev,oweifp akayizwa eyonogada kudlwengulwa umhlengikazi esibhedlela
+zul_test_track_c_01923,uvalo kowabhidlikelwa yindlu,0,0.0,1,0,0,0.0,['fear'],isizulu,test,uvalo kowabhidlikelwa yindlu
+zul_test_track_c_00846,umfana oneminyaka ewu-11 ungomunye wababoshelwe ukudlwengula,1,1.0,0,0,0,1.0,['anger' 'disgust' 'surprise'],isizulu,test,umfana oneminyaka ewu11 ungomunye wababoshelwe ukudlwengula
+zul_dev_track_c_00569,siyeke kanjani ukuhlupheka sidukiswa abasihlolelayo?,0,0.0,0,0,0,0.0,[],isizulu,dev,siyeke kanjani ukuhlupheka sidukiswa abasihlolelayo
+zul_test_track_c_00063,uthi ibhizinisi ngeke limyekise ukusakaza,0,0.0,0,0,0,0.0,[],isizulu,test,uthi ibhizinisi ngeke limyekise ukusakaza
+zul_test_track_c_01968,"#coronavirus: sinyukele ku-2 783 isibalo sabahaqekile, sekushone abawu-50",0,0.0,0,0,0,0.0,[],isizulu,test,coronavirus sinyukele ku2 783 isibalo sabahaqekile sekushone abawu50
+zul_test_track_c_01526,kubuye ukuzethemba kwabechiefs iqhubeka nokunqoba,0,0.0,0,1,0,0.0,['joy'],isizulu,test,kubuye ukuzethemba kwabechiefs iqhubeka nokunqoba
+zul_dev_track_c_00487,iphoyisa enkantolo kwelokubulala owokufika,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,iphoyisa enkantolo kwelokubulala owokufika
+zul_dev_track_c_00496,ugumede uphika eyokufuna ukubuyiselwa kwesobumeya,0,0.0,0,0,0,0.0,[],isizulu,dev,ugumede uphika eyokufuna ukubuyiselwa kwesobumeya
+zul_dev_track_c_00219,udj tira usolwa ngokungasigcini isithembiso sokwakhela umndeni umuzi,1,0.0,0,0,1,0.0,['anger' 'sadness'],isizulu,dev,udj tira usolwa ngokungasigcini isithembiso sokwakhela umndeni umuzi
+zul_test_track_c_00304,basolwa ngokugwazisa abokhozi fm,0,0.0,0,0,0,0.0,[],isizulu,test,basolwa ngokugwazisa abokhozi fm
+zul_dev_track_c_00310,awombhoxo nedili lemidlalo,0,0.0,0,0,0,0.0,[],isizulu,dev,awombhoxo nedili lemidlalo
+zul_test_track_c_00783,kuhlukene imibono ngokushiwo unkk helen zille,0,0.0,0,0,0,0.0,[],isizulu,test,kuhlukene imibono ngokushiwo unkk helen zille
+zul_test_track_c_01003,ujabulele ukubuya kukamemela,0,0.0,0,1,0,0.0,['joy'],isizulu,test,ujabulele ukubuya kukamemela
+zul_test_track_c_00863,kubhubhe-19 ezingozini zomgwaqo,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kubhubhe19 ezingozini zomgwaqo
+zul_dev_track_c_00241,ngiyofa la ofa khona bafo kuehiwo into enje umuntu ashaye i pass ese marget ifike ivalwe e durban kulimale umuntu 🤗 asuke ngejubane abadlule bonke kobhobhoyi mabheleni mgababa sphingo lamontville afike kuqala… https://t.co/uuolyybaeg,0,0.0,0,0,0,0.0,[],isizulu,dev,ngiyofa la ofa khona bafo kuehiwo into enje umuntu ashaye i pass ese marget ifike ivalwe e durban kulimale umuntu asuke ngejubane abadlule bonke kobhobhoyi mabheleni mgababa sphingo lamontville afike kuqala httpstcouuolyybaeg
+zul_test_track_c_01292,ubarker kubhekwe atakule usuthu,0,0.0,0,0,0,0.0,[],isizulu,test,ubarker kubhekwe atakule usuthu
+zul_dev_track_c_00791,'sengiyakhumbula ukuthi ngubani owadala ingozi' - sbahle mpisane,0,0.0,0,0,0,0.0,[],isizulu,dev,sengiyakhumbula ukuthi ngubani owadala ingozi sbahle mpisane
+zul_dev_track_c_00088,sivulelwe icala lokugwazisa abafundi isikhulu somsakazo,0,0.0,0,0,0,0.0,[],isizulu,dev,sivulelwe icala lokugwazisa abafundi isikhulu somsakazo
+zul_dev_track_c_00612,itwetwe kushona iphoyisa ebelihaqekile,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,itwetwe kushona iphoyisa ebelihaqekile
+zul_dev_track_c_00234,kuboshwe indodana kubulawa isalukazi (73),0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,kuboshwe indodana kubulawa isalukazi 73
+zul_test_track_c_00826,ayicutshungulwe eyelobolo elimba eqolo singekho isidingo,0,0.0,0,0,0,0.0,[],isizulu,test,ayicutshungulwe eyelobolo elimba eqolo singekho isidingo
+zul_test_track_c_01159,kuvulwe icala ngonqamule ugesi ezweni,0,0.0,0,0,0,0.0,[],isizulu,test,kuvulwe icala ngonqamule ugesi ezweni
+zul_test_track_c_01116,abokufika neqhaza ekubozeni kwelakuleli,0,0.0,0,0,0,0.0,[],isizulu,test,abokufika neqhaza ekubozeni kwelakuleli
+zul_test_track_c_00713,kufunwa isitshudeni esidukile,0,0.0,0,0,1,0.0,['sadness'],isizulu,test,kufunwa isitshudeni esidukile
+zul_test_track_c_00754,sasisatshwa isikhulu sezimali e-eskom,0,0.0,1,0,0,0.0,['fear'],isizulu,test,sasisatshwa isikhulu sezimali eeskom
+zul_test_track_c_00703,sebequlusa emahlathini abathathelwe izindlu zangasese enanda,0,1.0,0,0,1,0.0,['disgust' 'sadness'],isizulu,test,sebequlusa emahlathini abathathelwe izindlu zangasese enanda
+zul_dev_track_c_00507,odilika neminyaka kwababulala abasehostela,0,0.0,0,0,0,0.0,[],isizulu,dev,odilika neminyaka kwababulala abasehostela
+zul_test_track_c_00718,bahleli lubhojozi ngokubulawa kwabomndeni belandelana,0,0.0,1,0,1,0.0,['fear' 'sadness'],isizulu,test,bahleli lubhojozi ngokubulawa kwabomndeni belandelana
+zul_dev_track_c_00421,uyabalisa unina wethwasa eliminze nogobela obelithwasisa,0,0.0,0,0,1,0.0,['sadness'],isizulu,dev,uyabalisa unina wethwasa eliminze nogobela obelithwasisa
+zul_test_track_c_00551,bawotha ubomvu ngokudla okuduve emahhovisi ezifunda,1,0.0,0,0,0,0.0,['anger'],isizulu,test,bawotha ubomvu ngokudla okuduve emahhovisi ezifunda
+zul_test_track_c_01733,isicelo samaphoyisa kuminza umfana ebhishi,0,0.0,0,0,0,0.0,[],isizulu,test,isicelo samaphoyisa kuminza umfana ebhishi
+zul_test_track_c_01302,sengi lithwithile ngicela ukukhipha umuntu wami siyodla into ka fayfhandilethe🤲🤲🤲🤲 #familymeeting #uyajola99 #iamsinglebecause https://t.co/7s3rn8bgkm,0,0.0,0,0,0,0.0,[],isizulu,test,sengi lithwithile ngicela ukukhipha umuntu wami siyodla into ka fayfhandilethe familymeeting uyajola99 iamsinglebecause httpstco7s3rn8bgkm
+zul_dev_track_c_00565,ukhala ngokucwasa owe-da,0,0.0,0,0,0,0.0,[],isizulu,dev,ukhala ngokucwasa oweda
+zul_test_track_c_00504,ingwevu ilaxaze i-anc yayojoyina abenkatha,0,0.0,0,0,0,1.0,['surprise'],isizulu,test,ingwevu ilaxaze ianc yayojoyina abenkatha
+zul_test_track_c_01547,uthishanhloko uthwale umngcwabo,0,0.0,0,0,0,0.0,[],isizulu,test,uthishanhloko uthwale umngcwabo
+zul_test_track_c_01659,usatsha useshiyile kwijoyous celebration,0,0.0,0,0,0,0.0,[],isizulu,test,usatsha useshiyile kwijoyous celebration
+zul_dev_track_c_00332,udilizwe etekisini waboshwa osolwa ngokubulala,0,0.0,0,0,0,0.0,[],isizulu,dev,udilizwe etekisini waboshwa osolwa ngokubulala
+zul_dev_track_c_00343,abaneme ngokungaqokwa kukamakhadzi kumasama,0,0.0,0,0,0,0.0,[],isizulu,dev,abaneme ngokungaqokwa kukamakhadzi kumasama
+zul_test_track_c_01336,bafuna kube yicala ukubandlulula,0,0.0,0,0,0,0.0,[],isizulu,test,bafuna kube yicala ukubandlulula
+zul_test_track_c_00217,u-ertugral uyeke ithuba lokuyocija owebafana,0,0.0,0,0,0,0.0,[],isizulu,test,uertugral uyeke ithuba lokuyocija owebafana
