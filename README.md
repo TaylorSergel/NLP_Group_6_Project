@@ -58,9 +58,9 @@ This repository contains all code, data processing scripts, and experimental res
 
 | Phase | Description | Lead |
 |---|---|---|
-| Phase 1 | Dataset acquisition & preprocessing | Member 1 |
-| Phase 2 | Baseline model training (TF-IDF + LR/SVM) | Member 2 |
-| Phase 3 | Transfer learning & data augmentation | Member 3 |
+| Phase 1 | Dataset acquisition & preprocessing | Taylor |
+| Phase 2 | Baseline model training (TF-IDF + LR/SVM) | Junior |
+| Phase 3 | Transfer learning & data augmentation | Alisha |
 | Phase 4 | Analysis & error evaluation | All |
 | Phase 5 | Report & presentation preparation | All |
 
