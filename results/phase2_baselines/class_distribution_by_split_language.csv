@@ -1,0 +1,10 @@
+split,language,samples,anger,fear,joy,sadness,surprise,disgust
+test,afrikaans,1040,80,114,387,163,0,67
+test,english,2753,320,1535,670,875,794,0
+test,isizulu,438,34,15,30,82,41,15
+train,afrikaans,1217,44,121,529,177,0,12
+train,english,2757,332,1607,673,875,837,0
+train,isizulu,2044,169,59,118,425,184,54
+val,afrikaans,95,5,11,31,17,0,5
+val,english,115,16,62,31,34,31,0
+val,isizulu,438,37,20,24,93,38,14

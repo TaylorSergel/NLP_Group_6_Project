@@ -1,0 +1,8 @@
+{
+  "train": "data/processed/train.csv",
+  "val": "data/processed/val.csv",
+  "test": "data/processed/test.csv",
+  "output": "results/phase2_baselines",
+  "max_features": 20000,
+  "min_df": 2
+}
