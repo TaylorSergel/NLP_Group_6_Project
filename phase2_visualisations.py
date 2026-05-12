@@ -1,4 +1,8 @@
 # File for visualisaitions of phase 2 results, including overall performance, per-language and per-emotion breakdowns, and class distributions.
+#to run in terminal:
+"""python phase2_visualisations.py \
+  --results-dir results/phase2_baselines \
+  --output-dir results/phase2_visualisations """
 import argparse
 from pathlib import Path
 import pandas as pd
