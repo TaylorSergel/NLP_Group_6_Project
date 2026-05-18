@@ -422,14 +422,42 @@ print("FINAL TEST EVALUATION (best checkpoint)")
 print("="*60)
 
 # Reload best model weights
+# best_model = PeftModel.from_pretrained(
+#     AutoModelForSequenceClassification.from_pretrained(
+#         CONFIG["model_name"],
+#         num_labels=NUM_LABELS,
+#         problem_type="multi_label_classification",
+#     ),
+#     CONFIG["model_save_dir"],
+# ).to(DEVICE)
+
+# Reload the base model, apply LoRA structure, then load saved weights
+# modules_to_save=["classifier"] means the classifier IS inside the 
+# PEFT checkpoint — we must use the same lora_config to reconstruct it
+
+base_for_eval = AutoModelForSequenceClassification.from_pretrained(
+    CONFIG["model_name"],
+    num_labels=NUM_LABELS,
+    problem_type="multi_label_classification",
+)
+
+lora_config_eval = LoraConfig(
+    task_type=TaskType.SEQ_CLS,
+    r=CONFIG["lora_r"],
+    lora_alpha=CONFIG["lora_alpha"],
+    lora_dropout=CONFIG["lora_dropout"],
+    target_modules=CONFIG["lora_target_modules"],
+    bias="none",
+    modules_to_save=["classifier"],
+)
+
 best_model = PeftModel.from_pretrained(
-    AutoModelForSequenceClassification.from_pretrained(
-        CONFIG["model_name"],
-        num_labels=NUM_LABELS,
-        problem_type="multi_label_classification",
-    ),
+    base_for_eval,
     CONFIG["model_save_dir"],
 ).to(DEVICE)
+
+best_model.eval()
+print("Model reloaded successfully — classifier weights restored from checkpoint")
 
 test_macro_f1, test_per_label, test_preds, test_labels = evaluate(
     best_model, test_loader, CONFIG["threshold"]
