@@ -107,12 +107,14 @@ if DEVICE.type == "cuda":
 # ── CELL 3: Configuration ─────────────────────────────────────────────────────
 # Adjust DATA_DIR to wherever your processed CSVs live on Drive/repo
 
+DRIVE_BASE = "/content/drive/MyDrive/project_data"
+
 CONFIG = {
     # Paths — update DATA_DIR if running on Colab with Drive
     # e.g. "/content/drive/MyDrive/project_data/processed"
-    "data_dir": "/content/drive/MyDrive/project_data/processed",
-    "output_dir": "/content/drive/MyDrive/project_data/results/phase3_xlmroberta",
-    "model_save_dir": "/content/drive/MyDrive/project_data/models/xlmroberta_lora",
+    "data_dir": f"{DRIVE_BASE}/processed",
+    "output_dir": f"{DRIVE_BASE}/results/phase3_xlmroberta",
+    "model_save_dir": f"{DRIVE_BASE}/models/xlmroberta_lora",
 
     # Model
     "model_name": "xlm-roberta-base",  # ~278M params; use 'xlm-roberta-large' if A100
