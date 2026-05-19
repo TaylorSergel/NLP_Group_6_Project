@@ -82,7 +82,7 @@ NLLB_LANG_CODES = {
 # ── CELL 3: Configuration ─────────────────────────────────────────────────────
 
 CONFIG = {
-    "data_dir": "/content/drive/MyDrive/project_data/processed",
+    "data_dir": "/content/drive/MyDrive/project_data",
     "output_dir": "/content/drive/MyDrive/project_data/results/phase3_backtranslation",
 
     # NLLB-200-distilled-600M — good balance of quality vs speed/memory
