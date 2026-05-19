@@ -183,6 +183,27 @@ train_df, val_df, test_df = load_splits(CONFIG["data_dir"])
 print("\nLabel distribution (train):")
 print(train_df[LABEL_COLS].sum().to_string())
 
+# ── Add this after loading data (after Cell 4) ───────────────────
+
+def compute_class_weights(df, label_cols, device):
+    """
+    Compute positive class weights for BCEWithLogitsLoss.
+    Weight = (num_negative / num_positive) per label.
+    This penalises the model more for missing rare classes.
+    """
+    weights = []
+    for col in label_cols:
+        pos = df[col].sum()
+        neg = len(df) - pos
+        # Cap weight at 10 to avoid extreme values for disgust
+        weight = min(neg / (pos + 1e-6), 10.0)
+        weights.append(weight)
+        print(f"  {col:<10}: pos={int(pos)}  neg={int(neg)}  weight={weight:.2f}")
+    return torch.tensor(weights, dtype=torch.float32).to(device)
+
+print("Class weights:")
+pos_weights = compute_class_weights(train_df, LABEL_COLS, DEVICE)
+
 
 # ── CELL 5: Dataset class ─────────────────────────────────────────────────────
 # PyTorch Dataset wraps your DataFrame rows and tokenises on the fly.
@@ -223,9 +244,7 @@ print(f"Loading base model: {CONFIG['model_name']}")
 base_model = AutoModelForSequenceClassification.from_pretrained(
     CONFIG["model_name"],
     num_labels=NUM_LABELS,
-    # Use BCEWithLogitsLoss externally (see training loop)
-    # problem_type="multi_label_classification" sets sigmoid+BCE internally
-    problem_type="multi_label_classification",
+    # Remove problem_type — we'll handle loss manually with weights
 )
 
 # ── Apply LoRA adapters ──────────────────────────────────────────────────────
@@ -370,11 +389,13 @@ for epoch in range(1, CONFIG["num_epochs"] + 1):
 
         with autocast():
             outputs = model(
-                input_ids=input_ids,
-                attention_mask=attention_mask,
-                labels=labels,  # model computes BCEWithLogitsLoss internally
-            )
-            loss = outputs.loss / CONFIG["grad_accum_steps"]
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            # No labels — compute loss manually with class weights
+        )
+
+        loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weights)
+        loss = loss_fn(outputs.logits, labels) / CONFIG["grad_accum_steps"]
 
         scaler.scale(loss).backward()
         total_loss += loss.item() * CONFIG["grad_accum_steps"]
