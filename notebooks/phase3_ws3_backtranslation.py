@@ -133,7 +133,7 @@ def translate_batch(texts, src_lang, tgt_lang, batch_size=16):
         List of translated strings (same length as input)
     """
     tokenizer.src_lang = src_lang
-    tgt_lang_id = tokenizer.lang_code_to_id[tgt_lang]
+    tgt_lang_id = tokenizer.convert_tokens_to_ids(tgt_lang)
 
     translations = []
     total_batches = (len(texts) + batch_size - 1) // batch_size
