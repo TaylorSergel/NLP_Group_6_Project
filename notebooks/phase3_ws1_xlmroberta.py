@@ -132,7 +132,7 @@ CONFIG = {
     # Training
     "max_length": 128,       # Max token length; 128 covers 95%+ of your texts
     "batch_size": 16,        # Reduce to 8 if you get CUDA OOM errors
-    "num_epochs": 5,
+    "num_epochs": 10,
     "learning_rate": 2e-4,   # Higher LR works well for adapter-only training
     "weight_decay": 0.01,
     "warmup_ratio": 0.1,     # 10% of steps used for LR warmup
@@ -356,7 +356,7 @@ def evaluate_per_language(model, df, threshold=0.5):
         lang_dataset = EmotionDataset(lang_df, tokenizer, CONFIG["max_length"])
         lang_loader  = DataLoader(lang_dataset, batch_size=CONFIG["batch_size"] * 2,
                                   shuffle=False, num_workers=2)
-        macro_f1, per_label, _, _ = evaluate(model, lang_loader, threshold)
+        macro_f1, per_label, _, _ = evaluate_with_per_label_thresholds(model, lang_loader, best_thresholds)
         results[lang] = {"macro_f1": round(macro_f1, 4), "per_label": per_label}
     return results
 
@@ -480,8 +480,48 @@ best_model = PeftModel.from_pretrained(
 best_model.eval()
 print("Model reloaded successfully — classifier weights restored from checkpoint")
 
-test_macro_f1, test_per_label, test_preds, test_labels = evaluate(
-    best_model, test_loader, CONFIG["threshold"]
+# Per-label thresholds tuned on validation set
+best_thresholds = {
+    "anger":    0.6,
+    "fear":     0.55,
+    "joy":      0.55,
+    "sadness":  0.5,
+    "surprise": 0.65,
+    "disgust":  0.3,
+}
+
+# Modified evaluation using per-label thresholds
+def evaluate_with_per_label_thresholds(model, loader, thresholds):
+    model.eval()
+    all_preds, all_labels = [], []
+
+    with torch.no_grad():
+        for batch in loader:
+            input_ids      = batch["input_ids"].to(DEVICE)
+            attention_mask = batch["attention_mask"].to(DEVICE)
+            with autocast():
+                outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            logits = outputs.logits.float().cpu().numpy()
+            probs  = 1 / (1 + np.exp(-logits))
+
+            # Apply a different threshold per column
+            preds = np.zeros_like(probs, dtype=int)
+            for i, label in enumerate(LABEL_COLS):
+                preds[:, i] = (probs[:, i] >= thresholds[label]).astype(int)
+
+            all_preds.append(preds)
+            all_labels.append(batch["labels"].numpy())
+
+    all_preds  = np.vstack(all_preds)
+    all_labels = np.vstack(all_labels)
+    macro_f1   = f1_score(all_labels, all_preds, average="macro", zero_division=0)
+    per_label  = {LABEL_COLS[i]: round(float(
+                    f1_score(all_labels[:, i], all_preds[:, i], zero_division=0)
+                  ), 4) for i in range(NUM_LABELS)}
+    return macro_f1, per_label, all_preds, all_labels
+
+test_macro_f1, test_per_label, test_preds, test_labels = evaluate_with_per_label_thresholds(
+    best_model, test_loader, best_thresholds
 )
 
 print(f"\nOverall test macro F1: {test_macro_f1:.4f}")
