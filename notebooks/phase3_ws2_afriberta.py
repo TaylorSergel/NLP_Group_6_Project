@@ -95,7 +95,7 @@ if DEVICE.type == "cuda":
 # The rest of the config is nearly identical — this makes comparison fair.
 
 CONFIG = {
-    "data_dir": "/content/drive/MyDrive/project_data/processed",
+    "data_dir": "/content/drive/MyDrive/project_data",
     "output_dir": "/content/drive/MyDrive/project_data/results/phase3_afriberta",
     "model_save_dir": "/content/drive/MyDrive/project_data/models/afriberta_lora",
 
@@ -115,7 +115,7 @@ CONFIG = {
     "max_length": 128,
     "batch_size": 8,           # Smaller than WS1 due to larger model
     "grad_accum_steps": 4,     # Effective batch = 32 (same as WS1's 16×2)
-    "num_epochs": 5,
+    "num_epochs": 10,
     "learning_rate": 2e-4,
     "weight_decay": 0.01,
     "warmup_ratio": 0.1,
