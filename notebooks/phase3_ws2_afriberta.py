@@ -146,6 +146,20 @@ def load_splits(data_dir):
 
 train_df, val_df, test_df = load_splits(CONFIG["data_dir"])
 
+# Add this after load_splits() call
+def compute_class_weights(df, label_cols, device):
+    weights = []
+    for col in label_cols:
+        pos = df[col].sum()
+        neg = len(df) - pos
+        weight = min(neg / (pos + 1e-6), 10.0)
+        weights.append(weight)
+        print(f"  {col:<10}: pos={int(pos)}  neg={int(neg)}  weight={weight:.2f}")
+    return torch.tensor(weights, dtype=torch.float32).to(device)
+
+print("Class weights:")
+pos_weights = compute_class_weights(train_df, LABEL_COLS, DEVICE)
+
 
 # ── CELL 5: Tokenization check ────────────────────────────────────────────────
 # IMPORTANT: AfriBERTa uses SentencePiece tokenization.
@@ -206,8 +220,7 @@ print(f"\nLoading AfriBERTa model...")
 base_model = AutoModelForSequenceClassification.from_pretrained(
     CONFIG["model_name"],
     num_labels=NUM_LABELS,
-    problem_type="multi_label_classification",
-    ignore_mismatched_sizes=True,  # New classification head — sizes will differ
+    ignore_mismatched_sizes=True,
 )
 
 lora_config = LoraConfig(
@@ -296,8 +309,9 @@ for epoch in range(1, CONFIG["num_epochs"] + 1):
         labels         = batch["labels"].to(DEVICE)
 
         with autocast():
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss / CONFIG["grad_accum_steps"]
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            loss_fn = torch.nn.BCEWithLogitsLoss(pos_weight=pos_weights)
+            loss = loss_fn(outputs.logits, labels) / CONFIG["grad_accum_steps"]
 
         scaler.scale(loss).backward()
         total_loss += loss.item() * CONFIG["grad_accum_steps"]
@@ -337,17 +351,54 @@ print("\n" + "="*60)
 print("FINAL TEST EVALUATION — AfriBERTa")
 print("="*60)
 
+base_for_eval = AutoModelForSequenceClassification.from_pretrained(
+    CONFIG["model_name"],
+    num_labels=NUM_LABELS,
+    ignore_mismatched_sizes=True,
+)
 best_model = PeftModel.from_pretrained(
-    AutoModelForSequenceClassification.from_pretrained(
-        CONFIG["model_name"], num_labels=NUM_LABELS,
-        problem_type="multi_label_classification",
-        ignore_mismatched_sizes=True,
-    ),
+    base_for_eval,
     CONFIG["model_save_dir"],
 ).to(DEVICE)
+best_model.eval()
+print("AfriBERTa reloaded successfully")
 
-test_macro_f1, test_per_label, test_preds, test_labels = evaluate(
-    best_model, test_loader, CONFIG["threshold"]
+# Per-label thresholds tuned on validation set
+best_thresholds = {
+    "anger":    0.5,
+    "fear":     0.6,
+    "joy":      0.55,
+    "sadness":  0.45,
+    "surprise": 0.6,
+    "disgust":  0.3,
+}
+
+def evaluate_with_per_label_thresholds(model, loader, thresholds):
+    model.eval()
+    all_preds, all_labels = [], []
+    with torch.no_grad():
+        for batch in loader:
+            input_ids      = batch["input_ids"].to(DEVICE)
+            attention_mask = batch["attention_mask"].to(DEVICE)
+            with autocast():
+                outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            logits = outputs.logits.float().cpu().numpy()
+            probs  = 1 / (1 + np.exp(-logits))
+            preds  = np.zeros_like(probs, dtype=int)
+            for i, label in enumerate(LABEL_COLS):
+                preds[:, i] = (probs[:, i] >= thresholds[label]).astype(int)
+            all_preds.append(preds)
+            all_labels.append(batch["labels"].numpy())
+    all_preds  = np.vstack(all_preds)
+    all_labels = np.vstack(all_labels)
+    macro_f1   = f1_score(all_labels, all_preds, average="macro", zero_division=0)
+    per_label  = {LABEL_COLS[i]: round(float(
+                    f1_score(all_labels[:, i], all_preds[:, i], zero_division=0)
+                  ), 4) for i in range(NUM_LABELS)}
+    return macro_f1, per_label, all_preds, all_labels
+
+test_macro_f1, test_per_label, test_preds, test_labels = evaluate_with_per_label_thresholds(
+    best_model, test_loader, best_thresholds
 )
 
 print(f"\nOverall test macro F1: {test_macro_f1:.4f}")
@@ -362,7 +413,8 @@ for lang in test_df["language"].unique():
     lang_dataset = EmotionDataset(lang_df, tokenizer, CONFIG["max_length"])
     lang_loader  = DataLoader(lang_dataset, batch_size=CONFIG["batch_size"] * 2,
                                shuffle=False, num_workers=2)
-    macro_f1, per_label, _, _ = evaluate(best_model, lang_loader, CONFIG["threshold"])
+    macro_f1, per_label, _, _ = evaluate_with_per_label_thresholds(
+    best_model, lang_loader, best_thresholds)    
     lang_results[lang] = {"macro_f1": round(macro_f1, 4), "per_label": per_label}
     print(f"  {lang:<12}: {macro_f1:.4f}")
     for emotion, f1 in per_label.items():
