@@ -78,12 +78,19 @@ import anthropic
 # Load API key from Colab secrets (recommended) or environment
 # In Colab: from google.colab import userdata
 #           ANTHROPIC_API_KEY = userdata.get("ANTHROPIC_API_KEY")
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-if not ANTHROPIC_API_KEY:
-    raise ValueError(
-        "Set ANTHROPIC_API_KEY. In Colab: use the Secrets panel.\n"
-        "In local .env: ANTHROPIC_API_KEY=sk-ant-..."
-    )
+# ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+# if not ANTHROPIC_API_KEY:
+#     raise ValueError(
+#         "Set ANTHROPIC_API_KEY. In Colab: use the Secrets panel.\n"
+#         "In local .env: ANTHROPIC_API_KEY=sk-ant-..."
+#     )
+
+# client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
+# print("Anthropic client initialised.")
+
+# Replace the existing API key section with this
+from google.colab import userdata
+ANTHROPIC_API_KEY = userdata.get("ANTHROPIC_API_KEY")
 
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 print("Anthropic client initialised.")
@@ -102,8 +109,8 @@ CONFIG = {
     "model": "claude-haiku-20240307",
 
     # Max texts to annotate per language (set lower to save cost while testing)
-    "sesotho_limit": 4193,
-    "setswana_limit": 5000,
+    "sesotho_limit": 4174,
+    "setswana_limit": 4967,
 
     # How many examples to include in the prompt (few-shot examples)
     "num_few_shot": 3,
