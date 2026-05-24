@@ -89,8 +89,11 @@ import anthropic
 # print("Anthropic client initialised.")
 
 # Replace the existing API key section with this
-from google.colab import userdata
-ANTHROPIC_API_KEY = userdata.get("ANTHROPIC_API_KEY")
+# Replace with this
+import os
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+if not ANTHROPIC_API_KEY:
+    raise ValueError("ANTHROPIC_API_KEY environment variable not set")
 
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 print("Anthropic client initialised.")
