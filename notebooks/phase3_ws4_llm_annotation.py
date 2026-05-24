@@ -109,7 +109,7 @@ CONFIG = {
 
     # claude-haiku-20240307 is fastest and cheapest — good for bulk annotation
     # Use claude-sonnet for higher quality at higher cost
-    "model": "claude-haiku-20240307",
+    "model": "claude-haiku-4-5",
 
     # Max texts to annotate per language (set lower to save cost while testing)
     "sesotho_limit": 4174,
