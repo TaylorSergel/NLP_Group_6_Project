@@ -288,4 +288,4 @@ All other paths are derived automatically from `DRIVE_BASE`.
 
 ## Contact
 
-For access to the Google Drive folder containing processed datasets and model checkpoints, contact any group member via the course platform.
+For access to the Google Drive folder containing processed datasets and model checkpoints, follow the link for access : https://drive.google.com/drive/folders/1qW-AWSCy1yGBBPOguGdPm9PrYMRO7Etv?usp=sharing
