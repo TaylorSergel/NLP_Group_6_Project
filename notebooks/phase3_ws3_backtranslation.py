@@ -1,65 +1,3 @@
-# =============================================================================
-# PHASE 3 — WORKSTREAM 3: Back-Translation Data Augmentation
-# COS 760 — Group 5 | Alisha leads Phase 3
-# =============================================================================
-#
-# WHAT THIS SCRIPT DOES
-# ─────────────────────
-# Generates additional training data for Sesotho and Setswana using
-# back-translation: translate text → English → back to source language.
-# The result is paraphrased text that preserves the original meaning
-# and emotion, increasing training data diversity.
-#
-# WHY BACK-TRANSLATION?
-# ─────────────────────
-# Your sesotho_augmentation.csv (4193 rows) and setswana_augmentation.csv
-# (110103 rows) have NO emotion labels — they're raw text from news sources.
-# Back-translation + LLM annotation (Workstream 4) is how you create usable
-# training examples from this unlabelled data.
-#
-# Back-translation specifically helps because:
-#   1. It creates surface-form variety from existing text (paraphrasing)
-#   2. The semantic content and emotion is preserved through translation
-#   3. It exposes the model to more linguistic patterns in Sesotho/Setswana
-#
-# HOW IT WORKS (step by step)
-# ────────────────────────────
-# 1. Take Sesotho/Setswana text
-# 2. Translate → English using NLLB-200 (a Meta multilingual translation model)
-# 3. Translate English → back to original language using NLLB-200
-# 4. You now have a paraphrase of the original text
-# 5. Feed the back-translated text + original labels into training
-#    (labels come from Workstream 4 LLM annotation)
-#
-# WHY NLLB-200 NOT GOOGLE TRANSLATE?
-# ───────────────────────────────────
-# NLLB-200 (No Language Left Behind) from Meta supports Sesotho and Setswana
-# natively and is free to run locally. Google Translate requires an API key
-# and costs money at scale. For 4193 Sesotho samples NLLB-200 is practical.
-#
-# HOW TO RUN
-# ──────────────
-# Run on Colab T4 GPU — NLLB-200-distilled-600M fits comfortably.
-# The full NLLB-200-1.3B would be better quality but requires more memory.
-# Estimated runtime: ~2-4 hours for all Sesotho samples on T4.
-# For Setswana (110K rows), process a SUBSET (e.g. 5000 rows) only.
-#
-# EXPECTED OUTPUT
-# ───────────────
-# sesotho_backtranslated.csv  — original text + back-translated paraphrase
-# setswana_backtranslated.csv — same for Setswana subset
-# These get combined with LLM-annotated labels in a later step.
-# =============================================================================
-
-
-# ── CELL 1: Install dependencies ─────────────────────────────────────────────
-
-# !pip install -q transformers==4.40.0 sentencepiece sacremoses accelerate \
-#              pandas numpy torch
-
-
-# ── CELL 2: Imports ───────────────────────────────────────────────────────────
-
 import pandas as pd
 import numpy as np
 import torch
@@ -70,43 +8,34 @@ from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Device: {DEVICE}")
 
-# NLLB-200 language codes for our target languages
-# Full list: https://github.com/facebookresearch/flores/blob/main/flores200/README.md
 NLLB_LANG_CODES = {
     "sesotho":  "sot_Latn",   # Southern Sotho (Sesotho) — Latin script
     "setswana": "tsn_Latn",   # Tswana (Setswana) — Latin script
     "english":  "eng_Latn",   # English — Latin script
 }
 
-
-# ── CELL 3: Configuration ─────────────────────────────────────────────────────
+# ── Config ─────────────────────────────────────────────────────
 
 CONFIG = {
     "data_dir": "/content/drive/MyDrive/project_data",
     "output_dir": "/content/drive/MyDrive/project_data/results/phase3_backtranslation",
 
-    # NLLB-200-distilled-600M — good balance of quality vs speed/memory
-    # Use "facebook/nllb-200-1.3B" for better quality if you have A100
     "model_name": "facebook/nllb-200-distilled-600M",
 
-    # How many rows to process from each augmentation file
-    # Sesotho: process all 4193 (manageable)
-    # Setswana: process a subset — 110K rows would take days
-    "sesotho_sample_size": 4193,   # All available
-    "setswana_sample_size": 5000,  # Random sample — adjust based on time budget
+    "sesotho_sample_size": 4193,  
+    "setswana_sample_size": 5000, 
 
-    "batch_size": 16,       # Reduce to 8 if OOM
+    "batch_size": 16,      
     "max_input_length": 256,
     "max_output_length": 256,
-    "num_beams": 4,          # Beam search — higher = better quality, slower
+    "num_beams": 4,          
     "seed": 42,
 }
 
 Path(CONFIG["output_dir"]).mkdir(parents=True, exist_ok=True)
 
 
-# ── CELL 4: Load NLLB-200 model ───────────────────────────────────────────────
-# This downloads ~2.5GB on first run. Colab caches it for the session.
+# ── Load NLLB-200 model ───────────────────────────────────────────────
 
 print(f"\nLoading NLLB-200 model: {CONFIG['model_name']}")
 print("(First run downloads ~2.5GB — may take a few minutes)")
@@ -117,7 +46,7 @@ model.eval()
 print("Model loaded.")
 
 
-# ── CELL 5: Translation function ─────────────────────────────────────────────
+# ── Translation function ─────────────────────────────────────────────
 
 def translate_batch(texts, src_lang, tgt_lang, batch_size=16):
     """
@@ -164,7 +93,6 @@ def translate_batch(texts, src_lang, tgt_lang, batch_size=16):
                 early_stopping=True,
             )
 
-        # Decode — skip_special_tokens removes language tags and padding
         batch_translations = tokenizer.batch_decode(
             output_ids, skip_special_tokens=True
         )
@@ -197,9 +125,7 @@ def back_translate(texts, src_lang_code, batch_size=16):
     return {"english": english_texts, "back_translated": back_texts}
 
 
-# ── CELL 6: Quality check on small sample ────────────────────────────────────
-# Before processing all data, verify translation quality on 5 examples.
-# Check that the back-translated text is plausible and not garbled.
+# ── Quality check on small sample ────────────────────────────────────
 
 print("\n" + "="*60)
 print("QUALITY CHECK — 5 sample sentences per language")
@@ -222,7 +148,7 @@ for i, text in enumerate(sample_sesotho):
     print(f"     → Back-translated: {bt}")
 
 
-# ── CELL 7: Process Sesotho augmentation data ────────────────────────────────
+# ── Process Sesotho augmentation data ────────────────────────────────
 
 print("\n" + "="*60)
 print("PROCESSING SESOTHO AUGMENTATION DATA")
@@ -233,18 +159,15 @@ sesotho_df   = pd.read_csv(sesotho_path)
 print(f"Loaded {len(sesotho_df)} Sesotho rows")
 print(f"Columns: {sesotho_df.columns.tolist()}")
 
-# Use text_clean if available, otherwise fall back to first text column
 text_col = "text_clean" if "text_clean" in sesotho_df.columns else sesotho_df.columns[0]
 print(f"Using text column: '{text_col}'")
 
-# Sample if needed
 if CONFIG["sesotho_sample_size"] < len(sesotho_df):
     sesotho_df = sesotho_df.sample(n=CONFIG["sesotho_sample_size"], random_state=CONFIG["seed"])
     print(f"Sampled {CONFIG['sesotho_sample_size']} rows")
 
 sesotho_texts = sesotho_df[text_col].astype(str).tolist()
 
-# Filter out very short texts (likely not full sentences)
 sesotho_texts = [t for t in sesotho_texts if len(t.split()) >= 3]
 print(f"After filtering short texts: {len(sesotho_texts)} rows")
 
@@ -269,7 +192,7 @@ sesotho_out.to_csv(out_path, index=False)
 print(f"Saved {len(sesotho_out)} rows → {out_path}")
 
 
-# ── CELL 8: Process Setswana augmentation data ───────────────────────────────
+# ── Process Setswana augmentation data ───────────────────────────────
 
 print("\n" + "="*60)
 print("PROCESSING SETSWANA AUGMENTATION DATA")
@@ -281,7 +204,6 @@ print(f"Loaded {len(setswana_df)} Setswana rows (using {CONFIG['setswana_sample_
 
 text_col = "text_clean" if "text_clean" in setswana_df.columns else setswana_df.columns[0]
 
-# Sample subset — 110K rows is too many for a Colab session
 np.random.seed(CONFIG["seed"])
 setswana_df = setswana_df.sample(n=min(CONFIG["setswana_sample_size"], len(setswana_df)),
                                    random_state=CONFIG["seed"])
@@ -310,11 +232,7 @@ setswana_out.to_csv(out_path, index=False)
 print(f"Saved {len(setswana_out)} rows → {out_path}")
 
 
-# ── CELL 9: Quality metrics ───────────────────────────────────────────────────
-# Compute simple lexical similarity between original and back-translated text.
-# High overlap = back-translation preserved meaning (good).
-# Very high overlap = back-translation is just copying (bad — no paraphrase).
-# Aim for 40-70% word overlap.
+# ── Quality metrics ───────────────────────────────────────────────────
 
 from collections import Counter
 
@@ -340,7 +258,6 @@ for lang_name, out_df in [("Sesotho", sesotho_out), ("Setswana", setswana_out)]:
     print(f"  Median: {np.median(overlaps):.3f}  |  Std: {np.std(overlaps):.3f}")
     print(f"  (Target range: 0.30–0.70; too high = no paraphrase, too low = garbled)")
 
-    # Show 3 worst quality examples (lowest overlap) for manual inspection
     out_df_copy = out_df.copy()
     out_df_copy["overlap"] = overlaps
     worst = out_df_copy.nsmallest(3, "overlap")
@@ -351,8 +268,6 @@ for lang_name, out_df in [("Sesotho", sesotho_out), ("Setswana", setswana_out)]:
         print(f"    Overlap:     {row['overlap']:.3f}")
         print()
 
-
-# ── CELL 10: Summary ──────────────────────────────────────────────────────────
 
 print("\n" + "="*60)
 print("PHASE 3 WORKSTREAM 3 COMPLETE")

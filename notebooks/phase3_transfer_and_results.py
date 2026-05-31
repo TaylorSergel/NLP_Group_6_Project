@@ -1,47 +1,3 @@
-# =============================================================================
-# PHASE 3 — CROSS-LINGUAL TRANSFER & RESULTS AGGREGATION
-# COS 760 — Group 5
-# =============================================================================
-#
-# WHAT THIS SCRIPT DOES
-# ─────────────────────
-# 1. Cross-lingual transfer experiments: train on English + Afrikaans,
-#    test zero-shot on isiZulu (no isiZulu training data used).
-#    This measures how well multilingual models generalise cross-lingually.
-#
-# 2. Augmented training: re-trains WS1/WS2 models with the augmented dataset
-#    (original + LLM-annotated Sesotho/Setswana data).
-#
-# 3. Results aggregation: collects all Phase 3 results into one comparison
-#    table alongside Phase 2 baselines. This is the table that goes in your
-#    final report.
-#
-# WHY CROSS-LINGUAL TRANSFER?
-# ───────────────────────────
-# Your proposal specifically says to "train on English + Afrikaans combined,
-# then test on isiZulu, Sesotho, and Setswana with no further fine-tuning".
-# This is called ZERO-SHOT cross-lingual transfer.
-#
-# It answers the question: does multilingual pretraining alone enable the model
-# to generalise to unseen languages? If XLM-RoBERTa/AfriBERTa score well on
-# isiZulu without ever seeing isiZulu training data, that supports your
-# research question about transfer learning effectiveness.
-#
-# EXPECTED RESULTS (cross-lingual zero-shot)
-# ──────────────────────────────────────────
-# isiZulu zero-shot macro F1:     0.25 – 0.45
-# (Lower than trained-on-isiZulu result of 0.40-0.55, but much better than
-#  chance/random ~0.17 for 6 classes, and possibly better than LR baseline 0.29)
-#
-# HOW TO RUN
-# ──────────
-# Run this AFTER completing Workstreams 1-4.
-# Load the saved model from WS1 or WS2 and this script handles the rest.
-# =============================================================================
-
-
-# ── CELL 1: Imports ───────────────────────────────────────────────────────────
-
 import os
 import json
 import numpy as np
@@ -69,23 +25,20 @@ LABEL_COLS = ["anger", "fear", "joy", "sadness", "surprise", "disgust"]
 NUM_LABELS = len(LABEL_COLS)
 
 
-# ── CELL 2: Configuration ─────────────────────────────────────────────────────
+# ── Config ─────────────────────────────────────────────────────
 
 DRIVE_BASE = "/content/drive/MyDrive/project_data"
 
 CONFIG = {
-    # ── Paths (all pointing to Drive) ──────────────────────────────
     "data_dir":         f"{DRIVE_BASE}/processed",
     "annotation_dir":   f"{DRIVE_BASE}/results/phase3_annotation",
     "output_dir":       f"{DRIVE_BASE}/results/phase3_transfer",
     "xlmr_model_dir":   f"{DRIVE_BASE}/models/xlmroberta_lora",
     "afri_model_dir":   f"{DRIVE_BASE}/models/afriberta_lora",
 
-    # ── Model names (unchanged — these are HuggingFace downloads) ──
     "xlmr_base":   "xlm-roberta-base",
     "afri_base":   "castorini/afriberta_large",
 
-    # ── Training settings (unchanged) ──────────────────────────────
     "max_length":       128,
     "batch_size":       16,
     "num_epochs":       5,
@@ -95,7 +48,7 @@ CONFIG = {
     "grad_accum_steps": 2,
     "threshold":        0.5,
 
-    # ── LoRA config (unchanged) ─────────────────────────────────────
+    # ── LoRA config ─────────────────────────────────────
     "lora_r":                16,
     "lora_alpha":            32,
     "lora_dropout":          0.1,
@@ -105,7 +58,7 @@ CONFIG = {
 Path(CONFIG["output_dir"]).mkdir(parents=True, exist_ok=True)
 
 
-# ── CELL 3: Dataset class (shared) ────────────────────────────────────────────
+# ── Dataset class ────────────────────────────────────────────
 
 class EmotionDataset(Dataset):
     def __init__(self, df, tokenizer, max_length):
@@ -221,7 +174,7 @@ def build_lora_model(base_model_name, ignore_size=False):
     return get_peft_model(base, lora_cfg).to(DEVICE)
 
 
-# ── CELL 4: Load data ─────────────────────────────────────────────────────────
+# ── Load data ─────────────────────────────────────────────────────────
 
 train_df = pd.read_csv(Path(CONFIG["data_dir"]) / "train.csv").dropna(subset=["text_clean"])
 val_df   = pd.read_csv(Path(CONFIG["data_dir"]) / "val.csv").dropna(subset=["text_clean"])
@@ -230,7 +183,7 @@ test_df  = pd.read_csv(Path(CONFIG["data_dir"]) / "test.csv").dropna(subset=["te
 # Cross-lingual split: train only on English + Afrikaans
 xling_train = train_df[train_df["language"].isin(["english", "afrikaans"])].reset_index(drop=True)
 xling_val   = val_df[  val_df["language"].isin(  ["english", "afrikaans"])].reset_index(drop=True)
-# Test on isiZulu only (zero-shot language)
+# Test on isiZulu only
 isizulu_test = test_df[test_df["language"] == "isizulu"].reset_index(drop=True)
 
 print(f"Cross-lingual train: {len(xling_train)} rows (English + Afrikaans)")
@@ -238,10 +191,7 @@ print(f"Cross-lingual val:   {len(xling_val)} rows")
 print(f"isiZulu zero-shot test: {len(isizulu_test)} rows")
 
 
-# ── CELL 5: Zero-shot test — use existing WS1 model on isiZulu ────────────────
-# The WS1 model was trained on ALL languages including isiZulu.
-# Here we test a model trained ONLY on English+Afrikaans on isiZulu.
-# This is the true zero-shot cross-lingual transfer experiment.
+# ── Zero-shot test — use existing WS1 model on isiZulu ────────────────
 
 print("\n" + "="*60)
 print("EXPERIMENT A: Zero-shot cross-lingual transfer")
@@ -276,9 +226,7 @@ print(f"Improvement over baseline:              {zs_f1 - 0.2911:+.4f}")
 print("Per-label F1:", zs_per_label)
 
 
-# ── CELL 6: Augmented training experiment ─────────────────────────────────────
-# Re-train WS1 (XLM-RoBERTa) with the augmented dataset that includes
-# LLM-annotated Sesotho + Setswana data from Workstreams 3 & 4.
+# ── Augmented training experiment ─────────────────────────────────────
 
 print("\n" + "="*60)
 print("EXPERIMENT B: Augmented training (original + Sesotho/Setswana)")
@@ -323,9 +271,7 @@ else:
     aug_f1, aug_per_label = None, None
 
 
-# ── CELL 7: Aggregate all results ────────────────────────────────────────────
-# Collect results from all Phase 3 experiments + Phase 2 baselines
-# into one comparison table for your report.
+# ── Aggregate all results ────────────────────────────────────────────
 
 print("\n" + "="*60)
 print("COLLECTING ALL RESULTS INTO COMPARISON TABLE")
@@ -333,7 +279,6 @@ print("="*60)
 
 results_rows = []
 
-# Phase 2 baselines (from Phase 2 handoff)
 results_rows.append({
     "model": "TF-IDF + Logistic Regression",
     "phase": 2,
@@ -359,7 +304,6 @@ results_rows.append({
     "cross_lingual": False,
 })
 
-# Collect Phase 3 WS1 results if available
 ws1_summary_path = Path("results/phase3_xlmroberta/xlmroberta_summary.csv")
 if ws1_summary_path.exists():
     ws1 = pd.read_csv(ws1_summary_path).iloc[0]
@@ -379,7 +323,6 @@ if ws1_summary_path.exists():
             row[f"{r['language']}_f1"] = r["macro_f1"]
     results_rows.append(row)
 
-# Collect Phase 3 WS2 results if available
 ws2_summary_path = Path("results/phase3_afriberta/afriberta_summary.csv")
 if ws2_summary_path.exists():
     ws2 = pd.read_csv(ws2_summary_path).iloc[0]
@@ -404,7 +347,7 @@ results_rows.append({
     "model": "XLM-RoBERTa-base + LoRA (cross-lingual)",
     "phase": 3,
     "experiment": "zero_shot_transfer",
-    "test_macro_f1": None,  # Only isiZulu was evaluated
+    "test_macro_f1": None,  
     "isizulu_f1": round(zs_f1, 4),
     "english_f1": None,
     "afrikaans_f1": None,
@@ -428,7 +371,6 @@ results_path = Path(CONFIG["output_dir"]) / "phase3_all_results.csv"
 results_df.to_csv(results_path, index=False)
 print(f"\nFull results table saved → {results_path}")
 
-# Print a readable summary table
 print("\n" + "="*70)
 print("PHASE 3 RESULTS SUMMARY (for your report)")
 print("="*70)

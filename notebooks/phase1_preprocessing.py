@@ -9,7 +9,6 @@ EMOTIONS = ['anger', 'fear', 'joy', 'sadness', 'surprise', 'disgust']
 PROCESSED_PATH = 'data/processed'
 os.makedirs(PROCESSED_PATH, exist_ok=True)
 
-# ── Step 1: Load BRIGHTER languages (have emotion labels) ─
 print("Loading BRIGHTER datasets...")
 
 def load_brighter_language(lang_name):
@@ -32,16 +31,13 @@ isizulu_df   = load_brighter_language('isizulu')
 brighter_df = pd.concat([afrikaans_df, english_df, isizulu_df], ignore_index=True)
 print(f"\nTotal BRIGHTER rows: {len(brighter_df)}")
 
-# ── Step 2: Inspect columns ───────────────────────────────
 print("\nBRIGHTER columns:", brighter_df.columns.tolist())
 print("\nSample row:")
 print(brighter_df.iloc[0])
 
-# ── Step 3: Check emotion columns ────────────────────────
 available_emotions = [e for e in EMOTIONS if e in brighter_df.columns]
 print(f"\nEmotion columns found: {available_emotions}")
 
-# ── Step 4: Check intensity annotations ──────────────────
 intensity_cols = [c for c in brighter_df.columns if 'intensity' in c.lower()]
 print(f"\nIntensity columns found: {intensity_cols}")
 if intensity_cols:
@@ -51,7 +47,6 @@ if intensity_cols:
         non_null = lang_df[intensity_cols].notna().any(axis=1).sum()
         print(f"  {lang}: {non_null} rows with intensity annotations")
 
-# ── Step 5: Emotion class distribution ───────────────────
 print("\nEmotion distributions per language:")
 for lang in ['afrikaans', 'english', 'isizulu']:
     lang_df = brighter_df[brighter_df['language'] == lang]
@@ -59,7 +54,6 @@ for lang in ['afrikaans', 'english', 'isizulu']:
     if available_emotions:
         print(lang_df[available_emotions].sum())
 
-# ── Step 6: Preprocess text ───────────────────────────────
 def preprocess_text(text):
     if not isinstance(text, str):
         return ""
@@ -85,7 +79,6 @@ before = len(brighter_df)
 brighter_df = brighter_df.drop_duplicates(subset=['text_clean'])
 print(f"\nRemoved {before - len(brighter_df)} duplicates. Remaining: {len(brighter_df)}")
 
-# ── Step 7: Split into train/val/test ─────────────────────
 print("\nSplitting data...")
 train_list, val_list, test_list = [], [], []
 
@@ -104,7 +97,7 @@ for lang in ['afrikaans', 'english', 'isizulu']:
         test_list.append(lang_df[lang_df['split'] == 'test'])
         print(f"  {lang}: using existing splits")
     else:
-        # isiZulu has no train split — manually split from dev+test
+        # isiZulu has no train split - manually split from dev+test
         print(f"  {lang}: no train split found — manually splitting")
         train, temp = train_test_split(lang_df, test_size=0.3, random_state=42)
         val, test = train_test_split(temp, test_size=0.5, random_state=42)
@@ -118,7 +111,6 @@ test_df  = pd.concat(test_list).reset_index(drop=True)
 
 print(f"\nTrain: {len(train_df)} | Val: {len(val_df)} | Test: {len(test_df)}")
 
-# ── Step 8: Process augmentation languages ────────────────
 print("\nProcessing augmentation datasets (Sesotho & Setswana)...")
 
 # Sesotho
@@ -136,7 +128,6 @@ setswana_df['text_clean'] = setswana_df['text'].apply(preprocess_text)
 setswana_df = setswana_df.drop_duplicates(subset=['text_clean'])
 print(f"  Setswana: {len(setswana_df)} rows")
 
-# ── Step 9: Save all processed files ─────────────────────
 print("\nSaving processed files...")
 
 train_df.to_csv(f'{PROCESSED_PATH}/train.csv', index=False)
@@ -152,7 +143,6 @@ print(f"  test.csv                  ({len(test_df)} rows)")
 print(f"  sesotho_augmentation.csv  ({len(sesotho_df)} rows)")
 print(f"  setswana_augmentation.csv ({len(setswana_df)} rows)")
 
-# ── Step 10: Print data summary ───────────────────────────
 print("\n" + "="*50)
 print("DATA SUMMARY")
 print("="*50)

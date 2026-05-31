@@ -1,40 +1,3 @@
-# =============================================================================
-# PHASE 4 — ANALYSIS & ERROR EVALUATION
-# COS 760 — Group 5 | Shared phase
-# =============================================================================
-#
-# WHAT THIS SCRIPT DOES
-# ─────────────────────
-# Loads the saved WS1 (XLM-RoBERTa) and WS2 (AfriBERTa) model checkpoints
-# and runs comprehensive error analysis on the test set. No retraining needed.
-#
-# Produces:
-#   1. Full classification reports (precision, recall, F1 per emotion per language)
-#   2. Multilabel confusion matrices per emotion class
-#   3. Per-language error heatmaps
-#   4. Misclassification examples for qualitative analysis
-#   5. Model comparison summary table
-#   6. Attention visualisation for selected examples (bertviz)
-#
-# HOW TO RUN
-# ──────────
-# Run in the same Colab notebook as WS1/WS2, after those are complete.
-# All outputs save to Drive under results/phase4_analysis/
-#
-# EXPECTED RUNTIME
-# ────────────────
-# ~5-10 minutes (inference only, no training)
-# =============================================================================
-
-
-# ── CELL 1: Install dependencies ─────────────────────────────────────────────
-
-# !pip install -q transformers peft scikit-learn pandas numpy matplotlib \
-#              seaborn bertviz torch
-
-
-# ── CELL 2: Imports ───────────────────────────────────────────────────────────
-
 import os
 import json
 import numpy as np
@@ -71,22 +34,19 @@ DRIVE_BASE   = "/content/drive/MyDrive/project_data"
 OUTPUT_DIR   = f"{DRIVE_BASE}/results/phase4_analysis"
 Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
 
-# Saved model paths from Phase 3
 XLMR_MODEL_DIR = f"{DRIVE_BASE}/models/xlmroberta_lora"
 AFRI_MODEL_DIR = f"{DRIVE_BASE}/models/afriberta_lora"
 XLMR_BASE      = "xlm-roberta-base"
 AFRI_BASE      = "castorini/afriberta_large"
 
-# Best thresholds from WS1 threshold tuning
 XLMR_THRESHOLDS = {
     "anger": 0.5, "fear": 0.6, "joy": 0.55,
     "sadness": 0.45, "surprise": 0.6, "disgust": 0.3,
 }
-# Use same thresholds for AfriBERTa (can tune separately if needed)
 AFRI_THRESHOLDS = XLMR_THRESHOLDS
 
 
-# ── CELL 3: Dataset class ─────────────────────────────────────────────────────
+# ── Dataset class ─────────────────────────────────────────────────────
 
 class EmotionDataset(Dataset):
     def __init__(self, df, tokenizer, max_length=128):
@@ -113,7 +73,7 @@ class EmotionDataset(Dataset):
         }
 
 
-# ── CELL 4: Load data ─────────────────────────────────────────────────────────
+# ── Load data ─────────────────────────────────────────────────────────
 
 print("Loading test data...")
 test_df = pd.read_csv(f"{DRIVE_BASE}/test.csv").dropna(subset=["text_clean"])
@@ -122,7 +82,7 @@ print(f"Test set: {len(test_df)} rows")
 print(test_df["language"].value_counts())
 
 
-# ── CELL 5: Inference function ────────────────────────────────────────────────
+# ── Inference function ────────────────────────────────────────────────
 
 def get_predictions(model, tokenizer, df, thresholds, batch_size=32):
     """
@@ -159,7 +119,7 @@ def get_predictions(model, tokenizer, df, thresholds, batch_size=32):
     return all_probs, all_preds, all_labels.astype(int)
 
 
-# ── CELL 6: Load models ───────────────────────────────────────────────────────
+# ── Load models ───────────────────────────────────────────────────────
 
 print("\nLoading XLM-RoBERTa checkpoint...")
 xlmr_tokenizer = AutoTokenizer.from_pretrained(XLMR_BASE)
@@ -178,7 +138,7 @@ afri_model.eval()
 print("AfriBERTa loaded.")
 
 
-# ── CELL 7: Run inference for both models ─────────────────────────────────────
+# ── Run inference for both models ─────────────────────────────────────
 
 print("\nRunning XLM-RoBERTa inference...")
 xlmr_probs, xlmr_preds, true_labels = get_predictions(
@@ -193,7 +153,7 @@ afri_probs, afri_preds, _ = get_predictions(
 print("Inference complete.")
 
 
-# ── CELL 8: Full classification reports ───────────────────────────────────────
+# ── Full classification reports ───────────────────────────────────────
 
 print("\n" + "="*70)
 print("FULL CLASSIFICATION REPORTS")
@@ -250,9 +210,7 @@ for lang in LANGUAGES:
     }
 
 
-# ── CELL 9: Multilabel confusion matrices ────────────────────────────────────
-# For multilabel classification, each label gets its own 2x2 confusion matrix.
-# This shows false positives and false negatives per emotion.
+# ── Multilabel confusion matrices ────────────────────────────────────
 
 def plot_confusion_matrices(preds, labels, model_name):
     """Plot 2x2 confusion matrix for each emotion label."""
@@ -290,9 +248,7 @@ plot_confusion_matrices(xlmr_preds, true_labels, "xlmroberta")
 plot_confusion_matrices(afri_preds, true_labels, "afriberta")
 
 
-# ── CELL 10: Per-language F1 heatmap ─────────────────────────────────────────
-# Heatmap showing F1 score per emotion per language for both models.
-# This is the key visualisation for your report.
+# ── Per-language F1 heatmap ─────────────────────────────────────────
 
 def build_heatmap_data(preds, labels, df):
     """Build emotion x language F1 matrix."""
@@ -306,7 +262,7 @@ def build_heatmap_data(preds, labels, df):
             data[lang][label] = round(
                 f1_score(lang_true[:, i], lang_pred[:, i], zero_division=0), 3
             )
-    return pd.DataFrame(data).T  # languages as rows, emotions as columns
+    return pd.DataFrame(data).T 
 
 xlmr_heatmap = build_heatmap_data(xlmr_preds, true_labels, test_df)
 afri_heatmap = build_heatmap_data(afri_preds, true_labels, test_df)
@@ -337,12 +293,11 @@ plt.savefig(path, dpi=150, bbox_inches="tight")
 plt.show()
 print(f"Saved: {path}")
 
-# Save heatmap data as CSV for report
 xlmr_heatmap.to_csv(f"{OUTPUT_DIR}/xlmroberta_language_emotion_f1.csv")
 afri_heatmap.to_csv(f"{OUTPUT_DIR}/afriberta_language_emotion_f1.csv")
 
 
-# ── CELL 11: Model comparison bar chart ───────────────────────────────────────
+# ── Model comparison bar chart ───────────────────────────────────────
 
 fig, axes = plt.subplots(1, 3, figsize=(18, 6))
 fig.suptitle("Model Comparison: Macro F1 per Language",
@@ -383,7 +338,7 @@ plt.show()
 print(f"Saved: {path}")
 
 
-# ── CELL 12: Emotion-level comparison chart ───────────────────────────────────
+# ── Emotion-level comparison chart ───────────────────────────────────
 
 fig, ax = plt.subplots(figsize=(14, 6))
 
@@ -435,9 +390,7 @@ plt.show()
 print(f"Saved: {path}")
 
 
-# ── CELL 13: Qualitative error analysis ───────────────────────────────────────
-# Extract and save misclassified examples for each language and emotion.
-# These go in your report as qualitative analysis.
+# ── Qualitative error analysis ───────────────────────────────────────
 
 print("\n" + "="*70)
 print("QUALITATIVE ERROR ANALYSIS — MISCLASSIFIED EXAMPLES")
@@ -489,7 +442,7 @@ afri_errors = get_error_examples(
     test_df.reset_index(drop=True), afri_preds,  true_labels, "afriberta"
 )
 
-# Print sample errors for each language for the report
+# Print sample errors for each language
 print("\n--- Sample False Negatives by Language (XLM-RoBERTa) ---")
 for lang in LANGUAGES:
     lang_fn = xlmr_errors[
@@ -504,8 +457,7 @@ for lang in LANGUAGES:
             print()
 
 
-# ── CELL 14: isiZulu deep dive ────────────────────────────────────────────────
-# isiZulu is the most interesting failure case — deep dive into what went wrong.
+# ── isiZulu deep dive ────────────────────────────────────────────────
 
 print("\n" + "="*70)
 print("isiZULU DEEP DIVE — WHY DID BOTH MODELS STRUGGLE?")
@@ -537,7 +489,6 @@ for i, label in enumerate(LABEL_COLS):
     f1     = f1_score(isizulu_true[:, i], isizulu_afri[:, i], zero_division=0)
     print(f"  {label:<10}: predicted {n_pred} (true={n_true})  F1={f1:.3f}")
 
-# Token length analysis — are isiZulu texts harder to encode?
 print("\nTokenisation analysis:")
 xlmr_isizulu_lengths = [
     len(xlmr_tokenizer.encode(t, truncation=True, max_length=128))
@@ -563,8 +514,7 @@ print(f"  AfriBERTa avg tokens — isiZulu: {np.mean(afri_isizulu_lengths):.1f} 
 print("  (More tokens per text = more fragmented subwords = harder for model)")
 
 
-# ── CELL 15: Summary comparison table ────────────────────────────────────────
-# The main table for your report — all models, all languages, all emotions.
+# ── Summary comparison table ────────────────────────────────────────
 
 print("\n" + "="*70)
 print("FINAL SUMMARY TABLE (for report)")
@@ -572,7 +522,6 @@ print("="*70)
 
 summary_rows = []
 
-# Baseline from Phase 2
 summary_rows.append({
     "model": "TF-IDF + Logistic Regression",
     "overall_macro_f1": 0.4356,
@@ -618,7 +567,6 @@ summary_rows.append(afri_row)
 summary_df = pd.DataFrame(summary_rows)
 summary_df.to_csv(f"{OUTPUT_DIR}/phase4_summary_table.csv", index=False)
 
-# Print readable table
 print("\nOverall and per-language macro F1:")
 display_cols = ["model", "overall_macro_f1", "english_f1",
                 "afrikaans_f1", "isizulu_f1"]
@@ -629,10 +577,7 @@ emotion_cols = ["model"] + [f"{l}_f1" for l in LABEL_COLS]
 print(summary_df[emotion_cols].to_string(index=False))
 
 
-# ── CELL 16: Attention visualisation (bertviz) ────────────────────────────────
-# Visualise attention weights for selected examples.
-# This shows WHAT the model focuses on when predicting each emotion.
-# Run this cell separately — it opens an interactive widget.
+# ── Attention visualisation ────────────────────────────────
 
 print("\n" + "="*70)
 print("ATTENTION VISUALISATION (optional — run separately)")
@@ -654,30 +599,25 @@ def visualise_attention(text, model, tokenizer, model_name, true_labels_str=""):
                        truncation=True, max_length=128).to(DEVICE)
     tokens = tokenizer.convert_ids_to_tokens(inputs["input_ids"][0])
 
-    # Get attention weights from base model
     base = model.base_model
     with torch.no_grad():
         outputs = base(**inputs, output_attentions=True)
 
-    attention = outputs.attentions  # tuple of tensors per layer
+    attention = outputs.attentions  
     print(f"\nModel: {model_name}")
     print(f"Text: {text[:80]}")
     print(f"True emotions: {true_labels_str}")
     print(f"Tokens: {tokens}")
     print(f"Layers: {len(attention)}  |  Heads per layer: {attention[0].shape[1]}")
 
-    # Display interactive attention view
     head_view(attention, tokens)
 
 
-# Select interesting examples for visualisation
-# 1. isiZulu example where model got sadness right
 isizulu_sadness = test_df[
     (test_df["language"] == "isizulu") &
     (test_df["sadness"] == 1)
 ]["text_clean"].iloc[0]
 
-# 2. English example with multiple emotions
 english_multi = test_df[
     (test_df["language"] == "english") &
     (test_df[LABEL_COLS].sum(axis=1) >= 2)
@@ -690,8 +630,6 @@ print("\nTo visualise attention, run:")
 print("  visualise_attention(isizulu_sadness, xlmr_model, xlmr_tokenizer, 'XLM-RoBERTa')")
 print("  visualise_attention(english_multi,   xlmr_model, xlmr_tokenizer, 'XLM-RoBERTa')")
 
-
-# ── CELL 17: Save all outputs summary ────────────────────────────────────────
 
 print("\n" + "="*70)
 print("PHASE 4 COMPLETE — ALL OUTPUTS SAVED")

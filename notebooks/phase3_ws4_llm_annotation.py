@@ -1,70 +1,3 @@
-# =============================================================================
-# PHASE 3 — WORKSTREAM 4: LLM-Based Emotion Annotation
-# COS 760 — Group 5 | Alisha leads Phase 3
-# =============================================================================
-#
-# WHAT THIS SCRIPT DOES
-# ─────────────────────
-# Uses Claude (via the Anthropic API) to annotate Sesotho and Setswana news
-# headlines with emotion labels (anger, fear, joy, sadness, surprise, disgust).
-# These labelled headlines are then used as additional training data.
-#
-# WHY LLM ANNOTATION?
-# ───────────────────
-# Your sesotho_augmentation.csv and setswana_backtranslated.csv have text
-# but NO emotion labels. Human annotation at scale is expensive and slow.
-# LLMs can annotate hundreds of examples per minute and have shown reasonable
-# reliability for emotion labelling — especially via English intermediary
-# (the model sees the English translation + original text).
-#
-# ANNOTATION STRATEGY
-# ───────────────────
-# We use a TWO-STEP approach for reliability:
-#
-# Step 1 — Annotate via English translation (more reliable for the LLM)
-#   Input to LLM: English translation of the text (from Workstream 3)
-#   Output: emotion labels as JSON
-#
-# Step 2 — Verify with original text
-#   The LLM sees both original and translation, resolving ambiguity.
-#
-# This is more reliable than asking the LLM to read Sesotho/Setswana directly,
-# since Claude has stronger multilingual understanding via English.
-#
-# MANUAL VERIFICATION (REQUIRED)
-# ───────────────────────────────
-# LLM annotation is NOT 100% reliable. The proposal says "manually verify a sample".
-# This script:
-#   1. Annotates all texts automatically
-#   2. Produces a 100-row stratified sample for you to manually verify
-#   3. Computes estimated accuracy from your manual check
-#   4. Filters out low-confidence annotations before using for training
-#
-# HOW TO RUN
-# ──────────
-# You need an Anthropic API key. Set it as an environment variable:
-#   In Colab: use the Secrets panel (key icon in sidebar)
-#             Add secret: ANTHROPIC_API_KEY = sk-ant-...
-#   In your .env file locally: ANTHROPIC_API_KEY=sk-ant-...
-#
-# Estimated cost: ~$2-5 for annotating 4193 Sesotho headlines with claude-haiku
-# Estimated runtime: ~30-60 minutes (rate limited)
-#
-# EXPECTED RESULTS
-# ────────────────
-# LLM annotation agreement with human labels: 60-80% for English
-# For Sesotho/Setswana (via translation): 50-70% estimated
-# After filtering low-confidence annotations, expect higher agreement
-# =============================================================================
-
-
-# ── CELL 1: Install dependencies ─────────────────────────────────────────────
-
-# !pip install -q anthropic pandas numpy scikit-learn tqdm
-
-
-# ── CELL 2: Imports and API setup ─────────────────────────────────────────────
-
 import os
 import json
 import time
@@ -75,21 +8,6 @@ from pathlib import Path
 from tqdm import tqdm
 import anthropic
 
-# Load API key from Colab secrets (recommended) or environment
-# In Colab: from google.colab import userdata
-#           ANTHROPIC_API_KEY = userdata.get("ANTHROPIC_API_KEY")
-# ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
-# if not ANTHROPIC_API_KEY:
-#     raise ValueError(
-#         "Set ANTHROPIC_API_KEY. In Colab: use the Secrets panel.\n"
-#         "In local .env: ANTHROPIC_API_KEY=sk-ant-..."
-#     )
-
-# client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-# print("Anthropic client initialised.")
-
-# Replace the existing API key section with this
-# Replace with this
 import os
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 if not ANTHROPIC_API_KEY:
@@ -101,33 +19,25 @@ print("Anthropic client initialised.")
 LABEL_COLS = ["anger", "fear", "joy", "sadness", "surprise", "disgust"]
 
 
-# ── CELL 3: Configuration ─────────────────────────────────────────────────────
+# ── Config ─────────────────────────────────────────────────────
 
 CONFIG = {
     "backtranslation_dir": "/content/drive/MyDrive/project_data/results/phase3_backtranslation",
     "output_dir": "/content/drive/MyDrive/project_data/results/phase3_annotation",
 
-    # claude-haiku-20240307 is fastest and cheapest — good for bulk annotation
-    # Use claude-sonnet for higher quality at higher cost
     "model": "claude-haiku-4-5",
 
-    # Max texts to annotate per language (set lower to save cost while testing)
     "sesotho_limit": 4174,
     "setswana_limit": 4967,
 
-    # How many examples to include in the prompt (few-shot examples)
     "num_few_shot": 3,
 
-    # Confidence threshold — only keep annotations where model is confident
-    # Labels with confidence < this are set to 0 (not present)
-    "confidence_threshold": 0.6,
+    "confidence_threshold": 0.6,        # Confidence threshold 
 
-    # Rate limiting — Claude API has rate limits
     "requests_per_minute": 50,   # Safe default for claude-haiku
     "retry_attempts": 3,
-    "retry_delay": 5,            # Seconds between retries
+    "retry_delay": 5,            
 
-    # Manual verification sample size
     "verification_sample_size": 100,
 
     "seed": 42,
@@ -137,10 +47,7 @@ Path(CONFIG["output_dir"]).mkdir(parents=True, exist_ok=True)
 random.seed(CONFIG["seed"])
 
 
-# ── CELL 4: Annotation prompt ─────────────────────────────────────────────────
-# The prompt is the most important part of LLM annotation.
-# We use structured JSON output for easy parsing and few-shot examples
-# to anchor the model on what each emotion means in context.
+# ── Annotation prompt ─────────────────────────────────────────────────
 
 FEW_SHOT_EXAMPLES = [
     {
@@ -218,7 +125,7 @@ Respond ONLY with JSON in this exact format:
     return system_prompt, user_prompt
 
 
-# ── CELL 5: API call with retry logic ────────────────────────────────────────
+# ── API call with retry logic ────────────────────────────────────────
 
 def annotate_text(original_text, english_translation, language):
     """
@@ -264,14 +171,14 @@ def annotate_text(original_text, english_translation, language):
             print(f"  Raw response: {raw_text[:100]}")
             time.sleep(CONFIG["retry_delay"])
         except anthropic.RateLimitError:
-            wait = 60  # Wait a full minute on rate limit
+            wait = 60 
             print(f"  Rate limit hit — waiting {wait}s...")
             time.sleep(wait)
         except Exception as e:
             print(f"  API error (attempt {attempt+1}): {e}")
             time.sleep(CONFIG["retry_delay"])
 
-    return None  # All retries failed
+    return None  
 
 
 def annotate_batch(df, language, limit=None, delay_between=None):
@@ -291,7 +198,6 @@ def annotate_batch(df, language, limit=None, delay_between=None):
         df = df.head(limit).copy()
 
     if delay_between is None:
-        # Compute delay from requests_per_minute
         delay_between = 60.0 / CONFIG["requests_per_minute"]
 
     results = []
@@ -323,7 +229,7 @@ def annotate_batch(df, language, limit=None, delay_between=None):
     return pd.DataFrame(results)
 
 
-# ── CELL 6: Annotate Sesotho ──────────────────────────────────────────────────
+# ── Annotate Sesotho ──────────────────────────────────────────────────
 
 print("\n" + "="*60)
 print("ANNOTATING SESOTHO BACK-TRANSLATED TEXTS")
@@ -343,7 +249,7 @@ sesotho_annotated.to_csv(out_path, index=False)
 print(f"Saved raw annotations → {out_path}")
 
 
-# ── CELL 7: Annotate Setswana ─────────────────────────────────────────────────
+# ── Annotate Setswana ─────────────────────────────────────────────────
 
 print("\n" + "="*60)
 print("ANNOTATING SETSWANA BACK-TRANSLATED TEXTS")
@@ -363,9 +269,7 @@ setswana_annotated.to_csv(out_path, index=False)
 print(f"Saved raw annotations → {out_path}")
 
 
-# ── CELL 8: Confidence filtering ─────────────────────────────────────────────
-# Keep only high-confidence annotations for training.
-# Low-confidence labels are more likely to be wrong and would hurt the model.
+# ── Confidence filtering ─────────────────────────────────────────────
 
 def filter_by_confidence(df, threshold):
     """
@@ -389,7 +293,6 @@ print("="*60)
 sesotho_filtered   = filter_by_confidence(sesotho_annotated.copy(),   CONFIG["confidence_threshold"])
 setswana_filtered  = filter_by_confidence(setswana_annotated.copy(),  CONFIG["confidence_threshold"])
 
-# Label distribution after filtering
 for lang_name, df in [("Sesotho", sesotho_filtered), ("Setswana", setswana_filtered)]:
     print(f"\n{lang_name} label counts after filtering:")
     for col in LABEL_COLS:
@@ -397,9 +300,7 @@ for lang_name, df in [("Sesotho", sesotho_filtered), ("Setswana", setswana_filte
             print(f"  {col:<10}: {int(df[col].sum())} positive ({df[col].mean()*100:.1f}%)")
 
 
-# ── CELL 9: Manual verification sample ───────────────────────────────────────
-# Export a stratified sample of 100 annotations for you to verify manually.
-# This is required by your proposal and gives an estimate of annotation quality.
+# ── Manual verification sample ───────────────────────────────────────
 
 def create_verification_sample(df, n=100, language="unknown"):
     """
@@ -408,7 +309,6 @@ def create_verification_sample(df, n=100, language="unknown"):
     """
     sample_rows = []
 
-    # Include examples of each emotion
     for col in LABEL_COLS:
         if col in df.columns and df[col].sum() > 0:
             positive_rows = df[df[col] == 1].sample(
@@ -416,14 +316,12 @@ def create_verification_sample(df, n=100, language="unknown"):
             )
             sample_rows.append(positive_rows)
 
-    # Include some all-zero rows
     all_zero = df[(df[LABEL_COLS] == 0).all(axis=1)]
     if len(all_zero) > 0:
         sample_rows.append(all_zero.sample(min(20, len(all_zero)), random_state=CONFIG["seed"]))
 
     sample = pd.concat(sample_rows).drop_duplicates().head(n)
 
-    # Add columns for manual annotation
     sample = sample.copy()
     sample["human_anger"]    = ""
     sample["human_fear"]     = ""
@@ -456,9 +354,7 @@ print("  3. Fill in 'human_*' columns with 0 or 1 based on your judgment")
 print("  4. Run Cell 10 below to compute agreement with LLM annotations")
 
 
-# ── CELL 10: Agreement computation ───────────────────────────────────────────
-# Run this AFTER completing manual verification.
-# It computes Cohen's Kappa and per-label accuracy between LLM and human labels.
+# ── Agreement computation ───────────────────────────────────────────
 
 def compute_agreement(verified_csv_path, language):
     """
@@ -490,19 +386,13 @@ def compute_agreement(verified_csv_path, language):
         accuracy = (llm_labels == human_labels).mean()
         print(f"  {col:<10}: {accuracy:.3f} accuracy ({int(accuracy*100)}%)")
 
-    # Overall exact match (all 6 labels correct)
     llm_matrix   = df_filled[LABEL_COLS].astype(int).values
     human_matrix = df_filled[human_cols].astype(int).values
     exact_match  = (llm_matrix == human_matrix).all(axis=1).mean()
     print(f"\n  Exact match (all 6 labels): {exact_match:.3f} ({int(exact_match*100)}%)")
 
-# Uncomment and run after filling in manual verification CSV:
-# compute_agreement(Path(CONFIG["output_dir"]) / "sesotho_verify_me.csv",  "Sesotho")
-# compute_agreement(Path(CONFIG["output_dir"]) / "setswana_verify_me.csv", "Setswana")
 
-
-# ── CELL 11: Prepare final augmentation training file ────────────────────────
-# Combine the filtered annotated data into a format compatible with train.csv
+# ── Prepare final augmentation training file ────────────────────────
 
 def prepare_for_training(df, language, text_col="back_translated_text"):
     """Convert annotated augmentation data to train.csv format."""
